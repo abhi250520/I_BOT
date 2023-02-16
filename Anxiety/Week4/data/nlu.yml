@@ -1,0 +1,311 @@
+version: "2.0"
+
+nlu:
+
+- intent: great
+  examples: |
+    - Start
+    - start
+    - go
+    - Go
+    - hi
+    - Hi
+    - hello
+    - Hello
+    - hey
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - Ok.
+    - okay
+    - Okay
+    - ok.
+    - okk
+    - okay.
+    - OKAY
+    - OKay 
+    - ok. 
+    - oK. 
+    - oK...
+    - okay
+    - Okay
+    - okay.
+    - okay... 
+    - oky
+    - OKY!
+    - OKk 
+    - Yes.
+    - yes 
+    - Sure
+    - sure 
+    - I guess so
+    - I Guess So
+    - Sure...
+    - sure 
+    - I guess so
+    - I Guess so
+    - I GUESS SO
+    - Yes, it was
+    - yes it was
+    - Sure.
+    - Go on...
+    - go on...  
+    - yeah
+    - Yeah  
+    - Yeah...
+    - Yes,I would like to
+    - Y, i think
+    - Yes, I think I've experienced these at some point
+    - Yes,I want to try again
+    - yes i want to try again
+    - Ok I'll do that
+    - ok ill do that
+    - Maybe a little
+    - Hmm
+    - hmm
+    - I think, I understand
+    - i think , i understand
+    - I understand what you mean...
+    - Yes, I can think of a few thoughts...
+    - Let me try
+    - Definitely
+    - Yes, I want to add more
+    - Yes, it was. Thank you
+    - Yes, I want to work it!
+    - I think that would help!
+    - Yes, sometimes...
+    - Ok, Let's start!
+    - Done
+    - Next
+    - Continue with session
+    - Set reminders for thought diary
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - NO
+    - No
+    - No.
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - I'm not sure
+    - im not sure
+    - No, I'm good
+    - no, im good 
+    - I don't understand...
+    - i dont understand
+    - No,I'm good
+    - no im good
+    - No, I'm done for today.
+
+- intent: mood_great
+  examples: |
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - What's that?
+    - whats that
+    - You too!
+    - you too
+    - You too
+    - exactly...
+    - More than a year
+    - More than a few months    -
+    - More than a week
+    - That sounds helpful!
+    - Sure, I will try them!
+    - I'm done for today!
+    - Why are they unhelpful?
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - Tell me more
+    - tell me more 
+    - Sadness? Doesn't everyone feel sad
+    - sadness
+    - Can you tell me more?
+    - can you tell me more
+    - Can you give me an examples?    
+    - CAN YOU GIVE ME A EXAMPLE  
+    - Really? How?
+    - Can I try it? 
+    - How does this work?
+
+ 
+
+- intent: meter10
+  examples: |
+    - 1. Slightly better than before.
+    - 2. Better than before.
+    - slightly
+ 
+- intent: meter11
+  examples: |
+    - 3. No change.
+    - nochange.
+    - 3. No changeE.
+    - nochangeE
+ 
+- intent: meter12
+  examples: |
+    - 4. Slightly worse than before.
+    - 5. Worse than before.
+    - worse than before  
+
+ 
+
+- intent: week4
+  examples: |
+    - Continue to Session 44
+    - Continue to Session 4..
+
+ 
+
+- intent: distortion12
+  examples: |
+    - distortion12
+    - distortion1212
+
+- intent: distortion13
+  examples: |
+    - distortion13
+    - distortion1313
+
+- intent: distortion14
+  examples: |
+    - distortion14
+    - distortion1414
+
+- intent: distortion15
+  examples: |
+    - distortion15
+    - distortion1515 
+
+- intent: distortion16
+  examples: |
+    - distortion16
+    - distortion1616
+
+- intent: distortion17
+  examples: |
+    - distortion17
+    - distortion1717
+
+- intent: distortion18
+  examples: |
+    - distortion18
+    - distortion1818
+
+- intent: affirm10
+  examples: |    
+    - affirm10
+    - affirm10...
+
+- intent: affirm6
+  examples: |    
+    - affirm6
+    - I was able to identify them....
+
+- intent: affirm12
+  examples: |    
+    - affirm12
+    - affirm12...
+
+- intent: affirm13
+  examples: |    
+    - affirm13
+    - affirm13...
+
+- intent: affirm14
+  examples: |    
+    - affirm14
+    - affirm14...    
+
+- intent: affirm15
+  examples: |    
+    - affirm15
+    - affirm15...
+
+- intent: affirm16
+  examples: |    
+    - affirm16
+    - affirm16...  
+
+- intent: affirm17
+  examples: |    
+    - affirm17
+    - affirm17...  
+
+- intent: affirm8
+  examples: |    
+    - affirm8
+    - affirm8...
+
+- intent: affirm9
+  examples: |    
+    - affirm9
+    - affirm9...  
+
+- intent: affirm7
+  examples: |    
+    - affirm7
+    - affirm7...  
+
+- intent: button1
+  examples: |    
+    - button1
+    - button1...      
+
+- intent: button2
+  examples: |    
+    - button2
+    - button2...       

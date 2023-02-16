@@ -1,0 +1,466 @@
+version: "2.0"
+
+stories:
+
+- story: story 1 convo1 start.................................................
+  steps:
+  - intent: week2
+  - action: utter_user1c
+  - action: utter_user2c
+
+- story: meter 1
+  steps:  
+  - intent: meter_4
+  - action: utter_meter_1c
+  - action: utter_meter_2_3c
+  - action: utter_meter_2_4c
+
+- story: meter 2
+  steps: 
+  - intent: meter_5
+  - action: utter_meter_2c
+  - action: utter_meter_2_2c
+  - action: utter_meter_2_3c
+  - action: utter_meter_2_4c
+
+- story: meter 3
+  steps: 
+  - intent: meter_6
+  - action: utter_meter_3c
+  - action: utter_meter_3_1c
+  - action: utter_meter_2_3c
+  - action: utter_meter_2_4c
+
+- story: story 2
+  steps:
+  - intent: affirm1
+  - action: utter_convo_1
+  - action: utter_convo_2
+  - intent: affirm
+  - action: utter_convo_3
+  - action: utter_convo_4
+  # - action: utter_convo_5
+  - intent: affirm
+  - action: utter_convo_6
+  - action: utter_convo_7
+  - intent: affirm
+  - action: utter_convo_8
+  - action: utter_convo_9
+  - action: utter_convo_10
+  - intent: affirm
+  - action: utter_convo_11
+  - action: utter_convo_12
+  - intent: affirm
+  - action: utter_convo_13
+  - action: utter_convo_14
+
+- story: story a
+  steps:
+  - intent: explore1
+  - action: utter_no_one
+
+- story: story a_1
+  steps:  
+  - intent: mood_great1
+  - action: utter_a_option
+  # - intent: chart5
+  # - action: utter_feelings
+  # - intent: chart6
+  # - action: utter_thoughts
+  # - intent: chart7
+  # - action: utter_behaviours
+  - intent: affirm
+  - action: utter_a_story_1
+  - action: utter_a_story_2
+  - action: utter_a_story_3
+  - intent: affirm
+  - action: utter_a_story_4
+  - action: utter_a_story_5
+  - action: utter_a_story_6
+  - intent: affirm
+  - action: utter_a_story_end
+  - action: utter_a_story_end1  
+
+
+- story: story b
+  steps:
+  - intent: explore2
+  - action: utter_no_one1
+
+- story: story b_1
+  steps:
+  - intent: mood_great2
+  - action: utter_b_option
+  # - intent: chart5
+  # - action: utter_feelings_b
+  # - intent: chart6
+  # - action: utter_thoughts_b
+  # - intent: chart7
+  # - action: utter_behaviours_b
+  - intent: affirm
+  - action: utter_b_story_1
+  - action: utter_b_story_2
+  - action: utter_b_story_3
+  - intent: affirm
+  - action: utter_b_story_4
+  - action: utter_b_story_5
+  - action: utter_b_story_6
+  - intent: affirm
+  - action: utter_a_story_end
+  - action: utter_a_story_end1  
+
+- story: story c
+  steps:
+  - intent: explore3
+  - action: utter_no_one2
+
+- story: story c_1
+  steps:  
+  - intent: mood_great3
+  - action: utter_c_option
+  # - intent: chart5
+  # - action: utter_feelings_c
+  # - intent: chart6
+  # - action: utter_thoughts_c
+  # - intent: chart7
+  # - action: utter_behaviours_c
+  - intent: affirm
+  - action: utter_c_story_1
+  - action: utter_c_story_2
+  - action: utter_c_story_3
+  - intent: affirm
+  - action: utter_c_story_4
+  - action: utter_c_story_5
+  - action: utter_c_story_6
+  - intent: affirm
+  - action: utter_a_story_end
+  - action: utter_a_story_end1  
+
+- story: story d
+  steps:
+  - intent: explore4
+  - action: utter_no_one3
+
+- story: story d_1
+  steps:  
+  - intent: mood_great4
+  - action: utter_d_option
+  # - intent: chart5
+  # - action: utter_feelings_d
+  # - intent: chart6
+  # - action: utter_thoughts_d
+  # - intent: chart7
+  # - action: utter_behaviours_d
+  - intent: affirm
+  - action: utter_d_story_1
+  - action: utter_d_story_2
+  - action: utter_d_story_3
+  - intent: affirm
+  - action: utter_d_story_4
+  - action: utter_d_story_5
+  - action: utter_d_story_6
+  - intent: affirm
+  - action: utter_a_story_end
+  - action: utter_a_story_end1  
+
+- story: story week2_1
+  steps:
+  - intent: affirm2
+  - action: utter_story_week2_1
+  # - action: utter_story_week2_2
+  - action: utter_story_week2_3
+
+- story: story week2_deny_1
+  steps:
+  - intent: deny1
+  - action: utter_week2_deny1
+  - action: input8_form
+  - action: utter_story_week2_4
+
+- story: story week2_affirm_1
+  steps:
+  - intent: affirm4
+  - action: utter_week2_affirm1
+  - action: input7_form
+  - action: action_set_input7_slot
+  - intent: affirm
+  - action: action_input7_slot
+  # - intent: deny
+  # - action: utter_week2_affirm5
+  - intent: mood_great
+  - action: action_set_input7_slot_none
+  - action: utter_story_week2_4
+
+- story: story week2_affirm_1_action
+  steps:
+  - intent: mood_great9
+  # - action: action_set_input7_slot_none
+  - action: utter_week2_affirm1
+  - action: action_set_input7_slot_none
+  - action: input7_form
+  - action: action_set_input7_slot
+  - intent: affirm
+  - action: action_input7_slot
+  # - intent: deny
+  # - action: utter_week2_affirm5
+  - intent: mood_great
+  - action: action_set_input7_slot_none
+  - action: utter_story_week2_4
+
+- story: story week2_2
+  steps:
+  - intent: mood_great0
+  - action: action_set_input8_slot_none
+  - action: utter_story_week2_5
+  - action: utter_story_week2_6
+  - intent: mood_great
+  - action: utter_story_week2_7
+  - action: utter_story_week2_8
+  - action: utter_story_week2_9
+  - action: utter_story_week2_10
+  - action: input10_form
+  - action: action_set_input10_slot
+  - intent: affirm
+  - action: action_set_input10_slot_none
+  - action: utter_story_week2_12
+
+- story: story week2_action3
+  steps:
+  - intent: mood_great5
+  - action: action_set_input10_slot_none
+  - action: utter_story_week2_10
+  - action: input10_form
+  - action: action_set_input10_slot
+  - intent: affirm
+  - action: action_set_input10_slot_none
+  - action: utter_story_week2_12
+
+- story: story week2_deny_2
+  steps:
+  - intent: deny2
+  - action: utter_story_week2_15
+  - action: utter_story_week2_16
+
+- story: story week2_affirm_2
+  steps:
+  - intent: affirm5
+  - action: utter_story_week2_13
+  - action: input11_form
+  - action: action_set_input11_slot
+  - intent: affirm
+  - action: action_set_input11_slot_none
+  - action: utter_story_week2_15
+  - action: utter_story_week2_16
+
+- story: story week2_action4
+  steps:
+  - intent: mood_great6
+  - action: action_set_input11_slot_none
+  - action: utter_story_week2_13
+  - action: input11_form
+  - action: action_set_input11_slot
+  - intent: affirm
+  - action: action_set_input11_slot_none
+  - action: utter_story_week2_15
+  - action: utter_story_week2_16
+
+- story: story week2_3
+  steps:
+  - intent: affirm0
+  - action: utter_story_week2_17
+  - action: utter_story_week2_18
+  - intent: affirm
+  - action: utter_addmore1
+  - action: utter_addmore2
+  - intent: goodbye
+  - action: utter_addmore3_a
+  - intent: mood_great
+  - action: utter_addmore4 
+
+- story: story week2_4
+  steps:
+  - intent: mood_unhappy1
+  - action: utter_story_week2_19
+  - action: utter_story_week2_20
+  - intent: affirm
+  - action: utter_story_week2_21
+  - action: utter_story_week2_22
+  - action: utter_story_week2_23
+  - intent: affirm
+  - action: utter_story_week2_24
+  - action: utter_story_week2_25
+  - intent: affirm3
+  - action: utter_story_week2_26
+  - action: utter_story_week2_27
+
+- story: story week2_4 deny
+  steps:
+  - intent: deny3
+  - action: utter_story_week2_28
+  - action: utter_story_week2_29
+  - intent: affirm
+  - action: utter_story_week2_17
+  - action: utter_story_week2_18
+  - intent: affirm
+  - action: utter_addmore1
+  - action: utter_addmore2
+  - intent: goodbye
+  - action: utter_addmore3_a
+  - intent: mood_great
+  - action: utter_addmore4 
+
+- story: story week2_4 affirm
+  steps:
+  - intent: affirm6
+  - action: utter_story_week2_30
+  - action: utter_story_week2_32
+  - intent: affirm
+  - action: utter_story_week2_33
+  - action: utter_story_week2_34
+  - intent: affirm
+  - action: utter_story_week2_28
+  - action: utter_story_week2_29
+  - intent: affirm
+  - action: utter_story_week2_17
+  - action: utter_story_week2_18 
+  - intent: affirm
+  - action: utter_addmore1
+  - action: utter_addmore2
+  - intent: goodbye
+  - action: utter_addmore3_a
+  - intent: mood_great
+  - action: utter_addmore4 
+ 
+
+- story: story 2 convo2 start.................................................
+  steps:
+  - intent: week2_1
+  - action: utter_user1d
+  - action: utter_user2d
+
+- story: story 2
+  steps:
+  - intent: affirm7
+  - action: utter_affirm1
+  - action: utter_affirm2
+  - intent: mood_unhappy
+  - action: utter_affirm3
+  - action: utter_affirm4
+  - intent: affirm
+  - action: utter_affirm5
+  - action: utter_affirm6
+  - intent: affirm
+  - action: utter_affirm7
+  - intent: affirm
+  - action: utter_affirm8
+  - action: utter_addmore1_b
+  - action: utter_addmore2
+  - intent: goodbye
+  - action: utter_addmore3_b
+  - intent: mood_great
+  - action: utter_addmore4 
+
+- story: story 3
+  steps:
+  - intent: deny4
+  - action: utter_deny1
+  - action: utter_deny2
+  - action: utter_deny3
+  - intent: mood_unhappy
+  - action: utter_deny4
+  - action: utter_deny5
+  - intent: affirm
+  - action: utter_deny6
+  - action: input12_form
+  - action: utter_deny7
+
+- story: story 3 deny
+  steps:
+  - intent: deny5
+  - action: utter_deny8
+  - action: input13_form
+  - action: utter_convo2_1
+  - action: utter_convo2_2
+  - action: input14_form
+  - action: action_set_input14_slot
+  - intent: affirm
+  - action: action_set_input12_slot_none
+  - action: utter_convo2_4
+ 
+- story: story 3 affirm
+  steps:
+  - intent: affirm8
+  - action: utter_convo2_1
+  - action: utter_convo2_2
+  - action: input14_form
+  - action: action_set_input14_slot
+  - intent: affirm
+  - action: action_set_input12_slot_none
+  - action: utter_convo2_4
+
+- story: story 3 action
+  steps:
+  - intent: mood_great7
+  - action: action_set_input14_slot_none
+  - action: utter_convo2_2
+  - action: input14_form
+  - action: action_set_input14_slot
+  - intent: affirm
+  - action: action_set_input12_slot_none
+  - action: utter_convo2_4
+
+- story: story 4 affirm
+  steps:
+  - intent: affirm9
+  - action: action_set_input13_slot_none
+  - action: action_set_input14_slot_none
+  - action: utter_affirm10
+  - action: input15_form
+  - action: action_set_input15_slot
+  - intent: affirm
+  - action: utter_convo2_5
+  - action: utter_convo2_6
+  - intent: affirm
+  - action: action_set_input15_slot_none
+  - action: utter_addmore1_a
+  - action: utter_addmore2
+  - intent: goodbye
+  - action: utter_addmore3_b
+  - intent: mood_great
+  - action: utter_addmore4 
+ 
+- story: story 4 affirm action
+  steps:
+  - intent: mood_great8
+  - action: action_set_input15_slot_none
+  - action: utter_affirm10
+  - action: input15_form
+  - action: action_set_input15_slot
+  - intent: affirm
+  - action: utter_convo2_5
+  - action: utter_convo2_6
+  - intent: affirm
+  - action: action_set_input15_slot_none
+  - action: utter_addmore1_a
+  - action: utter_addmore2
+  - intent: goodbye
+  - action: utter_addmore3_b
+  - intent: mood_great
+  - action: utter_addmore4 
+
+- story: story 4 deny
+  steps:
+  - intent: deny6
+  - action: utter_convo2_5
+  - action: utter_convo2_6
+  - intent: affirm
+  - action: action_set_input15_slot_none
+  - action: utter_addmore1_a
+  - action: utter_addmore2
+  - intent: goodbye
+  - action: utter_addmore3_b
+  - intent: mood_great
+  - action: utter_addmore4 
+
+# ================================================
+ 

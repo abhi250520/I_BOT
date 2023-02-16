@@ -1,0 +1,1512 @@
+version: "2.0"
+
+intents:
+  - chitchat
+  - great
+  - goodbye
+  - affirm
+  - affirm0
+  - affirm1
+  - affirm2
+  - affirm3
+  - affirm4
+  - affirm5
+  - affirm6
+  - deny
+  - deny1
+  - deny2
+  - deny3
+  - deny_spell
+  - affirm_spell
+  - mood_great
+  - mood_great0
+  - mood_great1
+  - mood_great2
+  - mood_great3
+  - mood_great4
+  - mood_great5
+  - mood_great6
+  - mood_unhappy
+  - mood_unhappy1
+  - mood_unhappy2
+  - mood_unhappy3
+  - mood_unhappy4
+  - mood_unhappy5
+  - mood_unhappy6
+  - mood_unhappy7 
+  - mood_unhappy8
+  - mood_unhappy9
+  - mood_unhappy10
+  - mood_unhappy11
+  # - mood_unhappy12
+  - mood_unhappy13
+  - mood_unhappy14
+  - affirm_ok2
+  - affirm_ok3
+  - affirm_ok4
+  - affirm_ok5       
+  - affirm_ok6
+  - affirm_ok7  
+  - affirm_ok8 
+  - affirm_ok01
+  - week3_name1
+  - week3_name2
+  - week3_name3
+  - week3_disha
+  - mood_unhappy0  
+  - explore1
+  - explore2
+  - explore3
+  - explore4
+  - explore5
+  - chart
+  - chart1
+  - chart2
+  - chart3
+  - chart4
+  - chart5
+  - chart6
+  - chart7
+  - it_feels1
+  - it_feels2
+  - meter_1
+  - meter_2
+  - meter_3
+  - meter_4
+  - meter_5
+  - meter_6
+  - meter_7
+  - meter_8
+  - meter_9   
+  - affirm_ok1
+  - affirm_ok0
+  - affirm_ok
+  # - name
+  - input1
+  - input2
+  - input3
+  - manual_input
+  - manual_input_1
+  - okay_story_part_1
+  - okay_story_part_2
+  - umm_yes_exactly
+  - okay_story_part_3
+  - okay_story_part_4
+  - yes_i_can
+  - continue_story
+  - it_feels1_story
+  - it_feels2_story
+  - okay_story_part_5
+  - thank_you_story
+  - affirm_yes
+  - session0
+  - session1
+  - week3
+  - session3
+  - affirm7
+  - affirm8
+  - affirm9
+  - affirm13
+  - affirm_3in1
+  - affirm_w3_yes
+  - deny4
+  - deny5
+  - deny6
+  - affirm_ok9
+  - affirm_ok10
+  - mood_great7
+  - mood_great8
+  - mood_great9
+  - distortion1
+  - distortion2
+  - distortion3
+  - distortion4
+  - distortion5
+  - distortion6
+  - distortion7
+  - distortion8
+  - distortion9
+  - distortion10
+  - distortion11
+  
+responses:
+  # utter_great:
+  # - text: "Hey! How are you?"
+
+  # utter_cheer_up:
+  # - text: "Here is something to cheer you up:"
+  #   image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  # utter_did_that_help:
+  # - text: "Did that help you?"
+
+  # utter_happy:
+  # - text: "Great, carry on!"
+ 
+# ============================================week3=============================================
+
+  utter_week3_start:
+  - text: Welcome back, {name}! How are you doing?
+    buttons:
+    - payload: /meter_7
+      title: 1. Slightly better than before
+    - payload: /meter_7
+      title: 2. Better than before
+    - payload: /meter_8
+      title: 3. No change
+    - payload: /meter_9
+      title: 4. Slightly worse than before
+    - payload: /meter_9
+      title: 5. Worse than before
+
+  utter_w3_meter_4_1:
+  - text: |- 
+      Wow, that's great!
+      
+      I'm really happy this is working out for you.
+
+  utter_w3_meter_4_3:
+  - text: Would you like to tell me about any situations you faced in these few days, and how you handled them?
+    buttons:
+    - payload: /affirm_ok1
+      title: Yes!
+    - payload: /deny
+      title: Not really...
+
+  utter_w3_meter_4_4_deny:
+  - text: No problem. Let's begin with our session!
+    buttons:
+    - payload: /affirm_ok3
+      title: Sure!
+
+  utter_w3_meter_4_4_affirm:
+  - text: Great! Do tell me.
+
+  utter_w3_meter_4_5:
+  - text: |- 
+      It looks like you're getting better at handling things that upset you, {name}.
+
+      That's a great sign! I'm glad this is working out for you.
+
+  utter_w3_meter_4_7:
+  - text: Would you like to begin with our next session?
+    buttons:
+    - payload: /affirm_ok3
+      title: Sure!
+
+  utter_w3_meter_5_1:
+  - text: |- 
+      Don't worry, {name}.
+
+      I know this is super stressful, but you're doing great!
+
+  utter_w3_meter_5_3:
+  - text: Trust me, I've got your back. We shall work through this together.
+    buttons:
+    - payload: /affirm
+      title: Thank you. I'm looking forward to learning new things.
+
+  utter_w3_meter_5_4:
+  - text: That's great! Let's begin with our next session!
+    buttons:
+    - payload: /affirm_ok3
+      title: Sure!
+
+  utter_w3_meter_6_1:
+  - text: I'm sorry to hear that. I can't imagine what it must be like for you.
+
+  utter_w3_meter_6_2:
+  - text: |- 
+      You can try scheduling a session with our experienced psychologists to get more personalized help with your problems.
+    buttons:
+    - payload: /deny
+      title: No, I want to continue with chatbot sessions
+    - payload: /deny
+      title: Take me there!
+
+  utter_w3_meter_6_3:
+  - text: |- 
+      Ok, {name}. I love the efforts you're putting in to feel better!
+
+      So, you said you were feeling worse, right? Is there anything specific that happened in these few days, that triggered you?
+
+  utter_w3_meter_6_5:
+  - text: Is there anything else you would like to add?
+    buttons:
+    - payload: /deny
+      title: No, I'm good
+    - payload: /affirm13
+      title: Yes.
+  
+  utter_w3_meter_6_5a:
+  - text: Ok, Please enter it below.
+
+  utter_w3_meter_6_6:
+  - text: |- 
+      That's too bad, {name}. I can imagine how depressing that must have been.
+
+      I hope you feel better. Let's see if this session can help you deal with such triggers.
+
+  utter_w3_meter_6_8:
+  - text: |- 
+      Would you like to start?
+    buttons:
+    - payload: /affirm_ok3
+      title: Sure!
+
+  utter_w3_meter_1:
+  - text: So {name}, remember how in our previous sessions, we talked about maintaining a thought diary?
+    buttons:
+    - payload: /affirm
+      title: Yes!
+    - payload: /affirm
+      title: I think so...
+
+  utter_w3_meter_2:
+  - text: Great! I hope you've been using the thought diary to record your thoughts regularly.
+    buttons:
+    - payload: /affirm_3in1
+      title: Yes!
+    - payload: /deny
+      title: Not really
+
+  utter_w3_meter_3:
+  - text: |- 
+      That's alright!
+
+      It would be good if you could try doing the thought diary.
+ 
+  utter_w3_meter_5:
+  - text: Do you want to...?
+    buttons:
+    - payload: /affirm
+      title: Continue with session
+    - payload: /affirm
+      title: Set reminders for thought diary
+
+  utter_w3_meter_6:
+  - text: |- 
+      Ok! So before we begin this session, let's go back to the feelings wheel.
+
+      Like before, try to identify your emotions from the center of the wheel, and move outwards.
+ 
+  utter_w3_meter_7_image:
+  - text: Once you've identified your emotions, write them down below. Click the Done button to continue.
+    image: https://i.ibb.co/xD2GM6W/Charts-wheel.png   
+ 
+  utter_w3_meter_8:
+  - text: Would you like to write down more emotions?
+    buttons:
+    - payload: /affirm_w3_yes
+      title: Yes!
+    - payload: /affirm
+      title: Done
+  
+  utter_w3_meter_9:
+  - text: It's great that you can pinpoint your emotions, {name}! We will come back to this feelings wheel at the end of the session, ok?
+    buttons:
+    - payload: /affirm
+      title: Ok!
+
+  utter_w3_meter_10:
+  - text: Great! So in this session, we will be learning about patterns of unhelpful thinking.
+  
+  utter_w3_meter_11:
+  - text: These patterns are called Cognitive Distortions.
+    buttons:
+    - payload: /mood_great
+      title: Why are they unhelpful?
+    - payload: /mood_unhappy2
+      title: Can you give me examples?
+
+ 
+  utter_w3_7_great:  
+  - text: Our brain has been wired to alert us to danger, and find solutions to the problems we encounter every day.
+
+  utter_w3_8_great:  
+  - text: Do you agree, {name}?
+    buttons:
+    - payload: /affirm
+      title: That's true
+    - payload: /affirm
+      title: Yes.
+
+  utter_w3_9_great:  
+  - text: But, you see, sometimes, you're brain can't be trusted completely.
+    buttons:
+    - payload: /mood_unhappy
+      title: I can't trust my own brain?
+    - payload: /mood_unhappy
+      title: What?? Why?
+
+  utter_w3_10_great:  
+  - text: This is because, sometimes, your brain may make faulty, inaccurate connections between thoughts, ideas, actions, and consequences.
+
+  utter_w3_11_great:  
+  - text: These inaccurate connections are called cognitive distortions.
+    buttons:
+    - payload: /mood_unhappy3
+      title: Ohh...Can you give me an example?
+    - payload: /mood_unhappy
+      title: I don't think I completely understand
+
+  utter_w3_12_great:  
+  - text: Ok, let me give you an example.
+
+  utter_w3_13_great:  
+  - text: Sure!
+
+  utter_w3_14_great:  
+  - text: Choose the character whom you relate with most.
+    buttons:
+    - payload: /week3_name1
+      title: Ankush was humiliated by his teacher for getting low marks.
+    - payload: /week3_name2
+      title: Shivani's partner just ended their long term relationship.
+    - payload: /week3_name3
+      title: Bharat
+    - payload: /week3_disha
+      title: Disha has been diagnosed with a terminal illness.
+
+# --------ankush---------------------------------------------
+
+  utter_week3_ankush1:  
+  - text: |- 
+      Great! So...  
+      
+      Ankush's negative thought was "All these bad things happen only to me."
+
+      And "Everyone thinks I'm stupid."
+
+  utter_week3_ankush1_a:  
+  - text: |- 
+      Don't you think ankush was being too harsh on himself?
+    buttons:
+    - payload: /mood_great
+      title: Yes, he thinks all bad things always happen to him based on one incident.
+    - payload: /mood_unhappy4
+      title: Yes, he assumes everyone is judging him without knowing so.
+    - payload: /mood_unhappy6
+      title: No, I don't think he was
+
+  utter_week3_ankush_great:  
+  - text: Exactly! This type of thinking is called Overgeneralization.
+    buttons:
+    - payload: /mood_great
+      title: Ohh...Can you tell me more about it?
+
+  utter_week3_ankush_unhappy:  
+  - text: Exactly! This type of thinking is called Mind Reading.
+    buttons:
+    - payload: /mood_great
+      title: Ohh...Can you tell me more about it?
+
+  utter_week3_ankush_great_1:  
+  - text: Sure! In Overgeneralization, the person applies one bad experience to their entire life.
+
+  utter_week3_ankush_unhappy_1:  
+  - text: Sure! In Mind Reading, the person thinks they know exactly what everyone else is thinking about them, without any evidence.
+
+  utter_week3_ankush_great_2:  
+  - text: Let me give you a few more examples of this.
+    buttons:
+    - payload: /affirm
+      title: Yes, that would help!
+
+  utter_week3_ankush_unhappy_2:  
+  - text: Let me give you a few more examples of this.
+    buttons:
+    - payload: /affirm
+      title: Yes, that would help!
+
+  utter_week3_ankush_great_3:  
+  - text: |- 
+      1. "She always ignores me."
+      
+      2. "I never do anything right."
+
+      3. "Nothing good comes out of anything I do." 
+
+  utter_week3_ankush_unhappy_3:  
+  - text: |- 
+      1. She's going to think I'm a weird person.
+      
+      2. They didn't invite me to the party. Maybe they are annoyed with me.
+
+      3. He hangs out with me only because he feels sorry for me.
+
+  utter_week3_ankush_great_4:  
+  - text: Do you think any of your thoughts fall into Overgeneralization?
+    buttons:
+    - payload: /affirm
+      title: Maybe...
+    - payload: /mood_unhappy0
+      title: Yes.
+
+  utter_week3_ankush_unhappy_4:  
+  - text: Do you think any of your thoughts fall into Mind Reading?
+    buttons:
+    - payload: /affirm
+      title: Maybe...
+    - payload: /mood_unhappy0
+      title: Yes.
+
+# =====================================================
+
+  utter_week3_ankush_button:  
+  - text: Oh I see...Why do you think so?
+    buttons:
+    - payload: /mood_unhappy7
+      title: His classmates will definitely judge him on this.
+    - payload: /mood_great
+      title: Maybe all bad things do happen to him.
+
+  utter_week3_ankush_left1:  
+  - text: |- 
+      That's not true, {name}. We cannot come to conclusions about what others are thinking without any evidence.
+      
+      Maybe we are judging ourselves too harshly, and others don't see it as such a grave mistake? It is always better to ask than assume.
+
+  utter_week3_ankush_left2:  
+  - text: Do you understand why this is a distorted/biased way of thinking?
+    buttons:
+    - payload: /affirm
+      title: A little bit...
+
+  utter_week3_ankush_left3:  
+  - text: This type of thinking is called Mind Reading.
+    buttons:
+    - payload: /mood_great
+      title: Ohh...Can you tell me more about it?
+
+  utter_week3_ankush_right1:  
+  - text: |- 
+      That's not true, {name}. Our lives are a mix of good, not so good, and bad experiences.
+      
+      We cannot neglect all the good experiences and focus only on the bad ones.
+
+  utter_week3_ankush_right2:  
+  - text: Do you understand why this is a distorted/biased way of thinking?
+    buttons:
+    - payload: /affirm
+      title: A little bit...
+
+  utter_week3_ankush_right3:  
+  - text: This type of thinking is called Magnification/ Minimization.
+    buttons:
+    - payload: /affirm
+      title: Ohh...Can you tell me more about it?
+
+  utter_week3_ankush_right4:  
+  - text: Sure! In Magnification/ Minimization, you decrease the importance of the good experiences and increase the importance of the bad ones.
+
+  utter_week3_ankush_right5:  
+  - text: Let me give you a few more examples of this
+    buttons:
+    - payload: /affirm
+      title: Yes, that would help!
+
+  utter_week3_ankush_right6:  
+  - text: |- 
+      1. "I didn't do such a great job. They only praised be to be nice."
+      
+      2. "How could I have made such a horrible mistake? They will never forgive me for this."
+
+  utter_week3_ankush_right7:  
+  - text: Do you think any of your thoughts fall into Magnification/ Minimization?
+    buttons:
+    - payload: /affirm
+      title: Maybe...
+    - payload: /mood_unhappy0
+      title: Yes.
+
+# ----------shivani-----------------------------------------------------------------
+
+  utter_week3_shivani1:  
+  - text: |- 
+      Great! So...  
+      
+      Shivani's negative thought was "I'm unlovable. Everyone hates me."
+
+      And "I can never be in a happy relationship anymore."
+
+  utter_week3_shivani1_a:  
+  - text: |- 
+      Don't you think Shivani is being too harsh on herself?
+    buttons:
+    - payload: /mood_great
+      title: Yes, she calls herself unlovable based on one experience.
+    - payload: /mood_unhappy8
+      title: Yes, she concludes that she can never be in a better position.
+    - payload: /mood_unhappy9
+      title: No, I don't think she was
+
+  utter_week3_shivani_great:  
+  - text: Exactly! This type of thinking is called Labelling.
+    buttons:
+    - payload: /mood_great
+      title: Ohh...Can you tell me more about it?
+
+  utter_week3_shivani_unhappy:  
+  - text: Exactly! This type of thinking is called Fortune Telling.
+    buttons:
+    - payload: /mood_great
+      title: Ohh...Can you tell me more about it?
+
+  utter_week3_shivani_great_1:  
+  - text: Sure! In Labelling, you judge or label yourself or others in an extreme way based on one situation or experience.
+
+  utter_week3_shivani_unhappy_1:  
+  - text: Sure! In Fortune Telling, the person tends to make conclusions and predictions based on little to no evidence.
+
+  utter_week3_shivani_great_2:  
+  - text: Let me give you a few more examples of this.
+    buttons:
+    - payload: /affirm
+      title: Yes, that would help!
+
+  utter_week3_shivani_unhappy_2:  
+  - text: Let me give you a few more examples of this.
+    buttons:
+    - payload: /affirm
+      title: Yes, that would help!
+
+  utter_week3_shivani_great_3:  
+  - text: |- 
+      1. I am 5 mins late. I'm so irresponsible.
+      
+      2. He did not help me. He's a bad friend.
+
+  utter_week3_shivani_unhappy_3:  
+  - text: |- 
+      1. She is not going to like me anyway.
+      
+      2. Nothing will ever work out for me
+
+      3. Everyone will look down on
+
+  utter_week3_shivani_great_4:  
+  - text: Do you think any of your thoughts fall into Labelling?
+    buttons:
+    - payload: /affirm
+      title: Maybe...
+    - payload: /mood_unhappy0
+      title: Yes.
+
+  utter_week3_shivani_unhappy_4:  
+  - text: Do you think any of your thoughts fall into Fortune Telling?
+    buttons:
+    - payload: /affirm
+      title: Maybe...
+    - payload: /mood_unhappy0
+      title: Yes.
+
+# ===============================================================
+
+  utter_week3_shivani_button:  
+  - text: Oh I see...Why do you think so?
+    buttons:
+    - payload: /mood_great
+      title: If she failed in a long term relationship, how can she ever recover from it?
+
+  utter_week3_shivani_left1:  
+  - text: |- 
+      Life has a way of challenging us sometimes, {name}. That doesn't mean it will never get better.
+      
+      One or two steps backward doesn't mean we will never be able to go forward in the future.
+
+  utter_week3_shivani_left2:  
+  - text: Do you understand why this is a distorted/biased way of thinking?
+    buttons:
+    - payload: /affirm
+      title: A little bit...
+
+  utter_week3_shivani_left3:  
+  - text: This type of thinking is called Fortune Telling.
+    buttons:
+    - payload: /mood_great
+      title: Ohh...Can you tell me more about it?
+
+# -----------bharat---------------------------------------------------------------
+
+  utter_week3_bharat1:  
+  - text: |- 
+      Great! So...  
+      
+      Bharat's negative thought was "I'm not good enough. I'm a failure. I will never be successful."
+
+  utter_week3_bharat1_a:  
+  - text: |- 
+      Don't you think Bharat was being too harsh on himself?
+    buttons:
+    - payload: /affirm_ok2
+      title: Yes, he thinks he's a failure only based on one interview.
+    - payload: /mood_great
+      title: Yes, he assumes he will never be successful in the future.
+    - payload: /affirm_ok4
+      title: No, I don't think he was
+
+  utter_week3_bharat_great:  
+  - text: Exactly! This type of thinking is called All or None thinking.
+    buttons:
+    - payload: /mood_great
+      title: Ohh...Can you tell me more about it?
+
+  utter_week3_bharat_unhappy:  
+  - text: Exactly! This type of thinking is called Fortune Telling.
+    buttons:
+    - payload: /mood_great
+      title: Ohh...Can you tell me more about it?
+
+  utter_week3_bharat_great_1:  
+  - text: Sure! In All or None thinking, the person thinks they’ve failed if things don’t go 100% right.
+
+  utter_week3_bharat_unhappy_1:  
+  - text: Sure! In Fortune Telling, the person tends to make conclusions and predictions based on little to no evidence.
+
+  utter_week3_bharat_great_2:  
+  - text: Let me give you a few more examples of this.
+    buttons:
+    - payload: /affirm
+      title: Yes, that would help!
+
+  utter_week3_bharat_unhappy_2:  
+  - text: Let me give you a few more examples of this.
+    buttons:
+    - payload: /affirm
+      title: Yes, that would help!
+
+  utter_week3_bharat_great_3:  
+  - text: |- 
+      1. People are either good or bad.
+      
+      2. I am either perfect or disastrous.
+
+      3. Things I do can only be a complete success or failure.
+
+  utter_week3_bharat_unhappy_3:  
+  - text: |- 
+      1. She is not going to like me anyway.
+      
+      2. Nothing will ever work out for me.
+
+      3. Everyone will look down on. 
+
+  utter_week3_bharat_great_4:  
+  - text: Do you think any of your thoughts fall into All or None thinking?
+    buttons:
+    - payload: /affirm
+      title: Maybe...
+    - payload: /mood_unhappy0
+      title: Yes.
+
+  utter_week3_bharat_unhappy_4:  
+  - text: Do you think any of your thoughts fall into Fortune Telling?
+    buttons:
+    - payload: /affirm
+      title: Maybe...
+    - payload: /mood_unhappy0
+      title: Yes.
+
+# =====================================================
+
+  utter_week3_bharat_button:  
+  - text: Oh I see...Why do you think so?
+    buttons:
+    - payload: /mood_great
+      title: If he failed in the interview itself, how will he be successful in the future?
+    - payload: /affirm_ok5
+      title: He got rejected in the interview. That means he's a failure.
+
+  utter_week3_bharat_left1:  
+  - text: |- 
+      Life has a way of challenging us sometimes, {name}. That doesn't mean it will never get better.
+      
+      One or two steps backward doesn't mean we will never be able to go forward in the future.
+
+  utter_week3_bharat_left2:  
+  - text: Do you understand why this is a distorted/biased way of thinking?
+    buttons:
+    - payload: /affirm
+      title: A little bit...
+
+  utter_week3_bharat_left3:  
+  - text: This type of thinking is called Fortune Telling.
+    buttons:
+    - payload: /mood_great
+      title: Ohh...Can you tell me more about it?
+
+  utter_week3_bharat_right1:  
+  - text: |- 
+      That's not true, {name}. One or two bad situations in life do not define what or who we are.
+      
+      Our self-worth is not based on our productivity. There's a lot more to our identity than that.
+
+  utter_week3_bharat_right2:  
+  - text: Do you understand why this is a distorted/biased way of thinking?
+    buttons:
+    - payload: /mood_unhappy
+      title: A little bit...
+
+  utter_week3_bharat_right3:  
+  - text: This type of thinking is called Labelling.
+    buttons:
+    - payload: /affirm
+      title: Ohh...Can you tell me more about it?
+
+  utter_week3_bharat_right4:  
+  - text: Sure! In Labelling, you judge or label yourself or others in an extreme way based on one situation or experience.
+
+  utter_week3_bharat_right5:  
+  - text: Let me give you a few more examples of this
+    buttons:
+    - payload: /affirm
+      title: Yes, that would help!
+
+  utter_week3_bharat_right6:  
+  - text: |- 
+      1. I am 5 mins late. I'm so irresponsible.
+      
+      2. He did not help me. He's a bad friend.
+
+  utter_week3_bharat_right7:  
+  - text: Do you think any of your thoughts fall into Labelling?
+    buttons:
+    - payload: /affirm
+      title: Maybe...
+    - payload: /mood_unhappy0
+      title: Yes.
+
+
+# ------------disha-----------------------------------------------------------------------------
+
+  utter_week3_disha1:  
+  - text: |- 
+      Ok! So...  
+      
+      Disha's negative thought was "My family is devastated. This is all because of me."
+
+      And "There's no pint trying. I'm going to die."
+
+  utter_week3_disha1_a:  
+  - text: |- 
+      Don't you think Disha was being too harsh on herself?
+    buttons:
+    - payload: /affirm_ok7
+      title: Yes, she is blaming herself for something out of her control.
+    - payload: /mood_great
+      title: Yes, she assumes nothing will work out and everything will end up going wrong.
+    - payload: /affirm_ok6
+      title: No, I don't think she was
+
+  utter_week3_disha_great:  
+  - text: Exactly! This type of thinking is called Blaming.
+    buttons:
+    - payload: /mood_great
+      title: Ohh...Can you tell me more about it?
+
+  utter_week3_disha_unhappy:  
+  - text: Exactly! This type of thinking is called Catastrophizing.
+    buttons:
+    - payload: /mood_great
+      title: Ohh...Can you tell me more about it?
+
+  utter_week3_disha_great_1:  
+  - text: Sure! In Personalization/ Blaming, the person thinks they are responsible for things that may not be completely in their control.
+
+  utter_week3_disha_unhappy_1:  
+  - text: Sure! In Catastrophizing, the person exaggerates the seriousness of their situation and imagines the worst possible outcome.
+
+  utter_week3_disha_great_2:  
+  - text: Let me give you a few more examples of this.
+    buttons:
+    - payload: /affirm
+      title: Yes, that would help!
+
+  utter_week3_disha_unhappy_2:  
+  - text: Let me give you a few more examples of this.
+    buttons:
+    - payload: /affirm
+      title: Yes, that would help!
+
+  utter_week3_disha_great_3:  
+  - text: |- 
+      1. "It is my fault our team lost the game."
+      
+      2. "My mom is in a bad mood because of me."
+
+      3. "We always get punished because of him."
+
+  utter_week3_disha_unhappy_3:  
+  - text: |- 
+      1. If I don't wash my hands 7 times daily, I will fall sick.
+      
+      2. What if I get into an accident on my way home?
+
+      3. What if I get an anxiety attack on stage and die?
+
+  utter_week3_disha_great_4:  
+  - text: Do you think any of your thoughts fall into Personalization/ Blaming?
+    buttons:
+    - payload: /affirm
+      title: Maybe...
+    - payload: /mood_unhappy0
+      title: Yes.
+
+  utter_week3_disha_unhappy_4:  
+  - text: Do you think any of your thoughts fall into Catastrophizing?
+    buttons:
+    - payload: /affirm
+      title: Maybe...
+    - payload: /mood_unhappy0
+      title: Yes.
+
+# =====================================================
+
+  utter_week3_disha_button:  
+  - text: Oh I see...Why do you think so?
+    buttons:
+    - payload: /mood_great
+      title: Maybe nothing will work out. She is just preparing for the worst.
+    - payload: /affirm_ok8
+      title: It is her responsibility to make sure she doesn't get sick. She is right in blaming herself.
+
+  utter_week3_disha_left1:  
+  - text: |- 
+      We can't jump to conclusions without enough evidence to support it, {name}.
+
+  utter_week3_disha_left1_a:  
+  - text: |-       
+      When we imagine the worst possible outcome, it automatically contributes to worsening our feelings.
+    buttons:
+    - payload: /affirm
+      title: Hmm...But isn't it better to be prepared?
+
+  utter_week3_disha_left1_b:  
+  - text: Yes! But preparing for a bad situation is different from worrying about it. Worrying gets us nowhere.
+
+  utter_week3_disha_left2:  
+  - text: Do you understand why this is a distorted/biased way of thinking?
+    buttons:
+    - payload: /affirm
+      title: A little bit...
+
+  utter_week3_disha_left3:  
+  - text: This type of thinking is called Catastrophizing.
+    buttons:
+    - payload: /affirm_ok
+      title: Ohh...Can you tell me more about it?
+
+  utter_week3_disha_right1:  
+  - text: |- 
+      That's not true, {name}. Not all situations are in our control alone. There are so many factors that could have contributed.
+      
+      Assuming that every bad outcome was under our control will make you take the blame, even when you did nothing wrong.
+
+  utter_week3_disha_right2:  
+  - text: Do you understand why this is a distorted/biased way of thinking?
+    buttons:
+    - payload: /affirm
+      title: A little bit...
+
+  utter_week3_disha_right3:  
+  - text: This type of thinking is called Blaming.
+    buttons:
+    - payload: /affirm
+      title: Ohh...Can you tell me more about it?
+
+  utter_week3_disha_right4:  
+  - text: Sure! In Personalization/ Blaming, the person thinks they are responsible for things that may not be completely in their control.
+
+  utter_week3_disha_right5:  
+  - text: Let me give you a few more examples of this
+    buttons:
+    - payload: /affirm
+      title: Yes, that would help!
+
+  utter_week3_disha_right6:  
+  - text: |- 
+      1. "It is my fault our team lost the game."
+      
+      2. "My mom is in a bad mood because of me."
+
+      3. "We always get punished because of him."
+
+  utter_week3_disha_right7:  
+  - text: Do you think any of your thoughts fall into Personalization/ Blaming?
+    buttons:
+    - payload: /affirm
+      title: Maybe...
+    - payload: /mood_unhappy0
+      title: Yes.
+
+
+# ================================================================================================================
+
+
+  utter_week3_all_a:  
+  - text: |- 
+      That's alright.
+
+      Take a look at the other cognitive distortions below and see if you can categorise your thoughts into any of them.
+      
+      Remember, one thought can fall under more than one cognitive distortion.
+
+  utter_week3_all_b:  
+  - text: |- 
+      Great!
+
+      Take a look at the other cognitive distortions below and see if you can categorise your thoughts into any of them.
+      
+      Remember, one thought can fall under more than one cognitive distortion.
+ 
+ 
+  utter_distortion_list:  
+  - text: You can click on the distortion to learn more about it.
+    buttons:
+    - payload: /distortion1
+      title: All or None
+    - payload: /distortion2
+      title: Mind reading
+    - payload: /distortion3
+      title: Fortune Telling
+    - payload: /distortion4
+      title: Magnification and Minimization
+    - payload: /distortion5
+      title: Catastrophizing
+    - payload: /distortion6
+      title: Personalization and/or Blaming
+    - payload: /distortion7
+      title: Discounting the positive
+    - payload: /distortion8
+      title: Labelling
+    - payload: /distortion9
+      title: Should Statements
+    - payload: /distortion10
+      title: Emotional Reasoning
+    - payload: /distortion11
+      title: Overgeneralization 
+
+  utter_distortion1:
+  - text: The inability or unwillingness to see shades of gray. In other words, you see things in terms of extremes.
+
+  utter_distortion1a:
+  - text: |- 
+      Ex: Something is either fantastic or awful.
+ 
+  utter_distortion1b:
+  - text: You believe you are either completely perfect or a total failure.
+    buttons:
+    - payload: /affirm_ok9
+      title: Continue
+
+  utter_distortion2:
+  - text: Inaccurate belief that we know what another person is thinking. Believing that people are thinking badly of you without any real evidence that they are.
+
+  utter_distortion2a:
+  - text: |- 
+      Ex: Seeing a stranger with an unpleasant expression and jumping to the conclusion that they are thinking something negative about you.
+
+      "I'm pretty sure she hates me now"
+ 
+  utter_distortion2b:
+  - text: "He thinks I'm weird."
+    buttons:
+    - payload: /affirm_ok9
+      title: Continue
+
+  utter_distortion3:
+  - text: Tendency to make  predictions about the future based on little to no evidence.
+
+  utter_distortion3a:
+  - text: |- 
+      Ex: "I will end up all alone"
+
+      "I will never be successful"
+
+      "I can never pay off my debts"
+
+  utter_distortion3b:
+  - text: "She is not going to like me anyways"
+    buttons:
+    - payload: /affirm_ok9
+      title: Continue
+
+  utter_distortion4:
+  - text: Negative experiences/aspects seem large and scary wile positive things seem small and insignificant. In simpler words, you focus only on what went wrong.
+
+  utter_distortion4a:
+  - text: |- 
+      Ex: Minimization: You win a prestigious award, but still think you're mediocre, minimizing the importance of the good thing (the award)
+
+  utter_distortion4b:
+  - text: |- 
+      Magnification: Worrying that a small mistake you did could get you fired from your job.
+    buttons:
+    - payload: /affirm_ok9
+      title: Continue
+
+  utter_distortion5:
+  - text: Focusing on the worst possible scenario.
+
+  utter_distortion5a:
+  - text: |- 
+      Ex: "What if I break my leg while playing?"
+
+  utter_distortion5b:
+  - text: |- 
+      "What will I do if there is a robbery at the bank today?"
+    buttons:
+    - payload: /affirm_ok9
+      title: Continue
+
+  utter_distortion6:
+  - text: Taking everything personally or assigning blame to yourself or others without any logical reason to believe it.
+
+  utter_distortion6a:
+  - text: |- 
+      Ex: "If only I was a better friend, he would be doing well."
+
+  utter_distortion6b:
+  - text: |- 
+      "I am the reason our team didn't get the grant. I should have worked harder."
+    buttons:
+    - payload: /affirm_ok9
+      title: Continue
+
+  utter_distortion7:
+  - text: Turning something positive into negative.
+
+  utter_distortion7a:
+  - text: |- 
+      Ex: "He only said something nice because he wanted a favour."
+
+      "She only talked to me because she felt bad for me."
+
+  utter_distortion7b:
+  - text: |- 
+      "It doesn't matter if they like me if the popular kids don't like me."
+    buttons:
+    - payload: /affirm_ok9
+      title: Continue
+
+  utter_distortion8:
+  - text: Judging or labelling yourself or others in an extreme way based on one instance or experience.
+
+  utter_distortion8a:
+  - text: |- 
+      Ex: "I failed this test. I'm a loser."
+
+  utter_distortion8b:
+  - text: |- 
+      "He's late by 5 mins. He's such an irresponsible and unreliable person."
+    buttons:
+    - payload: /affirm_ok9
+      title: Continue
+
+  utter_distortion9:
+  - text: Should statements are rules that you make to yourself about what you “should” do, what you “ought” to do, or what you “must” do. They can also be applied to others, setting a expectations that may not be met.
+
+  utter_distortion9a:
+  - text: |- 
+      Ex: "I should be able to handle this on my own."
+
+      "He should have bought me flowers."
+
+  utter_distortion9b:
+  - text: |- 
+      "I must give a perfect interview."
+    buttons:
+    - payload: /affirm_ok9
+      title: Continue
+
+  utter_distortion10:
+  - text: Here, we mistake our feelings for facts. Just because we feel something doesn’t mean it is true.
+
+  utter_distortion10a:
+  - text: |- 
+      Ex: "I feel guilty, so I must have done something bad."
+
+  utter_distortion10b:
+  - text: |- 
+      "I feel overwhelmed and hopeless, therefore my problems are impossible to solve."
+    buttons:
+    - payload: /affirm_ok9
+      title: Continue
+
+  utter_distortion11:
+  - text: In overgeneralization, you take a single negative situation and generalize it widely using words like "always", "never", and "everyone".
+
+  utter_distortion11a:
+  - text: |- 
+      "Everyone always tries to take advantage of me."
+
+  utter_distortion11b:
+  - text: |- 
+      "Nobody ever thinks about me."
+    buttons:
+    - payload: /affirm_ok9
+      title: Continue
+
+  utter_week3_last1:
+  - text: I hope you are now a little more clear on how many different ways our thoughts can be distorted.
+    buttons:
+    - payload: /mood_great
+      title: Yes, it's clear to me now  
+    - payload: /affirm_ok10
+      title: I understood a little
+
+  utter_week3_last1a:
+  - text: Great job, {name}! Now that you understand these distortions, let me tell you why it's important to identify them.
+    buttons:
+    - payload: /affirm
+      title: Ok!
+
+  utter_week3_last1b:
+  - text: No problem, {name}. You will become more familiar with them once we start using them in our future sessions.
+    buttons:
+    - payload: /affirm
+      title: Ok!
+
+  utter_week3_last2:
+  - text: |- 
+      Learning about these distortions can give us a better understanding of how thoughts are processed by our brain and the resulting emotions.
+
+      Categorizing your negative thoughts into these distortions will also help decrease the power of the thought.
+
+  utter_week3_last3:
+  - text: |-     
+      This will also make it easier for you to let those thoughts go, and stop feeding them.
+    buttons:
+    - payload: /affirm
+      title: I'm interested in trying it!
+    - payload: /affirm
+      title: Ok...I guess I'll try it
+
+  utter_week3_last4:
+  - text: Great! So in the next session, we'll try to correct these distortions consciously.
+
+  utter_week3_last5:
+  - text: Meanwhile, you can try to categorize the thoughts that trigger you into any of distortions. Remember, one thought can have more than one distortion in it.
+    buttons:
+    - payload: /affirm
+      title: Ok, I'll do that!
+
+  utter_week3_last6:
+  - text: |- 
+      Amazing!
+
+      So {name}, how are you feeling after this session?
+      
+      Feelings wheel.
+
+      Please enter your emotion/feeling below
+
+  utter_week3_last6_etc:
+  - text: |- 
+      Good job, {name}! I hope you feel better soon!
+
+  utter_week3_last6a:
+  - text: |- 
+      See you in the next session!
+    buttons:
+    - payload: /week4
+      title: Continue to Session 4 
+
+  # fallback
+  # utter_please_rephrase:
+  # - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  # utter_default:
+  # - text: Sorry I didn't get that. Can you rephrase?
+
+entities:
+  - name
+  - input0
+  - input1
+  - input2
+  - input3
+  - input4
+  - input5
+  - input6
+  - input7
+  - input8
+  - input9
+  - input10
+  - input11
+  - input12
+  - input13
+  - input14
+  - input15
+  - input16
+  - input17
+  - input18
+  - input19
+
+slots:
+
+  name:
+    type: text
+    # initial_value: null 
+    # auto_fill: true
+    influence_conversation: False
+
+  input0:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False  
+
+  input1:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False    
+
+  input2:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input3:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input4:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input5:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False 
+
+  input6:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False     
+
+  input7:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input8:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input9:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input10:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False 
+
+  input11:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input12:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input13:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input14:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input15:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False 
+ 
+  input16:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input17:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False 
+
+  input18:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input19:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False 
+
+forms:
+
+  name_form:
+    required_slots:
+      name:
+      - type: from_text
+
+  input0_form:
+    required_slots:
+      input0:
+      - type: from_text    
+
+  input1_form:
+    required_slots:
+      input1:
+      - type: from_text
+
+  input2_form:
+    required_slots:
+      input2:
+      - type: from_text    
+
+  input3_form:
+    required_slots:
+      input3:
+      - type: from_text
+
+  input4_form:
+    required_slots:
+      input4:
+      - type: from_text
+
+  input5_form:
+    required_slots:
+      input5:
+      - type: from_text
+
+  input6_form:
+    required_slots:
+      input6:
+      - type: from_text
+
+  input7_form:
+    required_slots:
+      input7:
+      - type: from_text  
+
+  input8_form:
+    required_slots:
+      input8:
+      - type: from_text    
+
+  input10_form:
+    required_slots:
+      input10:
+      - type: from_text
+
+  input11_form:
+    required_slots:
+      input11:
+      - type: from_text
+
+  input9_form:
+    required_slots:
+      input9:
+      - type: from_text
+
+  input12_form:
+    required_slots:
+      input12:
+      - type: from_text 
+  
+  input13_form:
+    required_slots:
+      input13:
+      - type: from_text
+
+  input14_form:
+    required_slots:
+      input14:
+      - type: from_text
+
+  input15_form:
+    required_slots:
+      input15:
+      - type: from_text 
+
+  input16_form:
+    required_slots:
+      input16:
+      - type: from_text
+
+  input17_form:
+    required_slots:
+      input17:
+      - type: from_text 
+
+  input18_form:
+    required_slots:
+      input18:
+      - type: from_text 
+
+  input19_form:
+    required_slots:
+      input19:
+      - type: from_text 
+
+actions:
+- action_set_name_slot_none
+- action_set_input0_slot_none
+- action_set_input1_slot_none
+- action_set_input2_slot_none
+- action_set_input3_slot_none
+- action_set_input4_slot_none
+- action_set_input5_slot_none
+- action_set_input6_slot_none
+- action_set_input7_slot_none
+- action_set_input8_slot_none
+- action_set_input10_slot_none
+- action_set_input11_slot_none
+- action_set_input12_slot_none
+- action_set_input13_slot_none
+- action_set_input14_slot_none
+- action_set_input15_slot_none
+- action_set_input3_slot
+- action_input0_1_2_3
+- action_set_input10_slot
+- action_set_input11_slot
+- action_set_input14_slot
+- action_set_input15_slot
+- action_set_input7_slot
+- action_input7_slot
+- action_set_input16_slot_none
+- action_set_input17_slot_none
+- action_set_input18_slot_none
+- action_set_input19_slot_none 
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

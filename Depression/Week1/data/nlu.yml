@@ -1,0 +1,703 @@
+version: "2.0"
+
+nlu:
+- intent: great
+  examples: |
+    - hey
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Start
+    - start
+    - go
+    - Go
+    - hi
+    - Hi
+    - hello
+    - Hello  
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - Ok.
+    - okay
+    - Okay
+    - ok.
+    - okk
+    - okay.
+    - OKAY
+    - OKay 
+    - ok. 
+    - oK. 
+    - oK...
+    - okay
+    - Okay
+    - okay.
+    - okay... 
+    - oky
+    - OKY!
+    - OKk 
+    - Yes.
+    - yes 
+    - Sure
+    - sure 
+    - I guess so
+    - I Guess So
+    - Sure...
+    - sure 
+    - I guess so
+    - I Guess so
+    - I GUESS SO
+    - Yes, it was
+    - yes it was
+    - Sure.
+    - Umm Yes..
+    - umm ys  
+    - Exactly
+    - Go on...
+    - go on...  
+    - yeah
+    - Yeah  
+    - Yeah...
+    - Yes,I would like to
+    - y i would like to
+    - Y, i think
+    - Yes, I think I've experienced these at some point
+    - Yes,I want to try again
+    - yes i want to try again
+    - Ok I'll do that
+    - ok ill do that
+    - Hmm
+    - hmm
+    - Yes, I can think of a few thoughts...
+    - I will definitely try that
+    - I'm ready!
+    - Let's go!
+    - Yes! Not really...
+    - A little bit
+    - Ok...But why?
+    - Yes, Please
+    - Kind of...
+    - That's true...
+    - Done
+    - A little bit...
+    - Take me there!
+    - I think I understand. I want to give this a try
+    - Yes, I think I should try a simpler task
+    - I've made the list
+    - Ok, take me to the calendar
+    - I think he/she should give it a try.
+    - That's true, he/she would!
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - I'm not sure
+    - im not sure
+    - No, I'm good
+    - no, im good 
+    - I don't understand...
+    - i dont understand
+    - No,I'm good
+    - I'm done
+    - No, I'm done for today.
+    - No, thank you.
+    - No, this is good
+    - No, I think I get it. I want to give this a try.
+    - No... I couldn't start
+    - No...I got stuck in the middle. I just couldn't go ahead with it
+    - No, I want to change it
+    - Options
+
+- intent: mood_great
+  examples: |
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - What's that?
+    - whats that
+    - I think, I understand
+    - i think , i understand
+    - I understand what you mean...
+    - You too!
+    - you too
+    - You too
+    - exactly...
+    - I'm done for today!
+    - I don't understand...
+    - Tell me more...
+    - Next Step
+    - 1. Slightly better than before
+    - 2. Better than before
+    - 3. No change
+    - 4. Slightly worse than before
+    - 5. Worse than before
+    
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - Tell me more
+    - tell me more 
+    - Sadness? Doesn't everyone feel sad
+    - sadness
+    - Can you tell me more?
+    - can you tell me more
+    - Can you give me an examples?    
+    - CAN YOU GIVE ME A EXAMPLE
+    - How is this going to help?
+    - Wait, why am I doing this?
+    - Options
+    - I didn't feel better even after doing most/half of the steps
+    - I got overwhelmed with one/most of the steps
+
+- intent: explore1
+  examples: |
+    - A was humiliated by his teacher for scoring low marks.
+    - explore1
+
+- intent: explore2
+  examples: |
+    - B's partner just ended their long term relationship.
+    - explore2
+
+- intent: explore3
+  examples: |
+    - Bharat just got rejected in an interview in his dream company.
+    - explore3
+
+- intent: explore4
+  examples: |
+    - D just got diagnosed with a terminal illness.   
+    - explore4 
+
+- intent: affirm1
+  examples: |
+    - affirm1
+    - I'll make sure to do that
+    - I will work on it!
+
+- intent: chart5
+  examples: |
+    - FEELINGS
+    - FEELING
+
+- intent: chart6
+  examples: |
+    - THOUGHTS
+    - THOUGHT
+ 
+- intent: chart7
+  examples: |    
+    - BEHAVIOURS
+    - behaviour
+ 
+- intent: mood_great1
+  examples: |    
+    - mood_great1
+    - I relate with this character
+
+- intent: mood_great2
+  examples: |    
+    - mood_great2
+    - I relate with this character .
+
+- intent: mood_great3
+  examples: |    
+    - mood_great3
+    - I relate with this character ..
+
+- intent: mood_great4
+  examples: |    
+    - mood_great4
+    - I relate with this character ...   
+
+- intent: affirm2
+  examples: |    
+    - affirm2
+    - affirm2...
+
+- intent: mood_great5
+  examples: |    
+    - mood_great5
+    - Next Step .  
+
+- intent: mood_great6
+  examples: |    
+    - mood_great6
+    - Next Step .. 
+
+- intent: affirm3
+  examples: |    
+    - affirm3
+    - affirm3...
+    - That makes sense!
+
+- intent: mood_great0
+  examples: |    
+    - mood_great0
+    - mood_great0...
+
+- intent: deny1
+  examples: |    
+    - deny1
+    - deny1...
+    - No, I want to change it
+
+- intent: affirm4
+  examples: |    
+    - affirm4
+    - affirm4...
+
+- intent: deny2
+  examples: |    
+    - deny2
+    - deny2...
+
+- intent: deny_spell
+  examples: |
+    - deny_spell
+    - deny_spell1
+
+- intent: affirm_spell
+  examples: |
+    - affirm_spell
+    - affirm_spell1
+
+- intent: affirm5
+  examples: |    
+    - affirm5
+    - affirm5...
+
+- intent: deny3
+  examples: |    
+    - deny3
+    - deny3...
+
+- intent: affirm6
+  examples: |    
+    - affirm6
+    - affirm6...
+
+- intent: okay_story_part_1
+  examples: |
+    - okay story part 1
+    - okay story.. part1
+
+- intent: okay_story_part_2
+  examples: |
+    - okay story part 2
+    - okay story.. part2 
+
+- intent: okay_story_part_3
+  examples: |
+    - okay story part 3
+    - okay story.. part3
+
+- intent: umm_yes_exactly
+  examples: |
+    - umm_yes_exactly
+    - umm_yes_exactly...
+
+- intent: okay_story_part_4
+  examples: |
+    - okay story part 4
+    - okay story.. part4
+
+- intent: chart
+  examples: |
+    - SITUATION
+    - situation
+    - SITUATIOn
+    - situatioN
+    - sITUATION
+    - Situation
+    - SITUATIONS
+    - situationS
+- intent: chart1
+  examples: |
+    - THOUGHTS/BELIEFS
+    - thoughts  
+    - THOUGHTS/BELIEFSS
+    - thoughtsS
+    - THOUGHTSS/BELIEFS
+    - thoughtsSS 
+    - THOUGHTTS/BELIEFS
+    - thoughtTs 
+- intent: chart2
+  examples: |
+    - EMOTIONS
+    - emotions
+    - EMOTIONs
+    - emotionS
+    - EMOTIONSS
+    - emotionsS
+    - EMOTIONNS
+    - emotionNs
+- intent: chart3
+  examples: |    
+    - BEHAVIOUR
+    - behaviour
+    - BEHAVIOURR
+    - behaviourR
+    - BEHAVIOUUR
+    - behaviouUr
+    - BEHAVIOURS
+    - behaviourSS
+- intent: chart4
+  examples: |    
+    - PHYSIOLOGICAL RESPONSE
+    - phy.response
+    - PHYSIOLOGICAL RESPONSES
+    - phy.responseS
+    - PHYSIOLOGICALL RESPONSE
+    - phy.responseSXS
+    - PHYSIOLOGICAL RESPONSE
+    - phy.responseX
+
+- intent: yes_i_can
+  examples: |
+    - yes_i_can 
+    - yes_i_can_think    
+
+- intent: continue_story
+  examples: |
+    - continue_story
+    - continue...  
+
+- intent: it_feels1_story
+  examples: |
+    - it_feels1_story   
+    - it_feels1_story.. 
+
+- intent: it_feels2_story
+  examples: |
+    - it_feels2_story   
+    - it_feels2_story..   
+
+- intent: okay_story_part_5
+  examples: |
+    - okay story part 5
+    - okay story.. part5   
+
+- intent: meter_1
+  examples: |
+    - 1. Slightly better than before
+    - 2. Better than before
+    - 1. Slightly better than Before
+    - 2. Better than Before
+ 
+- intent: meter_2
+  examples: |
+    - 3. No change
+    - nochange
+    - 3. No changeE
+    - nochangeE
+ 
+- intent: meter_3
+  examples: |
+    - 4. Slightly worse than before
+    - 5. Worse than before
+    - 4. Slightly worse than Before
+    - 5. Worse than Before
+ 
+- intent: meter_4
+  examples: |
+    - 1. Slightly better than before...
+    - 2. Better than before...
+    - 1. Slightly better than Before...
+    - 2. Better than Before...
+ 
+- intent: meter_5
+  examples: |
+    - 3. No change...
+    - nochange...
+    - 3. No changeE...
+    - nochangeE...
+ 
+- intent: meter_6
+  examples: |
+    - 4. Slightly worse than before...
+    - 5. Worse than before...
+    - 4. Slightly worse than Before...
+    - 5. Worse than Before...
+ 
+- intent: thank_you_story
+  examples: |
+    - thank_you_story
+    - thank_you_story...
+
+- intent: affirm_yes
+  examples: |
+    - affirm_yes
+    - affirm_Yes! 
+    
+- intent: week2
+  examples: |
+    - Continue to week2
+    - Continue to Session 2 part 1
+
+- intent: session1
+  examples: |
+    - Continue to Session1..
+    - Continue to Session 2 part 2
+
+- intent: session2
+  examples: |
+    - Continue to Session2.
+    - Continue to Session 3
+
+- intent: meter_7
+  examples: |
+    - 1. Slightly better than before...
+    - 2. Better than before...
+    - 1. Slightly better than Before...
+    - 2. Better than Before...
+ 
+- intent: meter_8
+  examples: |
+    - 3. No change...
+    - nochange...
+    - 3. No changeE...
+    - nochangeE...
+ 
+- intent: meter_9
+  examples: |
+    - 4. Slightly worse than before...
+    - 5. Worse than before...
+    - 4. Slightly worse than Before...
+    - 5. Worse than Before...
+
+- intent: affirm0
+  examples: |    
+    - affirm0
+    - affirm0...
+
+- intent: affirm7
+  examples: |    
+    - affirm7
+    - affirm7...
+
+- intent: affirm8
+  examples: |    
+    - affirm8
+    - affirm8...
+
+- intent: affirm9
+  examples: |    
+    - affirm9
+    - affirm9...  
+
+- intent: affirm13
+  examples: |    
+    - affirm13
+    - affirm13... 
+
+- intent: affirm_w3_yes
+  examples: |
+    - affirm_w3_yes
+    - affirm_w3_Yes! 
+
+- intent: affirm_3in1
+  examples: |
+    - affirm_3in1
+    - affirm_3in1! 
+
+- intent: deny9
+  examples: |    
+    - deny9
+    - deny9... 
+
+- intent: deny4
+  examples: |    
+    - deny4
+    - deny4... 
+
+- intent: deny5
+  examples: |    
+    - deny5
+    - deny5...
+
+- intent: deny6
+  examples: |    
+    - deny6
+    - deny6...  
+
+- intent: mood_great7
+  examples: |    
+    - mood_great7
+    - Next Step7 .    
+
+- intent: mood_great8
+  examples: |    
+    - mood_great8
+    - Next Step8 . 
+
+- intent: mood_great9
+  examples: |    
+    - mood_great9
+    - Next Activity . 
+
+- intent: affirm_ok1
+  examples: |    
+    - affirm_ok1
+    - affirm_ok1... 
+
+- intent: affirm_ok2
+  examples: |    
+    - affirm_ok2
+    - affirm_ok2... 
+
+- intent: affirm_ok3
+  examples: |    
+    - affirm_ok3
+    - affirm_ok3...
+
+- intent: affirm_ok4
+  examples: |    
+    - affirm_ok4
+    - affirm_ok4... 
+
+- intent: affirm_ok5
+  examples: |    
+    - affirm_ok5
+    - affirm_ok5...
+
+- intent: affirm_ok6
+  examples: |    
+    - affirm_ok6
+    - affirm_ok6...    
+ 
+- intent: affirm_ok7
+  examples: |    
+    - affirm_ok7
+    - affirm_ok7...
+
+- intent: affirm_ok8
+  examples: |    
+    - affirm_ok8
+    - affirm_ok8...  
+
+- intent: affirm_ok
+  examples: |    
+    - affirm_ok
+    - affirm_ok...  
+
+- intent: explore5
+  examples: |
+    - It is her responsibility to make sure she doesn't get sick. She is right in blaming herself. 
+    - explore5     
+
+- intent: distortion1
+  examples: |
+    - distortion1
+    - distortion11 
+
+- intent: distortion2
+  examples: |
+    - distortion2
+    - distortion22
+
+- intent: distortion3
+  examples: |
+    - distortion3
+    - distortion33
+
+- intent: distortion4
+  examples: |
+    - distortion4
+    - distortion44   
+
+- intent: distortion5
+  examples: |
+    - distortion5
+    - distortion55 
+
+- intent: distortion6
+  examples: |
+    - distortion6
+    - distortion66
+
+- intent: distortion7
+  examples: |
+    - distortion7
+    - distortion77
+
+- intent: distortion8
+  examples: |
+    - distortion8
+    - distortion88 
+
+- intent: distortion9
+  examples: |
+    - distortion9
+    - distortion99
+
+- intent: distortion11
+  examples: |
+    - Distortion11
+    - Overgeneralization
+
+- intent: distortion10
+  examples: |
+    - distortion10
+    - distortion1010
+
+# - intent: session3
+#   examples: |
+#     - Continue to Session4.
+#     - Continue to Session 4   
+
+# - intent: affirm_ok9
+#   examples: |
+#     - affirm_ok9
+#     - Continue       
+
+# - intent: affirm_ok10
+#   examples: |
+#     - affirm_ok10
+#     - I understood a little     

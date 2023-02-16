@@ -1,0 +1,872 @@
+version: "2.0"
+
+intents:
+  - chitchat
+  - great
+  - goodbye
+  - affirm
+  - affirm0
+  - affirm1
+  - affirm2
+  - affirm3
+  - affirm4
+  - affirm5
+  - affirm6
+  - deny
+  - deny1
+  - deny2
+  - deny3
+  - deny_spell
+  - affirm_spell
+  - mood_great
+  - mood_great0
+  - mood_great1
+  - mood_great2
+  - mood_great3
+  - mood_great4
+  - mood_great5
+  - mood_great6
+  - mood_unhappy
+  - mood_unhappy1
+  - mood_unhappy2
+  - mood_unhappy3
+  - mood_unhappy4
+  - mood_unhappy5
+  - mood_unhappy6
+  - mood_unhappy7 
+  - mood_unhappy8
+  - mood_unhappy9
+  - mood_unhappy10
+  - mood_unhappy11
+  # - mood_unhappy12
+  - mood_unhappy13
+  - mood_unhappy14
+  - affirm_ok2
+  - affirm_ok3
+  - affirm_ok4
+  - affirm_ok5       
+  - affirm_ok6
+  - affirm_ok7  
+  - affirm_ok8 
+  - affirm_ok01
+  - week3_name1
+  - week3_name2
+  - week3_name3
+  - week3_disha
+  - mood_unhappy0  
+  - explore1
+  - explore2
+  - explore3
+  - explore4
+  - explore5
+  - chart
+  - chart1
+  - chart2
+  - chart3
+  - chart4
+  - chart5
+  - chart6
+  - chart7
+  - it_feels1
+  - it_feels2
+  - meter_1
+  - meter_2
+  - meter_3
+  - meter_4
+  - meter_5
+  - meter_6
+  - meter_7
+  - meter_8
+  - meter_9   
+  - affirm_ok1
+  - affirm_ok0
+  - affirm_ok
+  # - name
+  - input1
+  - input2
+  - input3
+  - manual_input
+  - manual_input_1
+  - okay_story_part_1
+  - okay_story_part_2
+  - umm_yes_exactly
+  - okay_story_part_3
+  - okay_story_part_4
+  - yes_i_can
+  - continue_story
+  - it_feels1_story
+  - it_feels2_story
+  - okay_story_part_5
+  - thank_you_story
+  - affirm_yes
+  - week2
+  - session1
+  - session2
+  - session3
+  - affirm7
+  - affirm8
+  - affirm9
+  - affirm13
+  - affirm_3in1
+  - affirm_w3_yes
+  - deny4
+  - deny5
+  - deny6
+  - affirm_ok9
+  - affirm_ok10
+  - mood_great7
+  - mood_great8
+  - mood_great9
+  - distortion1
+  - distortion2
+  - distortion3
+  - distortion4
+  - distortion5
+  - distortion6
+  - distortion7
+  - distortion8
+  - distortion9
+  - distortion10
+  - distortion11
+  
+responses:
+  # utter_great:
+  # - text: "Hey! How are you?"
+
+  # utter_cheer_up:
+  # - text: "Here is something to cheer you up:"
+  #   image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  # utter_did_that_help:
+  # - text: "Did that help you?"
+
+  # utter_happy:
+  # - text: "Great, carry on!"
+
+  utter_great:
+  - text: I'm Psybot! I'm going to be your mental health companion...What would you like to be called? (Please Enter Your Name).
+  
+  utter_great_spell:
+  - text: Is {name} spelled correctly?
+    buttons:
+    - payload: /affirm_spell
+      title: Yes.
+    - payload: /deny_spell
+      title: No.
+  
+  utter_great_enter_name:
+  - text: Please Enter Your Name  
+ 
+  utter_name:
+  - text: Hi {name}! Nice to meet you!
+    buttons:
+    - payload: /mood_great
+      title: You too!
+  utter_user1:
+  - text: So {name}, from the answer above, it looks like you have depressive symptoms.
+    # attachment:
+    #   payload:
+    #     src: https://www.youtube.com/embed/ihO02wUzgkc?autoplay=1
+    #   type: video   
+    #   autoplay: true    
+  utter_user2:
+  - text: Would you like to know more about it?
+    buttons:
+    - payload: /affirm
+      title: Yeah
+    - payload: /affirm
+      title: Go on...
+  utter_intro_how:
+  - text: Depression is a mood disorder that can cause a feeling of sadness that lasts for weeks, months or even years.
+    buttons:
+    - payload: /mood_unhappy
+      title: Tell me more
+    - payload: /mood_unhappy
+      title: Sadness? Doesn't everyone feel sad?
+  utter_mood_sad:
+  - text: Depression is different from being sad. Sadness is a normal emotion and generally comes about when something bad happens. Sadness usually goes away after a few days.
+    buttons:
+    - payload: /mood_great
+      title: I think I understand
+  utter_understand:
+  - text: Depression can make it extremely difficult for you to do daily tasks, focus on your work and engage in social activities. It can lower your self-esteem, and makes you feel hopeless or worthless.
+    buttons:
+    - payload: /affirm
+      title: Hmm
+  utter_understand1:
+  - text: All of us can experience depression differently.
+    image: https://i.ibb.co/vsZPFs0/Chartsfinal-02.png
+    buttons:
+    - payload: /okay_story_part_1
+      title: Ok
+  utter_ok1:
+  - text: Can you relate with any of these symptoms?
+    buttons:
+    - payload: /deny
+      title: I'm not sure
+    - payload: /affirm
+      title: Yes.
+  utter_not_sure:
+  - text: Have you ever lost interest in doing your favorite things? Or maybe someone told you that you were sleeping more than usual, or moving slower than you usually do?
+    buttons:
+    - payload: /affirm
+      title: Yes, I think I've experienced these at some point
+  utter_sure_yes:
+  - text: You see, most of these symptoms are caused by repetitive negative thoughts running through the brain... Ex- When you may feel worthless and sad, the repetitive thought running in your head could be - "I'm not good enough"
+  utter_sure_yes1:
+  - text: I can help you manage these symptoms in a healthy way by using CBT.
+    buttons:
+    - payload: /mood_great
+      title: What's that?
+  utter_what:
+  - text: CBT is Cognitive behavioral therapy. It says that...
+    image: https://i.ibb.co/Rvj8kx9/Chartsfinal-01.png
+    buttons:
+    - payload: /affirm
+      title: Ok
+  utter_red_blue_yellow:
+  - text: By reframing your thoughts and actions, CBT can help change your feelings and emotions.
+  utter_red_blue_yellow1:
+  - text: You will learn how to identify and change your thinking and behavior patterns that upset you.
+    buttons:
+    - payload: /mood_unhappy
+      title: Can you give me an example?
+  utter_sure_chart:
+  - text: Sure! Look at the chart below. You can click on each heading to learn more about it.   
+    image: https://i.ibb.co/ch1bwkv/Chartsfinal-04.png
+    buttons:
+    - payload: /chart
+      title: SITUATION
+    - payload: /chart1
+      title: THOUGHTS/BELIEFS  
+    - payload: /chart2
+      title: EMOTIONS
+    - payload: /chart3
+      title: BEHAVIOUR
+    - payload: /chart4
+      title: PHYSIOLOGICAL RESPONSE  
+  utter_chart:
+  - text: Anything that happens to a person.
+    buttons:
+    - payload: /affirm
+      title: Ok
+  utter_chart1:
+  - text: What runs through a person's head in that situation. How a person interprets the event.
+    buttons:
+    - payload: /affirm
+      title: Ok
+  utter_chart2:
+  - text: How a person feels about the situation. They don't have to be logical.
+    buttons:
+    - payload: /affirm
+      title: Ok
+  utter_chart5:
+  - text: The person's reactions and behaviors for that situation.
+    buttons:
+    - payload: /affirm
+      title: Ok
+  utter_chart4:
+  - text: Ex- Sleep issues, Weakness.
+    buttons:
+    - payload: /affirm
+      title: Ok
+  utter_ok:
+  - text: Now look at this chart.
+    image: https://i.ibb.co/wL8PpMH/Chartsfinal-03.png
+  utter_last3:
+  - text: Did you notice how the emotions and responses changed, by just changing/modifying the thought, even though the situation was the same?
+    buttons:
+    - payload: /affirm
+      title: Yeah...
+  utter_last2:
+  - text: We will work together to form healthier thinking patterns like this.  CBT will help you focus on the present!
+  utter_last1:
+  - text: Are you ready to begin?
+    buttons:
+    - payload: /okay_story_part_2
+      title: Ok
+  utter_begin:
+  - text: So {name}, you had mentioned in your answers that you feel sad or low frequently. Am I right?
+    buttons:
+    - payload: /umm_yes_exactly
+      title: Umm Yes..
+    - payload: /umm_yes_exactly
+      title: Exactly
+  utter_umm_yes:
+  - text: Ok, Let's try to find out more about this.
+  utter_umm_yes1:
+  - text: Usually, a particular situation can be a trigger for your depressive symptoms.
+           Ex:- Rahul got rejected in his job interview and was extremely disheartened
+    image: https://i.ibb.co/H4t0wcw/video-to-gif-converter.gif
+    buttons:
+    - payload: /affirm
+      title: Ok
+  utter_umm_yes2:
+  - text: Can you write down any situation that could have made you feel this way?  
+  utter_input1:
+  - text: Do you think what you wrote accurately summarizes the situation? You can add more details if you wish to.
+    buttons:
+    - payload: /deny
+      title: No, I'm good
+    - payload: /affirm
+      title: Yes,I would like to
+  utter_rightin:
+  - text: Ok, Please write it down below. 
+  utter_good_like:
+  - text: Great work, {name}! You were able to pin point your triggers.
+  utter_good_like1:
+  - text: Let's go one step further.
+    buttons:
+    - payload: /okay_story_part_3
+      title: Ok
+  utter_good_like2:
+  - text: Can you think of the unhelpful/discomforting thought/s that came into your mind in that situation? Ex- Rahul thinks that he wasn't good enough at his work.
+    image: https://i.ibb.co/f8wRHRC/video-to-gif-converter-1.gif
+    buttons:
+    - payload: /affirm
+      title: Yes, I can think of a few thoughts...
+  utter_good_like3:
+  - text: Remember, thoughts are different from emotions or feelings. Emotions include things like anger, sadness, shame, etc. A thought is something that comes into your mind at that point of time.
+  utter_good_like4:
+  - text: Can you write down the unhelpful/discomforting thought/s that came into your mind in that situation?
+  utter_input2:
+  - text: Thank you for sharing that with me. I can imagine how uncomfortable that thought was.
+    buttons:
+    - payload: /affirm
+      title: I guess so
+    - payload: /affirm
+      title: Yes, it was
+  utter_input2_1:
+  - text: Now tell me, how did you feel because of these thoughts?
+          Ex:- Rahul felt worthless and ashamed.
+    image: https://i.ibb.co/zm21YNR/video-to-gif-converter-2.gif
+    buttons:
+    - payload: /continue_story
+      title: Continue...
+  utter_input2_2:
+  - text: You can use this feelings wheel to pinpoint what you felt. Try starting from the center of the wheel and moving outward, to more specific emotions.
+    # image: https://i.ibb.co/xD2GM6W/Charts-wheel.png
+  utter_input2_3:
+  - text: Please write down the emotions you feel from the wheel.
+    image: https://i.ibb.co/xD2GM6W/Charts-wheel.png  
+  utter_guided_trymore:
+  - text: Would you like to write down more emotions?
+    buttons:
+    - payload: /affirm_yes
+      title: Yes!
+    - payload: /deny
+      title: I'm done
+  utter_input3:
+  - text: Good going, {name}! Here's a summary of what you have learnt till now.
+  utter_input3_0:
+  - text: When you face situations like "{input0}", you think that "{input2}". This makes you feel "{input3}". Am I right?
+    buttons:
+    - payload: /okay_story_part_4
+      title: Exactly...
+  utter_input3_1:
+  - text: When you face situations like "{input0}, {input1}" you think that "{input2}". This makes you feel "{input3}". Am I right?
+    buttons:
+    - payload: /okay_story_part_4
+      title: Exactly...    
+  utter_input3_2:
+  - text: Do your feelings make you react in a certain way, {name}?
+    buttons:
+    - payload: /deny
+      title: I don't understand...
+    - payload: /mood_unhappy
+      title: Can you tell me more?
+  utter_more_under:
+  - text: Ex- Rahul skipped 2 interviews after he felt worthless.
+    image: https://i.ibb.co/F6h2X2t/video-to-gif-converter-3.gif
+    buttons:
+    - payload: /affirm
+      title: Ok
+  utter_more_under1:
+  - text: Would you like to share how you acted/behaved because of your feelings/thoughts?
+  utter_manual_input:
+  - text: I hear you. I can understand it's been tough for you. But a deeper awareness of what's going on is the first step to change...
+  utter_manual_input1:
+  - text: How do you feel after sharing your thoughts?
+    buttons:
+    - payload: /it_feels1_story
+      title: It feels good to talk about it
+    - payload: /it_feels2_story
+      title: I would like to work on these thoughts and feelings
+    - payload: /it_feels1_story
+      title: I feel relieved
+  utter_it_feels:
+  - text: Would you like to go one step further?
+    buttons:
+    - payload: /affirm
+      title: I guess so
+    - payload: /affirm
+      title: Sure.
+  utter_it_feels1:
+  - text: Would you like to go one step further?
+    buttons:
+    - payload: /affirm
+      title: I guess so
+    - payload: /affirm
+      title: Sure.  
+  utter_it_feelings:
+  - text: That's great! Let's try to build an alternative, more positive thought for the situation.
+    buttons:
+    - payload: /affirm
+      title: Ok
+  utter_it_feelings1:
+  - text: Ex- Instead of thinking "I'm worthless because I couldn't qualify the interview", Rahul could instead think - "I messed up, but mistakes happen. I'm going to prepare better and be more confident next time"
+    image: https://i.ibb.co/vV5Vqnn/video-to-gif-converter-4.gif
+    buttons:
+    - payload: /okay_story_part_5
+      title: Hmm
+  utter_it_feelings2:
+  - text: Can you write down of a more positive way of thinking about your situation?
+  utter_think:
+  - text: Do you think you could be more compassionate to yourself through this thought? You can add more details if you wish to.
+    buttons:
+    - payload: /affirm
+      title: Yes,I want to try again
+    - payload: /deny
+      title: No,I'm good
+  utter_enter:
+  - text: Ok, Please write it down below...
+  utter_think1:
+  - text: Good work! Think about this alternative thought for a little bit. Try to weigh how true it could be compared to your original negative thought.
+    buttons:
+    - payload: /affirm
+      title: Ok
+  utter_think2:
+  - text: How does this alternative thought make you feel? Do you feel calmer, slightly more hopeful? Rate you mood on the mood meter below.
+  utter_meter:
+  - text: Mood meter:-
+    buttons:
+    - payload: /meter_1
+      title: 1. Slightly better than before
+    - payload: /meter_1
+      title: 2. Better than before
+    - payload: /meter_2
+      title: 3. No change
+    - payload: /meter_3
+      title: 4. Slightly worse than before
+    - payload: /meter_3
+      title: 5. Worse than before
+  utter_meter_1:
+  - text: That's great!
+  utter_meter_3:
+  - text: I'm sorry to hear that. We will try to work on these regularly to make sure you feel better.
+  utter_meter_2:
+  - text: That's too bad. But don't worry! It takes time to get used to the process.
+  utter_meter_2_1:
+  - text: I'll be here to help you through it, step-by-step.
+  utter_meter_2_2:
+  - text: It's great to see you taking these steps to improve your emotional health, {name}!
+    buttons:
+    - payload: /thank_you_story
+      title: Thank You!
+  utter_meter_2_3:
+  - text: It's these small steps that will help us reach our destination.
+  utter_meter_2_4:
+  - text: Meanwhile...I have some homework for you.
+    buttons:
+    - payload: /affirm
+      title: Sure
+  utter_meter_2_5:
+  - text: Next time you start feeling low/sad, open the thought diary, a (you'll find it in the tools tab!) and write down the situation, your thought, your emotions, and your response to it. And...
+  utter_meter_2_6:
+  - text: Try to build a more healthy and positive alternative thought.
+    buttons:
+    - payload: /affirm
+      title: Ok I'll do that
+  utter_meter_2_7:
+  - text: You can also find the mood meter on the tools tab. Try to rate your mood atleast once a day. This will help you keep track of your emotions.
+  utter_meter_2_8:
+  - text: Remember, be compassionate and kind to yourself, just like you would be towards a friend!
+    buttons:
+    - payload: /affirm
+      title: I will definitely try that
+
+  utter_chitchat/bot_challenge:
+  - text: I am your iWill (POWERED BY EPSYCLINIC) assistant design by a RASA.AI Team!!
+  utter_chitchat/ask_builder:
+  - text: I was design by a RASA.AI Team!
+  utter_chitchat/handleinsult:
+  - text: I'll pretend I didn't process that mean comment.
+  utter_chitchat/nicetomeeyou:
+  - text: Nice to meet you too!!!
+
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_addmore_session:
+  - text:  |-
+       That's it for this session, {name}!
+
+  utter_addmore1:
+  - text:  |-
+       Great job, {name}!
+      
+       Try and stick to this schedule, and trust me you will feel much better!   
+ 
+       That's it for this session, {name}!
+
+  utter_addmore1_a:
+  - text:  |-
+       You're doing great, {name}!
+      
+       Try your best to stick to this schedule, and track your mood in the mood meter!  
+ 
+       That's it for this session, {name}!
+
+  utter_addmore1_b:
+  - text:  |-
+       Try your best to stick to this schedule, and track your mood in the mood meter!  
+ 
+       That's it for this session, {name}!
+  # utter_addmore0_1:
+  # - text: Try and stick to this schedule, and trust me you will feel much better!
+
+  # utter_addmore1:
+  # - text: That's it for this session, {name}!
+  
+  utter_addmore2:
+  - text: Bye! 
+    buttons:
+    - payload: /goodbye
+      title: Bye!
+  
+  utter_addmore3:
+  - text: See you later!
+    buttons:
+    - payload: /mood_great
+      title: I'm done for today!
+    - payload: /week2
+      title: Continue to Session 2, Part 1
+
+  utter_addmore3_a:
+  - text: See you later!
+    buttons:
+    - payload: /mood_great
+      title: I'm done for today!
+    - payload: /session1
+      title: Continue to Session 2, Part 2   
+  
+  utter_addmore3_b:
+  - text: See you later!
+    buttons:
+    - payload: /mood_great
+      title: I'm done for today!
+    - payload: /session2
+      title: Continue to Session 3
+
+  utter_addmore4:
+  - text: OK, Thanks.
+# ---------------------------------------------------------------------------
+ 
+  # utter_week3_last6a:
+  # - text: |- 
+  #     See you in the next session!
+  #   buttons:
+  #   - payload: /session3
+  #     title: Continue to Session 4 
+
+  # fallback
+  # utter_please_rephrase:
+  # - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  # utter_default:
+  # - text: Sorry I didn't get that. Can you rephrase?
+
+entities:
+  - name
+  - input0
+  - input1
+  - input2
+  - input3
+  - input4
+  - input5
+  - input6
+  - input7
+  - input8
+  - input9
+  - input10
+  - input11
+  - input12
+  - input13
+  - input14
+  - input15
+  - input16
+  - input17
+  - input18
+  - input19
+
+slots:
+
+  name:
+    type: text
+    # initial_value: null 
+    # auto_fill: true
+    influence_conversation: False
+
+  input0:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False  
+
+  input1:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False    
+
+  input2:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input3:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input4:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input5:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False 
+
+  input6:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False     
+
+  input7:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input8:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input9:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input10:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False 
+
+  input11:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input12:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input13:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input14:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input15:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False 
+ 
+  input16:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input17:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False 
+
+  input18:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input19:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False 
+
+forms:
+
+  name_form:
+    required_slots:
+      name:
+      - type: from_text
+
+  input0_form:
+    required_slots:
+      input0:
+      - type: from_text    
+
+  input1_form:
+    required_slots:
+      input1:
+      - type: from_text
+
+  input2_form:
+    required_slots:
+      input2:
+      - type: from_text    
+
+  input3_form:
+    required_slots:
+      input3:
+      - type: from_text
+
+  input4_form:
+    required_slots:
+      input4:
+      - type: from_text
+
+  input5_form:
+    required_slots:
+      input5:
+      - type: from_text
+
+  input6_form:
+    required_slots:
+      input6:
+      - type: from_text
+
+  input7_form:
+    required_slots:
+      input7:
+      - type: from_text  
+
+  input8_form:
+    required_slots:
+      input8:
+      - type: from_text    
+
+  input10_form:
+    required_slots:
+      input10:
+      - type: from_text
+
+  input11_form:
+    required_slots:
+      input11:
+      - type: from_text
+
+  input9_form:
+    required_slots:
+      input9:
+      - type: from_text
+
+  input12_form:
+    required_slots:
+      input12:
+      - type: from_text 
+  
+  input13_form:
+    required_slots:
+      input13:
+      - type: from_text
+
+  input14_form:
+    required_slots:
+      input14:
+      - type: from_text
+
+  input15_form:
+    required_slots:
+      input15:
+      - type: from_text 
+
+  input16_form:
+    required_slots:
+      input16:
+      - type: from_text
+
+  input17_form:
+    required_slots:
+      input17:
+      - type: from_text 
+
+  input18_form:
+    required_slots:
+      input18:
+      - type: from_text 
+
+  input19_form:
+    required_slots:
+      input19:
+      - type: from_text 
+
+actions:
+- action_set_name_slot_none
+- action_set_input0_slot_none
+- action_set_input1_slot_none
+- action_set_input2_slot_none
+- action_set_input3_slot_none
+- action_set_input4_slot_none
+- action_set_input5_slot_none
+- action_set_input6_slot_none
+- action_set_input7_slot_none
+- action_set_input8_slot_none
+- action_set_input10_slot_none
+- action_set_input11_slot_none
+- action_set_input12_slot_none
+- action_set_input13_slot_none
+- action_set_input14_slot_none
+- action_set_input15_slot_none
+- action_set_input3_slot
+- action_input0_1_2_3
+- action_set_input10_slot
+- action_set_input11_slot
+- action_set_input14_slot
+- action_set_input15_slot
+- action_set_input7_slot
+- action_input7_slot
+- action_set_input16_slot_none
+- action_set_input17_slot_none
+- action_set_input18_slot_none
+- action_set_input19_slot_none 
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,168 @@
+version: "2.0"
+
+stories:
+
+# ----------------------------------------------------------------
+
+- story: story 1
+  steps:
+  - intent: week2
+  - action: utter_great
+  - action: utter_user0
+  - action: utter_user1
+  - action: utter_user2
+  - intent: affirm
+  - action: utter_user3
+  - action: utter_user4
+  - action: utter_user5
+  - action: utter_user6
+  - action: utter_user7
+  - action: input0_form
+  - action: utter_user8
+
+- story: story 2 affirm
+  steps:
+  - intent: affirm_add
+  # - action: action_set_input1_slot_none
+  - action: utter_user9
+  - action: input1_form
+  - action: utter_user10
+  - action: utter_user11
+
+- story: story 2 deny
+  steps:
+  - intent: deny1
+  - action: utter_user10
+  - action: utter_user11
+
+- story: story 3
+  steps:
+  - intent: okay_story_ok1
+  - action: utter_user12
+  # - action: utter_user13
+  # - action: utter_user14
+  - action: input2_form
+  - action: utter_user15
+  - intent: affirm
+  - action: utter_user16
+  - action: utter_user17
+  - action: utter_user18 
+  - action: input3_form 
+  - action: action_set_input3_slot
+  - intent: deny   
+  - action: utter_input3
+  - action: action_input0_1_2_3 
+
+- story: story try_more action
+  steps:
+  - intent: affirm_yes1
+  - action: action_set_input3_slot_none  
+  - action: utter_user18
+  - action: input3_form 
+  - action: action_set_input3_slot
+  - intent: deny   
+  - action: utter_input3
+  - action: action_input0_1_2_3 
+
+- story: story 4
+  steps: 
+  - intent: okay_story_part_4
+  - action: action_set_input0_slot_none
+  - action: action_set_input1_slot_none
+  - action: utter_user19  
+  - intent: mood_unhappy_story
+  - action: action_set_input2_slot_none
+  - action: action_set_input3_slot_none
+  - action: utter_user20
+  - action: utter_user21
+  - action: input4_form
+  - action: utter_user22
+  - action: utter_user23  
+
+- story: story feels2
+  steps: 
+  - intent: it_feels2_story
+  - action: action_set_input4_slot_none
+  - action: utter_it_feelings
+  - intent: affirm
+  - action: utter_it_feelings1 
+
+- story: story feels 1 and 3
+  steps:
+  - intent: it_feels1_story
+  - action: utter_it_feels
+  - intent: affirm
+  - action: action_set_input4_slot_none
+  - action: utter_it_feelings
+  - intent: affirm
+  - action: utter_it_feelings1 
+
+- story: story Manual Input 5 [happy]
+  steps:
+  - intent: okay_story_part_5  
+  - action: utter_it_feelings2
+  - action: input5_form
+  - action: utter_think
+  - intent: affirm
+  - action: action_set_input5_slot_none
+  - action: utter_enter
+  - action: input6_form
+  - action: utter_think1
+  - intent: affirm
+  - action: action_set_input6_slot_none
+  - action: utter_think2
+  - action: utter_meter_anx1
+
+- story: story Manual Input 5 [sad]
+  steps:
+  - intent: okay_story_part_5  
+  - action: utter_it_feelings2
+  - action: input5_form
+  - action: utter_think
+  - intent: deny
+  - action: action_set_input5_slot_none
+  - action: utter_think1
+  - intent: affirm
+  - action: utter_think2
+  - action: utter_meter_anx1
+
+- story: meter 1a
+  steps:  
+  - intent: meter4
+  - action: utter_meter_1anx
+  - action: utter_meter_2_2anx
+
+- story: meter 2a
+  steps: 
+  - intent: meter5
+  - action: utter_meter_2anx
+  - action: utter_meter_2_1anx
+  - action: utter_meter_2_2anx
+
+- story: meter 3a
+  steps: 
+  - intent: meter6
+  - action: utter_meter_3anx
+  - action: utter_meter_2_2anx
+
+- story: story 41
+  steps: 
+  - intent: thank_you_story
+  - action: utter_meter_2_3anx
+  - action: utter_meter_2_4anx
+  - intent: affirm
+  - action: utter_meter_2_5anx
+  - action: utter_meter_2_6anx
+  - intent: affirm
+  - action: utter_meter_2_7anx
+  - action: utter_meter_2_8anx 
+  - intent: affirm2
+  - action: utter_addmore1
+  - action: utter_addmore2
+  - intent: goodbye
+  - action: utter_addmore3_a
+  - intent: mood_great
+  - action: utter_addmore4
+
+# =================================================
+ 

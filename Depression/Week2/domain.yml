@@ -1,0 +1,1288 @@
+version: "2.0"
+
+intents:
+  - chitchat
+  - great
+  - goodbye
+  - affirm
+  - affirm0
+  - affirm1
+  - affirm2
+  - affirm3
+  - affirm4
+  - affirm5
+  - affirm6
+  - deny
+  - deny1
+  - deny2
+  - deny3
+  - deny_spell
+  - affirm_spell
+  - mood_great
+  - mood_great0
+  - mood_great1
+  - mood_great2
+  - mood_great3
+  - mood_great4
+  - mood_great5
+  - mood_great6
+  - mood_unhappy
+  - mood_unhappy1
+  - mood_unhappy2
+  - mood_unhappy3
+  - mood_unhappy4
+  - mood_unhappy5
+  - mood_unhappy6
+  - mood_unhappy7 
+  - mood_unhappy8
+  - mood_unhappy9
+  - mood_unhappy10
+  - mood_unhappy11
+  # - mood_unhappy12
+  - mood_unhappy13
+  - mood_unhappy14
+  - affirm_ok2
+  - affirm_ok3
+  - affirm_ok4
+  - affirm_ok5       
+  - affirm_ok6
+  - affirm_ok7  
+  - affirm_ok8 
+  - affirm_ok01
+  - week3_name1
+  - week3_name2
+  - week3_name3
+  - week3_disha
+  - mood_unhappy0  
+  - explore1
+  - explore2
+  - explore3
+  - explore4
+  - explore5
+  - chart
+  - chart1
+  - chart2
+  - chart3
+  - chart4
+  - chart5
+  - chart6
+  - chart7
+  - it_feels1
+  - it_feels2
+  - meter_1
+  - meter_2
+  - meter_3
+  - meter_4
+  - meter_5
+  - meter_6
+  - meter_7
+  - meter_8
+  - meter_9   
+  - affirm_ok1
+  - affirm_ok0
+  - affirm_ok
+  # - name
+  - input1
+  - input2
+  - input3
+  - manual_input
+  - manual_input_1
+  - okay_story_part_1
+  - okay_story_part_2
+  - umm_yes_exactly
+  - okay_story_part_3
+  - okay_story_part_4
+  - yes_i_can
+  - continue_story
+  - it_feels1_story
+  - it_feels2_story
+  - okay_story_part_5
+  - thank_you_story
+  - affirm_yes
+  - week2
+  - week2_1
+  - week3
+  - session3
+  - affirm7
+  - affirm8
+  - affirm9
+  - affirm13
+  - affirm_3in1
+  - affirm_w3_yes
+  - deny4
+  - deny5
+  - deny6
+  - affirm_ok9
+  - affirm_ok10
+  - mood_great7
+  - mood_great8
+  - mood_great9
+  - distortion1
+  - distortion2
+  - distortion3
+  - distortion4
+  - distortion5
+  - distortion6
+  - distortion7
+  - distortion8
+  - distortion9
+  - distortion10
+  - distortion11
+  
+responses:
+  # utter_great:
+  # - text: "Hey! How are you?"
+
+  # utter_cheer_up:
+  # - text: "Here is something to cheer you up:"
+  #   image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  # utter_did_that_help:
+  # - text: "Did that help you?"
+
+  # utter_happy:
+  # - text: "Great, carry on!"
+
+  utter_great:
+  - text: I'm Psybot! I'm going to be your mental health companion...What would you like to be called? (Please Enter Your Name).
+  
+  utter_great_spell:
+  - text: Is {name} spelled correctly?
+    buttons:
+    - payload: /affirm_spell
+      title: Yes.
+    - payload: /deny_spell
+      title: No.
+  
+  utter_great_enter_name:
+  - text: Please Enter Your Name  
+ 
+  utter_name:
+  - text: Hi {name}! Nice to meet you!
+    buttons:
+    - payload: /mood_great
+      title: You too!
+ 
+
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_addmore_session:
+  - text:  |-
+       That's it for this session, {name}!
+
+  utter_addmore1:
+  - text:  |-
+       Great job, {name}!
+      
+       Try and stick to this schedule, and trust me you will feel much better!   
+ 
+       That's it for this session, {name}!
+
+  utter_addmore1_a:
+  - text:  |-
+       You're doing great, {name}!
+      
+       Try your best to stick to this schedule, and track your mood in the mood meter!  
+ 
+       That's it for this session, {name}!
+
+  utter_addmore1_b:
+  - text:  |-
+       Try your best to stick to this schedule, and track your mood in the mood meter!  
+ 
+       That's it for this session, {name}!
+  # utter_addmore0_1:
+  # - text: Try and stick to this schedule, and trust me you will feel much better!
+
+  # utter_addmore1:
+  # - text: That's it for this session, {name}!
+  
+  utter_addmore2:
+  - text: Bye! 
+    buttons:
+    - payload: /goodbye
+      title: Bye!
+  
+  utter_addmore3:
+  - text: See you later!
+    buttons:
+    - payload: /mood_great
+      title: I'm done for today!
+    - payload: /week2
+      title: Continue to Session 2, Part 1
+
+  utter_addmore3_a:
+  - text: See you later!
+    buttons:
+    - payload: /mood_great
+      title: I'm done for today!
+    - payload: /week2_1
+      title: Continue to Session 2, Part 2   
+  
+  utter_addmore3_b:
+  - text: See you later!
+    buttons:
+    - payload: /mood_great
+      title: I'm done for today!
+    - payload: /week3
+      title: Continue to Session 3
+
+  utter_addmore4:
+  - text: OK, Thanks.
+# ---------------------------------------------------------------------------
+
+  utter_user1c:
+  - text: Welcome back, {name}!   
+  utter_user2c:
+  - text: How are you feeling?
+    buttons:
+    - payload: /meter_4
+      title: 1. Slightly better than before
+    - payload: /meter_4
+      title: 2. Better than before
+    - payload: /meter_5
+      title: 3. No change
+    - payload: /meter_6
+      title: 4. Slightly worse than before
+    - payload: /meter_6
+      title: 5. Worse than before
+  utter_meter_1c:
+  - text: That's great!
+  utter_meter_3c:
+  - text: I'm sorry to hear that. I understand what you're going through.
+  utter_meter_3_1c:
+  - text: Don't worry, I'm here for you! I will help you feel better by the end of this journey.
+  utter_meter_2c:
+  - text: |-
+      I understand. That's completely normal.
+    
+      This will be a slow, but fruitful journey.
+ 
+  utter_meter_2_2c:
+  - text: And I'm here to help you through every step in the way!
+  utter_meter_2_3c:
+  - text: You're on the right path, {name}.
+  utter_meter_2_4c:
+  - text: Working on the exercises in the tool box regularly will help you reach your goal.
+    buttons:
+    - payload: /affirm1
+      title: I'll make sure to do that
+    - payload: /affirm1
+      title: I will work on it!
+  utter_convo_1:
+  - text: Sounds great!
+  utter_convo_2:
+  - text: Let's start with our next session.
+    buttons:
+    - payload: /affirm
+      title: I'm ready!
+    - payload: /affirm
+      title: Let's go!
+  utter_convo_3:
+  - text: So, {name}, in the last session, we talked about how your thoughts affect you emotions, and behavior.
+  utter_convo_4:
+  - text: Do you remember this chart?
+    image: https://i.ibb.co/Rvj8kx9/Chartsfinal-01.png
+    buttons:
+    - payload: /affirm
+      title: Yes!
+    - payload: /affirm
+      title: A little bit
+  utter_convo_6:
+  - text: |-
+      Great!
+
+       So in the last session, we worked on building a connection between thoughts, feelings and emotions.
+  utter_convo_7:
+  - text: In this session, we will try to focus on our behavioral patterns. 
+    buttons:
+    - payload: /affirm
+      title: Ok...But why?
+  utter_convo_8:
+  - text: Because, your behavior can affect you mood, and you mood, in turn, can affect your behavior.
+  utter_convo_9:
+  - text: This is called the vicious cycle of depression.
+  utter_convo_10:
+  - text: Would you like to know more about it? 
+    buttons:
+    - payload: /affirm
+      title: I guess so
+    - payload: /affirm
+      title: Yes, Please
+  utter_convo_11:
+  - text: Great! Let me give you an example.
+  utter_convo_12:
+  - text: Remember Rahul from our first session? He was depressed because he couldn't get a job!
+    buttons:
+    - payload: /affirm
+      title: Yes!
+    - payload: /affirm
+      title: Kind of...
+  utter_convo_13:
+  - text: Ok...Here are a few more IWill characters dealing with difficult situations in their lives.
+  utter_convo_14:
+  - text: Feel free to explore, and choose the one you relate with the most!
+    buttons:
+    - payload: /explore1
+      title: Harish was humiliated by his teacher for scoring low marks.
+    - payload: /explore2
+      title: Deepthi partner just ended their long term relationship.
+    - payload: /explore3
+      title: Rahul just got rejected in an interview in his dream company.
+    - payload: /explore4
+      title: Muskaan just got diagnosed with a terminal illness.
+
+  utter_no_one:
+  - text: Continue
+    buttons:
+    - payload: /mood_great1
+      title: I relate with this character
+
+  utter_no_one1:
+  - text: Continue
+    buttons:
+    - payload: /mood_great2
+      title: I relate with this character  
+
+  utter_no_one2:
+  - text: Continue
+    buttons:
+    - payload: /mood_great3
+      title: I relate with this character
+
+  utter_no_one3:
+  - text: Continue
+    buttons:
+    - payload: /mood_great4
+      title: I relate with this character          
+
+  utter_a_option:
+  - text: Great! Now, let me show you how Harish's vicious cycle looked like.
+    image: https://i.ibb.co/smtRzyX/image-7.png
+    buttons:
+    - payload: /affirm
+      title: Ok
+  #   buttons:
+  #   - payload: /chart1
+  #     title: FEELINGS
+  
+  # utter_feelings:
+  # - text: Sad, low mood, tired, ashamed, guilty.
+  #   buttons:
+  #   - payload: /chart2
+  #     title: THOUGHTS
+
+  # utter_thoughts:
+  # - text: All these bad things happen only to me.
+  #          Everyone thinks I'm worthless and stupid.
+  #   buttons:
+  #   - payload: /chart3
+  #     title: BEHAVIOURS
+
+  # utter_behaviours:
+  # - text: Stops going to school.
+  #          Stops trying to study.
+    
+
+  utter_a_story_1:
+  - text: First, focus on the 'behaviors' and 'thoughts' circles.
+  
+  utter_a_story_2:
+  - text: Notice how his behavior was feeding his negative thoughts.
+
+  utter_a_story_3:
+  - text: Not putting any effort into studies makes Harish believe that "He is not good enough" and that "It will never get better" even more strongly
+    buttons:
+    - payload: /affirm
+      title: That's true...
+
+  utter_a_story_4:
+  - text: Now, notice that his thoughts in turn feed his negative emotions.
+
+  utter_a_story_5:
+  - text: So you see, Harish behavior makes him feel sadder and more depressed.
+
+  utter_a_story_6:
+  - text: Don't you think if Harish could find a way to exit this cycle, he might start feeling a little better?
+    buttons:
+    - payload: /affirm
+      title: That's true, he would!
+    - payload: /affirm
+      title: I think he should give it a try.
+
+  utter_b_option:
+  - text: Great! Now, let me show you how Deepthi's vicious cycle looked like.
+    image: https://i.ibb.co/RzBs4zQ/image-8.png
+    buttons:
+    - payload: /affirm
+      title: Ok
+  #   buttons:
+  #   - payload: /chart5
+  #     title: FEELINGS
+  
+  # utter_feelings_b:
+  # - text: Sad, low mood, tired, hurt, lonely.
+  #   buttons:
+  #   - payload: /chart6
+  #     title: THOUGHTS
+
+  # utter_thoughts_b:
+  # - text: I'm unlovable. Everyone hates me.
+  #          I will never find anyone.
+  #          He probably left me for another woman.
+  #   buttons:
+  #   - payload: /chart7
+  #     title: BEHAVIOURS
+
+  # utter_behaviours_b:
+  # - text:  Stops hanging out with friends.
+  #           Doesn't take care of herself.
+  #   buttons:
+  #   - payload: /affirm
+  #     title: Ok
+
+  utter_b_story_1:
+  - text: First, focus on the 'behaviors' and 'thoughts' circles.
+  
+  utter_b_story_2:
+  - text: Notice how her behavior was feeding her negative thoughts.
+
+  utter_b_story_3:
+  - text: Isolating herself from her friends makes Deepthi believe that "She will always be lonely." and that "No one loves her." even more strongly
+    buttons:
+    - payload: /affirm
+      title: That's true...
+
+  utter_b_story_4:
+  - text: Now, notice that her thoughts in turn feed her negative emotions.
+
+  utter_b_story_5:
+  - text: So you see, Deepthi's behavior makes her feel sadder and more depressed.
+
+  utter_b_story_6:
+  - text: Don't you think if Deepthi could find a way to exit this cycle, she might start feeling a little better?
+    buttons:
+    - payload: /affirm
+      title: That's true, she would!
+    - payload: /affirm
+      title: I think she should give it a try.
+
+  utter_c_option:
+  - text: Great! Now, let me show you how Rahul's vicious cycle looked like.
+    image: https://i.ibb.co/p2hZLMj/image-9.png
+    buttons:
+    - payload: /affirm
+      title: Ok
+    
+  #   buttons:
+  #   - payload: /chart5
+  #     title: FEELINGS
+  
+  # utter_feelings_c:
+  # - text: Sad, low mood, tired, ashamed
+  #   buttons:
+  #   - payload: /chart6
+  #     title: THOUGHTS
+
+  # utter_thoughts_c:
+  # - text: I'm not good enough
+  #          Things will never get better
+  #          I will never be able to do well
+  #   buttons:
+  #   - payload: /chart7
+  #     title: BEHAVIOURS
+
+  # utter_behaviours_c:
+  # - text: Avoids interviews, Stays in bed 
+  #   buttons:
+  #   - payload: /affirm
+  #     title: Ok
+
+  utter_c_story_1:
+  - text: First, focus on the 'behaviors' and 'thoughts' circles.
+  
+  utter_c_story_2:
+  - text: Notice how his behavior was feeding his negative thoughts.
+
+  utter_c_story_3:
+  - text: Avoiding interviews and staying in bed all day makes Rahul believe that "He is not good enough" and that "It will never get better" even more strongly.
+    buttons:
+    - payload: /affirm
+      title: That's true...
+
+  utter_c_story_4:
+  - text: Now, notice that his thoughts in turn feed his negative emotions.
+
+  utter_c_story_5:
+  - text: So you see, Rahul's behavior makes him feel sadder and more depressed.
+
+  utter_c_story_6:
+  - text: Don't you think if Rahul could find a way to exit this cycle, he might start feeling a little better?
+    buttons:
+    - payload: /affirm
+      title: That's true, he would!
+    - payload: /affirm
+      title: I think he should give it a try.
+
+  utter_d_option:
+  - text: Now, let me show you how Muskaan's vicious cycle looked like.
+    image: https://i.ibb.co/8bGHDX7/image-10.png
+    buttons:
+    - payload: /affirm
+      title: Ok
+
+  #   buttons:
+  #   - payload: /chart5
+  #     title: FEELINGS
+  
+  # utter_feelings_d:
+  # - text: Sad, tired, worsening illness, lonely.
+  #   buttons:
+  #   - payload: /chart6
+  #     title: THOUGHTS
+
+  # utter_thoughts_d:
+  # - text: There is no point trying. It's all over. I'm going to die.
+
+  #          My family is devastated. This is all because of me.
+  #   buttons:
+  #   - payload: /chart7
+  #     title: BEHAVIOURS
+
+  # utter_behaviours_d:
+  # - text: Avoids going for checkup and treatment
+
+  #          Avoids friends and family
+  #   buttons:
+  #   - payload: /affirm
+  #     title: Ok
+
+  utter_d_story_1:
+  - text: First, focus on the 'behaviors' and 'thoughts' circles.
+  
+  utter_d_story_2:
+  - text: Notice how her behavior was feeding his negative thoughts.
+
+  utter_d_story_3:
+  - text: Avoiding family and friends will make Muskaan believe she has no support even more strongly, and avoiding treatment will make her physical health worse.
+    buttons:
+    - payload: /affirm
+      title: That's true...
+
+  utter_d_story_4:
+  - text: Now, notice that her thoughts in turn feed her negative emotions.
+
+  utter_d_story_5:
+  - text: So you see, Muskaan's behavior makes her feel sadder and more depressed.
+
+  utter_d_story_6:
+  - text: Don't you think if could find a way to exit this cycle, she might start feeling a little better?
+    buttons:
+    - payload: /affirm
+      title: That's true, she would!
+    - payload: /affirm
+      title: I think she should give it a try.
+
+  utter_a_story_end:
+  - text: Exactly!
+           You see, the best way to break out of this vicious cycle is to try and change your thought or your actions.
+
+  utter_a_story_end1:
+  - text:  |-
+       Let's start by finding out how to modify your actions.
+      
+       Let's begin! 
+
+    buttons:
+    - payload: /affirm2
+      title: Sure!
+    - payload: /affirm2
+      title: Let's go!
+    
+  utter_story_week2_1:
+  - text: Think about one thing you used to enjoy doing. Here are a few suggestions:-
+    image: https://i.ibb.co/VJ105xH/image-11.png
+
+
+  # utter_story_week2_2:
+  # - text:  |- 
+  #      1. Going for a drive
+
+  #      2. Listen to uplifting music
+
+  #      3. Visiting a friend
+
+  #      4. Talking to someone
+
+  #      5. Dressing up/make up
+
+  #      6. Go for a walk, jog or hike
+
+  #      7. Playing a sport/indoor game
+
+  #      8. Going to the theatre
+
+  #      9. Gardening
+
+  #      10. Collecting things
+
+  #      11. Soaking in the bathtub
+
+  #      12. Do some cleaning
+
+  #      13. Do some cooking
+
+  utter_story_week2_3:
+  - text: Would you like to add any of your favorite activities? Try to keep them as simple as you can.
+    buttons:
+    - payload: /affirm4
+      title: Yes.
+    - payload: /deny1
+      title: No, thank you.
+
+  utter_week2_deny1:
+  - text: Okay... can you write down one activity that you would like to start doing?
+
+  utter_week2_affirm1:
+  - text: That's great! Write down your list below.
+           Please try to enter each activity in a separate message and tap on Done! when you want to continue
+
+  utter_week2_affirm2:
+  - text: Continue.
+    buttons:
+    - payload: /affirm
+      title: Done
+    - payload: /mood_great9
+      title: Next Activity     
+
+  utter_week2_affirm3:
+  - text: Good job! Here is a list of your favorite activities:- "{input7}".
+    # buttons:
+    # - payload: /deny
+    #   title: (1)
+    # - payload: /deny
+    #   title: (2)
+    # - payload: /deny
+    #   title: (3)
+    # - payload: /deny
+    #   title: (4)
+    # - payload: /deny
+    #   title: (5)   
+  
+  # utter_week2_affirm5:
+  # - text: Choose one that you would like to start working on this week! Write down the number next to the activity.
+  #   buttons:
+  #   - payload: /mood_great
+  #     title: 1. Slightly better than before
+  #   - payload: /mood_great
+  #     title: 2. Better than before
+  #   - payload: /mood_great
+  #     title: 3. No change
+  #   - payload: /mood_great
+  #     title: 4. Slightly worse than before
+  #   - payload: /mood_great
+  #     title: 5. Worse than before
+
+  utter_story_week2_4:
+  - text: Well done, {name}! Let's see how we're going to approach this!
+    buttons:
+    - payload: /mood_great0
+      title: I'm ready!
+    - payload: /mood_great0
+      title: I guess we can try...
+
+  utter_story_week2_5:
+  - text: It can be overwhelming to start doing normal things again.
+  
+  utter_story_week2_6:
+  - text: To make it manageable, you need to break your tasks down into tiny steps.
+    buttons:
+    - payload: /mood_great
+      title: I don't understand...
+    - payload: /mood_great
+      title: Tell me more...
+
+  utter_story_week2_7:
+  - text: Let me give you an example
+
+  utter_story_week2_8:
+  - text: My goal:- Go for a walk
+  
+  utter_story_week2_9:
+  - text: |-
+      Steps:-
+       1.  Pick my favorite walking shoes and wear them
+       2. Walk around the house
+       3. Walk till the end of the street
+
+  utter_story_week2_10:
+  - text: Can you break down this activity into 5 steps? Click on Done when you are finished.
+
+  utter_story_week2_11:
+  - text: Continue.
+    buttons:
+    - payload: /mood_great5
+      title: Next Step
+    - payload: /affirm
+      title: Done
+
+  utter_story_week2_12:
+  - text: That's great! Do you want to break it down into simpler steps than this?
+    buttons:
+    - payload: /affirm5
+      title: Yes.
+    - payload: /deny2
+      title: No, this is good
+
+  utter_story_week2_13:
+  - text: Ok! Write it down below & Click on done when you are finished.
+
+  utter_story_week2_14:
+  - text: Continue.
+    buttons:
+    - payload: /mood_great6
+      title: Next Step
+    - payload: /affirm
+      title: Done
+  
+  utter_story_week2_15:
+  - text: You're doing a great job, {name}!
+
+  utter_story_week2_16:
+  - text: Now, we're going to try and schedule each of the small steps.
+    buttons:
+    - payload: /affirm0
+      title: Ok...
+    - payload: /mood_unhappy1
+      title: How is this going to help?
+    - payload: /mood_unhappy1
+      title: Wait, why am I doing this?
+
+  utter_story_week2_17:
+  - text: Write down exactly when you’re going to do each step. It doesn't have to be on the same day 
+  
+  utter_story_week2_18:
+  - text: You can add it to your calendar so you don't forget it!
+    buttons:
+    - payload: /affirm
+      title: Done!
+
+  utter_story_week2_19:
+  - text: Ok, let me explain this to you.
+
+  utter_story_week2_20:
+  - text: Usually, we wait to get into a good mood or feel motivated before starting a task, correct?
+    buttons:
+    - payload: /affirm
+      title: Yes.
+
+  utter_story_week2_21:
+  - text: But, you see, depression comes from a part of our brain that is trying to protect us
+
+  utter_story_week2_22:
+  - text: It does this by getting us to isolate and avoid
+
+  utter_story_week2_23:
+  - text: Do you understand?
+    buttons:
+    - payload: /affirm
+      title: A little bit...
+
+  utter_story_week2_24:
+  - text: This means that as long
+           as we are following the lead of depression, we will continue to feel less motivated and
+           want to avoid and isolate ourselves.
+
+  utter_story_week2_25:
+  - text: So when we're feeling depressed, we cannot wait for our brain to give us the motivation to do things.
+    buttons:
+    - payload: /affirm3
+      title: That makes sense!
+
+  utter_story_week2_26:
+  - text: Research has shown that our decision to "do the thing" or "activate" is necessary for our emotions to change.
+
+  utter_story_week2_27:
+  - text: Do you want to know how?
+    buttons:
+    - payload: /deny3
+      title: No, I think i get it. I want to give this a try.
+    - payload: /affirm6
+      title: Yes. 
+
+  utter_story_week2_28:
+  - text: That's great!
+
+  utter_story_week2_29:
+  - text: Let's start scheduling your steps now!
+    buttons:
+    - payload: /affirm
+      title: Okay!
+    - payload: /affirm
+      title: Take me there!
+
+  utter_story_week2_30:
+  - text: Firstly, activating your behavior can change your brain state by releasing "good chemicals" in your brain.
+  
+  utter_story_week2_32:
+  - text: These good chemicals can lift up our mood
+    buttons:
+    - payload: /affirm
+      title: Go On...
+
+  utter_story_week2_33:
+  - text: Secondly, the more we activate our behavior, the more chances we have of experiencing positive situations.
+
+  utter_story_week2_34:
+  - text: Simple put, we need to "get out there" and give ourselves a chance of feeling better, even if we don't like it at that moment.
+    buttons:
+    - payload: /affirm
+      title: I think I understand. I want to give this a try
+
+# ---------------------------------------------------------------------------------------------------------------
+
+  utter_user1d:
+  - text: Welcome back!  
+
+  utter_user2d:
+  - text: Were you able to complete the activity you chose?
+    buttons:
+    - payload: /affirm7
+      title: Yes!
+    - payload: /deny4
+      title: No... I couldn't start
+    - payload: /deny4
+      title: No...I got stuck in the middle. I just couldn't go ahead with it
+
+  utter_affirm1:
+  - text: Wow that's amazing! It's great to see you putting in the efforts to improve your mental health!
+
+  utter_affirm2:
+  - text: So, how did you feel after doing the activity?
+    buttons:
+    - payload: /mood_unhappy
+      title: Options
+
+  utter_affirm3:
+  - text: Let's go one step further.
+
+  utter_affirm4:
+  - text: Watch this short video
+    attachment:
+      payload:
+        src: https://player.vimeo.com/video/732139635?h=bc947fda02a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479?autoplay=1&mute=1
+      type: video
+      autoplay: true
+    buttons:
+    - payload: /affirm
+      title: Done
+  
+  utter_affirm5:
+  - text: Great! You see, making sure you do atleast one activity from each category everyday, can make you feel more active, motivated and satisfied.
+
+  utter_affirm6:
+  - text: Try to make a list of things you can do under each - Fun, Achievement and Togetherness. Put atleast 2 activities under each
+    buttons:
+    - payload: /affirm
+      title: I've made the list
+
+  utter_affirm7:
+  - text: Good job! Let's go back to the calendar and try to schedule these activities. Scheduling will motivate you to stick to the plan.        
+    buttons:
+    - payload: /affirm
+      title: Done
+
+  utter_affirm8:
+  - text: Good job, {name}!
+
+  utter_deny1:
+  - text: Don't worry about it. That's completely normal.  It takes time to get used to it, and I will help you do that
+  
+  utter_deny2:
+  - text: Let's see where it went wrong
+
+  utter_deny3:
+  - text: Can you tell me why you couldn't go ahead with your activity?
+    buttons:
+    - payload: /mood_unhappy
+      title: I got overwhelmed with one/most of the steps
+    - payload: /mood_unhappy
+      title: I didn't feel better even after doing most/half of the steps
+
+  utter_deny4:
+  - text: Oh I'm sorry about that. Do you want to try a simpler, more enjoyable activity this time?
+
+  utter_deny5:
+  - text: For example, you could try wearing your favorite clothes every morning
+    buttons:
+    - payload: /affirm
+      title: Yes, I think I should try a simpler task
+
+  utter_deny6:
+  - text: That's great! Write down an activity below. Remember to keep it simple and enjoyable
+     
+  utter_deny7:
+  - text: Make sure your activity is SMART:-
+           Specific,
+           Measurable,
+           Attainable,
+           Realistic, and
+           Trackable.
+           Is your activity SMART?
+    buttons:
+    - payload: /deny5
+      title: No, I want to change it
+    - payload: /affirm8
+      title: Yes!
+
+  utter_deny8:
+  - text: Ok, let's try again
+
+  utter_convo2_1:
+  - text: Good work, {name}!
+           Now let's break it down into steps. Remember to keep the steps simple and SMART too!
+
+  utter_convo2_2:
+  - text: Can you write down the steps of your activity for me? Click on Done when you are finished
+
+  utter_convo2_3:
+  - text: Continue.
+    buttons:
+    - payload: /mood_great7
+      title: Next Step
+    - payload: /affirm
+      title: Done
+
+  utter_convo2_4:
+  - text: That's great! Do you want to break it down into simpler steps than this?
+    buttons:
+    - payload: /affirm9
+      title: Yes!
+    - payload: /deny6
+      title: No, this is good
+
+  utter_affirm10:
+  - text: Ok! Click on done when you are finished
+ 
+  utter_affirm11:
+  - text: Continue.
+    buttons:
+    - payload: /mood_great8
+      title: Next Step
+    - payload: /affirm
+      title: Done
+
+  utter_convo2_5:
+  - text: You're doing a great job, {name}!
+
+  utter_convo2_6:
+  - text: Let's schedule the steps in your calendar now!
+    buttons:
+    - payload: /affirm
+      title: Done
+
+  utter_convo2_7:
+  - text: Calendar
+    buttons:
+    - payload: /affirm
+      title: Ok
+
+# ============================================week3=============================================
+ 
+
+entities:
+  - name
+  - input0
+  - input1
+  - input2
+  - input3
+  - input4
+  - input5
+  - input6
+  - input7
+  - input8
+  - input9
+  - input10
+  - input11
+  - input12
+  - input13
+  - input14
+  - input15
+  - input16
+  - input17
+  - input18
+  - input19
+
+slots:
+
+  name:
+    type: text
+    # initial_value: null 
+    # auto_fill: true
+    influence_conversation: False
+
+  input0:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False  
+
+  input1:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False    
+
+  input2:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input3:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input4:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input5:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False 
+
+  input6:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False     
+
+  input7:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input8:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input9:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input10:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False 
+
+  input11:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input12:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input13:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input14:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input15:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False 
+ 
+  input16:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input17:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False 
+
+  input18:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input19:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False 
+
+forms:
+
+  name_form:
+    required_slots:
+      name:
+      - type: from_text
+
+  input0_form:
+    required_slots:
+      input0:
+      - type: from_text    
+
+  input1_form:
+    required_slots:
+      input1:
+      - type: from_text
+
+  input2_form:
+    required_slots:
+      input2:
+      - type: from_text    
+
+  input3_form:
+    required_slots:
+      input3:
+      - type: from_text
+
+  input4_form:
+    required_slots:
+      input4:
+      - type: from_text
+
+  input5_form:
+    required_slots:
+      input5:
+      - type: from_text
+
+  input6_form:
+    required_slots:
+      input6:
+      - type: from_text
+
+  input7_form:
+    required_slots:
+      input7:
+      - type: from_text  
+
+  input8_form:
+    required_slots:
+      input8:
+      - type: from_text    
+
+  input10_form:
+    required_slots:
+      input10:
+      - type: from_text
+
+  input11_form:
+    required_slots:
+      input11:
+      - type: from_text
+
+  input9_form:
+    required_slots:
+      input9:
+      - type: from_text
+
+  input12_form:
+    required_slots:
+      input12:
+      - type: from_text 
+  
+  input13_form:
+    required_slots:
+      input13:
+      - type: from_text
+
+  input14_form:
+    required_slots:
+      input14:
+      - type: from_text
+
+  input15_form:
+    required_slots:
+      input15:
+      - type: from_text 
+
+  input16_form:
+    required_slots:
+      input16:
+      - type: from_text
+
+  input17_form:
+    required_slots:
+      input17:
+      - type: from_text 
+
+  input18_form:
+    required_slots:
+      input18:
+      - type: from_text 
+
+  input19_form:
+    required_slots:
+      input19:
+      - type: from_text 
+
+actions:
+- action_set_name_slot_none
+- action_set_input0_slot_none
+- action_set_input1_slot_none
+- action_set_input2_slot_none
+- action_set_input3_slot_none
+- action_set_input4_slot_none
+- action_set_input5_slot_none
+- action_set_input6_slot_none
+- action_set_input7_slot_none
+- action_set_input8_slot_none
+- action_set_input10_slot_none
+- action_set_input11_slot_none
+- action_set_input12_slot_none
+- action_set_input13_slot_none
+- action_set_input14_slot_none
+- action_set_input15_slot_none
+- action_set_input3_slot
+- action_input0_1_2_3
+- action_set_input10_slot
+- action_set_input11_slot
+- action_set_input14_slot
+- action_set_input15_slot
+- action_set_input7_slot
+- action_input7_slot
+- action_set_input16_slot_none
+- action_set_input17_slot_none
+- action_set_input18_slot_none
+- action_set_input19_slot_none 
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

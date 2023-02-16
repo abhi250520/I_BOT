@@ -1,0 +1,501 @@
+version: "2.0"
+
+stories:
+
+# =================================================
+
+- story: anxty 3
+  steps: 
+  - intent: week3
+  - action: utter_week3_start
+
+- story: anxty 3_a1
+  steps: 
+  - intent: meter7
+  - action: utter_week3_a_1
+  - action: utter_week3_a_1a
+  - intent: deny
+  - action: utter_week3_a_deny1
+
+- story: anxty 3_a2
+  steps: 
+  - intent: affirm4
+  - action: utter_week3_a_affirm1
+  - action: input8_form
+  - action: utter_week3_a_affirm2
+  - action: utter_week3_a_affirm2a
+
+- story: anxty 3_b
+  steps: 
+  - intent: meter8
+  - action: utter_week3_b_1
+  - action: utter_week3_b_1a
+  - intent: deny
+  - action: utter_week3_b_2
+
+- story: anxty 3_c1
+  steps: 
+  - intent: meter9
+  - action: utter_week3_c_1
+  - action: utter_week3_c_1a
+  - intent: deny
+  - action: utter_week3_c_2
+  - action: input9_form
+  - action: utter_week3_c_3
+  - intent: deny
+  - action: utter_week3_c_4
+  - action: utter_week3_c_4a
+
+- story: anxty 3_c2
+  steps: 
+  - intent: affirm5
+  - action: action_set_input8_slot_none
+  - action: action_set_input9_slot_none
+  - action: utter_week3_c_3a
+  - action: input11_form
+  - action: utter_week3_c_4
+  - action: utter_week3_c_4a
+
+- story: anxty 3_1_a
+  steps: 
+  - intent: affirm3
+  - action: action_set_input11_slot_none
+  - action: utter_week3_1
+  - intent: affirm
+  - action: utter_week3_2
+  - intent: deny  
+  - action: utter_week3_3
+  - action: utter_week3_3a
+  - intent: affirm
+  - action: utter_week3_4
+  - action: input10_form
+  - action: utter_week3_4_a
+  - intent: affirm
+  - action: action_set_input10_slot_none
+  - action: utter_week3_5
+  - intent: affirm
+  - action: utter_week3_6
+  - action: utter_week3_6a
+
+- story: anxty 3_1_b
+  steps: 
+  - intent: affirm6
+  - action: utter_week3_4
+  - action: input10_form
+  - action: utter_week3_4_a
+  - intent: affirm
+  - action: action_set_input10_slot_none
+  - action: utter_week3_5
+  - intent: affirm
+  - action: utter_week3_6
+  - action: utter_week3_6a
+  - intent: mood_great
+  - action: utter_week3_7_great
+  - action: utter_week3_8_great
+  - intent: affirm
+  - action: utter_week3_9_great
+  - intent: mood_unhappy  
+  - action: utter_week3_10_great
+  - action: utter_week3_11_great
+  - intent: mood_unhappy 
+  - action: utter_week3_12_great
+  - action: utter_week3_14_great
+
+- story: anxty 3_1_b_a
+  steps: 
+  - intent: mood_unhappy2 
+  - action: utter_week3_14_great
+
+- story: anxty 3_1_c
+  steps: 
+  - intent: mood_unhappy1
+  - action: utter_week3_13_great
+  - action: utter_week3_14_great 
+
+- story: anxty 3_name1
+  steps: 
+  - intent: week3_name1
+  - action: utter_week3_Rohit1
+  - action: utter_week3_Rohit1_a
+  - intent: mood_great
+  - action: utter_week3_Rohit_great
+  - intent: mood_great
+  - action: utter_week3_Rohit_great_1
+  - action: utter_week3_Rohit_great_2
+  - intent: affirm
+  - action: utter_week3_Rohit_great_3
+  - action: utter_week3_Rohit_great_4
+  - intent: affirm
+  - action: utter_week3_all_a
+  - action: utter_week3_all_1  
+
+- story: anxty 3_name1_a
+  steps: 
+  - intent: mood_unhappy3
+  - action: utter_week3_Rohit_unhappy
+  - intent: mood_great
+  - action: utter_week3_Rohit_unhappy_1
+  - action: utter_week3_Rohit_unhappy_2
+  - intent: affirm
+  - action: utter_week3_Rohit_unhappy_3
+  - action: utter_week3_Rohit_unhappy_4
+  - intent: affirm
+  - action: utter_week3_all_a
+  - action: utter_week3_all_1 
+
+- story: anxty 3_name2
+  steps: 
+  - intent: week3_name2
+  - action: utter_week3_bindu1
+  - action: utter_week3_bindu1_a
+  - intent: mood_great
+  - action: utter_week3_bindu_great
+  - intent: mood_great
+  - action: utter_week3_bindu_great_1
+  - action: utter_week3_bindu_great_2
+  - intent: affirm
+  - action: utter_week3_bindu_great_3
+  - action: utter_week3_bindu_great_4
+  - intent: affirm
+  - action: utter_week3_all_a
+  - action: utter_week3_all_1 
+
+- story: anxty 3_name2_a
+  steps: 
+  - intent: mood_unhappy6
+  - action: utter_week3_bindu_unhappy
+  - intent: mood_great
+  - action: utter_week3_bindu_unhappy_1
+  - action: utter_week3_bindu_unhappy_2
+  - intent: affirm
+  - action: utter_week3_bindu_unhappy_3
+  - action: utter_week3_bindu_unhappy_4
+  - intent: affirm
+  - action: utter_week3_all_a
+  - action: utter_week3_all_1 
+
+- story: anxty 3_name2_left
+  steps: 
+  - intent: mood_unhappy5
+  - action: utter_week3_bindu_left1
+  - action: utter_week3_bindu_left2
+  - intent: affirm
+  - action: utter_week3_bindu_left3
+  - intent: mood_great
+  - action: utter_week3_bindu_unhappy_1
+  - action: utter_week3_bindu_unhappy_2
+  - intent: affirm
+  - action: utter_week3_bindu_unhappy_3
+  - action: utter_week3_bindu_unhappy_4
+  - intent: affirm
+  - action: utter_week3_all_a
+  - action: utter_week3_all_1 
+
+- story: anxty 3_name2_right
+  steps: 
+  - intent: mood_unhappy7
+  - action: utter_week3_bindu_button
+  - intent: mood_great
+  - action: utter_week3_bindu_right1
+  - action: utter_week3_bindu_right1a
+  - intent: affirm
+  - action: utter_week3_bindu_right1b  
+  - action: utter_week3_bindu_right2
+  - intent: affirm
+  - action: utter_week3_bindu_right2a
+  - action: utter_week3_bindu_right3
+  - intent: affirm
+  - action: utter_week3_bindu_right4
+  - action: utter_week3_bindu_right5
+  - intent: affirm
+  - action: utter_week3_bindu_right6
+  - action: utter_week3_bindu_right7
+  - intent: affirm
+  - action: utter_week3_all_a
+  - action: utter_week3_all_1 
+
+# ==================================================================
+
+- story: anxty 3_name3
+  steps: 
+  - intent: week3_name3
+  - action: utter_week3_shilpa1
+  - action: utter_week3_shilpa1_a
+  - intent: mood_great
+  - action: utter_week3_shilpa_great
+  - intent: mood_great
+  - action: utter_week3_shilpa_great_1
+  - action: utter_week3_shilpa_great_2
+  - intent: affirm
+  - action: utter_week3_shilpa_great_3
+  - action: utter_week3_shilpa_great_4
+  - intent: affirm
+  - action: utter_week3_all_a
+  - action: utter_week3_all_1 
+
+- story: anxty 3_name3_a
+  steps: 
+  - intent: mood_unhappy8
+  - action: utter_week3_shilpa_unhappy
+  - intent: mood_great
+  - action: utter_week3_shilpa_unhappy_1
+  - action: utter_week3_shilpa_unhappy_2
+  - intent: affirm
+  - action: utter_week3_shilpa_unhappy_3
+  - action: utter_week3_shilpa_unhappy_4
+  - intent: affirm
+  - action: utter_week3_all_a
+  - action: utter_week3_all_1 
+
+- story: anxty 3_name3_right
+  steps: 
+  - intent: mood_unhappy9
+  - action: utter_week3_shilpa_button
+  - intent: mood_great
+  - action: utter_week3_shilpa_right1
+  - action: utter_week3_shilpa_right2
+  - intent: affirm
+  - action: utter_week3_shilpa_right3
+  - intent: affirm
+  - action: utter_week3_shilpa_right4
+  - action: utter_week3_shilpa_right5
+  - intent: affirm
+  - action: utter_week3_shilpa_right6
+  - action: utter_week3_shilpa_right7
+  - intent: affirm
+  - action: utter_week3_all_a
+  - action: utter_week3_all_1 
+
+- story: anxty 3_name3_left
+  steps: 
+  - intent: mood_unhappy10
+  - action: utter_week3_shilpa_left1
+  - action: utter_week3_shilpa_left2
+  - intent: affirm
+  - action: utter_week3_shilpa_left3
+  - intent: mood_great
+  - action: utter_week3_shilpa_unhappy_1
+  - action: utter_week3_shilpa_unhappy_2
+  - intent: affirm
+  - action: utter_week3_shilpa_unhappy_3
+  - action: utter_week3_shilpa_unhappy_4
+  - intent: affirm
+  - action: utter_week3_all_a
+  - action: utter_week3_all_1 
+
+# ====================================================
+
+- story: anxty 3_name4
+  steps: 
+  - intent: week3_name4
+  - action: utter_week3_dinesh1
+  - action: utter_week3_dinesh1_a
+  - intent: mood_great
+  - action: utter_week3_dinesh_great
+  - intent: mood_great
+  - action: utter_week3_dinesh_great_1
+  - action: utter_week3_dinesh_great_2
+  - intent: affirm
+  - action: utter_week3_dinesh_great_3
+  - action: utter_week3_dinesh_great_4
+  - intent: affirm
+  - action: utter_week3_all_a
+  - action: utter_week3_all_1 
+
+- story: anxty 3_name4_a
+  steps: 
+  - intent: mood_unhappy11
+  - action: utter_week3_dinesh_unhappy
+  - intent: mood_great
+  - action: utter_week3_dinesh_unhappy_1
+  - action: utter_week3_dinesh_unhappy_2
+  - intent: affirm
+  - action: utter_week3_dinesh_unhappy_3
+  - action: utter_week3_dinesh_unhappy_4
+  - intent: affirm
+  - action: utter_week3_all_a
+  - action: utter_week3_all_1 
+
+- story: anxty 3_name4_right
+  steps: 
+  - intent: mood_unhappy12
+  - action: utter_week3_dinesh_button
+  - intent: mood_great
+  - action: utter_week3_dinesh_right1
+  - action: utter_week3_dinesh_right2
+  - intent: affirm
+  - action: utter_week3_dinesh_right3
+  - intent: affirm
+  - action: utter_week3_dinesh_right4
+  - action: utter_week3_dinesh_right5
+  - intent: affirm
+  - action: utter_week3_dinesh_right6
+  - action: utter_week3_dinesh_right7
+  - intent: affirm
+  - action: utter_week3_all_a
+  - action: utter_week3_all_1 
+
+- story: anxty 3_name4_left
+  steps: 
+  - intent: mood_unhappy13
+  - action: utter_week3_dinesh_left1
+  - action: utter_week3_dinesh_left1a  
+  - intent: affirm  
+  - action: utter_week3_dinesh_left1b
+  - action: utter_week3_dinesh_left2
+  - intent: affirm
+  - action: utter_week3_dinesh_left3
+  - intent: mood_great
+  - action: utter_week3_dinesh_unhappy_1
+  - action: utter_week3_dinesh_unhappy_2
+  - intent: affirm
+  - action: utter_week3_dinesh_unhappy_3
+  - action: utter_week3_dinesh_unhappy_4
+  - intent: affirm
+  - action: utter_week3_all_a
+  - action: utter_week3_all_1 
+
+- story: anxty 3_affirm7
+  steps: 
+  - intent: affirm7
+  - action: utter_week3_all_b
+  - action: utter_week3_all_1 
+
+- story: anxty 3_distortion1
+  steps: 
+  - intent: distortion1
+  - action: utter_distortion1 
+  - action: utter_distortion1a
+  - action: utter_distortion1b
+  - intent: affirm
+  - action: utter_week3_last1 
+  - intent: affirm
+  - action: utter_week3_last1a
+
+- story: anxty 3_distortion2
+  steps: 
+  - intent: distortion2
+  - action: utter_distortion2 
+  - action: utter_distortion2a
+  - action: utter_distortion2b  
+  - intent: affirm
+  - action: utter_week3_last1 
+  - intent: affirm
+  - action: utter_week3_last1a
+
+- story: anxty 3_distortion3
+  steps: 
+  - intent: distortion3
+  - action: utter_distortion3 
+  - action: utter_distortion3a
+  - action: utter_distortion3b  
+  - intent: affirm
+  - action: utter_week3_last1 
+  - intent: affirm
+  - action: utter_week3_last1a
+
+- story: anxty 3_distortion4
+  steps: 
+  - intent: distortion4
+  - action: utter_distortion4 
+  - action: utter_distortion4a
+  - action: utter_distortion4b  
+  - intent: affirm
+  - action: utter_week3_last1 
+  - intent: affirm
+  - action: utter_week3_last1a
+
+- story: anxty 3_distortion5
+  steps: 
+  - intent: distortion5
+  - action: utter_distortion5 
+  - action: utter_distortion5a
+  - action: utter_distortion5b  
+  - intent: affirm
+  - action: utter_week3_last1 
+  - intent: affirm
+  - action: utter_week3_last1a
+
+- story: anxty 3_distortion6
+  steps: 
+  - intent: distortion6
+  - action: utter_distortion6 
+  - action: utter_distortion6a
+  - action: utter_distortion6b  
+  - intent: affirm
+  - action: utter_week3_last1 
+  - intent: affirm
+  - action: utter_week3_last1a
+
+- story: anxty 3_distortion7
+  steps: 
+  - intent: distortion7
+  - action: utter_distortion7 
+  - action: utter_distortion7a
+  - action: utter_distortion7b
+  - intent: affirm
+  - action: utter_week3_last1 
+  - intent: affirm
+  - action: utter_week3_last1a
+
+- story: anxty 3_distortion8
+  steps: 
+  - intent: distortion8
+  - action: utter_distortion8 
+  - action: utter_distortion8a
+  - action: utter_distortion8b  
+  - intent: affirm
+  - action: utter_week3_last1 
+  - intent: affirm
+  - action: utter_week3_last1a  
+
+- story: anxty 3_distortion9
+  steps: 
+  - intent: distortion9
+  - action: utter_distortion9 
+  - action: utter_distortion9a
+  - action: utter_distortion9b  
+  - intent: affirm
+  - action: utter_week3_last1 
+  - intent: affirm
+  - action: utter_week3_last1a
+
+- story: anxty 3_distortion10
+  steps: 
+  - intent: distortion10
+  - action: utter_distortion10 
+  - action: utter_distortion10a
+  - action: utter_distortion10b
+  - intent: affirm
+  - action: utter_week3_last1 
+  - intent: affirm
+  - action: utter_week3_last1a
+
+- story: anxty 3_distortion11
+  steps: 
+  - intent: distortion11
+  - action: utter_distortion11 
+  - action: utter_distortion11a
+  - action: utter_distortion11b
+  - intent: affirm
+  - action: utter_week3_last1 
+  - intent: affirm
+  - action: utter_week3_last1a
+
+- story: anxty 3_last_b
+  steps:   
+  - intent: affirm9 
+  - action: utter_week3_last1b
+
+- story: anxty 3_last affirm
+  steps:   
+  - intent: affirm8
+  - action: utter_week3_last2
+  - action: utter_week3_last3
+  - intent: affirm
+  - action: utter_week3_last4
+  - action: utter_week3_last5
+  - intent: affirm
+  - action: utter_week3_last6  
+  - action: utter_week3_last6a
+ 

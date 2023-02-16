@@ -1,0 +1,867 @@
+version: "2.0"
+
+nlu:
+
+- intent: great
+  examples: |
+    - Start
+    - start
+    - go
+    - Go
+    - hi
+    - Hi
+    - hello
+    - Hello
+    - hey
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - Ok.
+    - okay
+    - Okay
+    - ok.
+    - okk
+    - okay.
+    - OKAY
+    - OKay 
+    - ok. 
+    - oK. 
+    - oK...
+    - okay
+    - Okay
+    - okay.
+    - okay... 
+    - oky
+    - OKY!
+    - OKk 
+    - Yes.
+    - yes 
+    - Sure
+    - sure 
+    - I guess so
+    - I Guess So
+    - Sure...
+    - sure 
+    - I guess so
+    - I Guess so
+    - I GUESS SO
+    - Yes, it was
+    - yes it was
+    - Sure.
+    - Go on...
+    - go on...  
+    - yeah
+    - Yeah  
+    - Yeah...
+    - Yes,I would like to
+    - Y, i think
+    - Yes, I think I've experienced these at some point
+    - Yes,I want to try again
+    - yes i want to try again
+    - Ok I'll do that
+    - ok ill do that
+    - Maybe a little
+    - Hmm
+    - hmm
+    - I think, I understand
+    - i think , i understand
+    - I understand what you mean...
+    - Yes, I can think of a few thoughts...
+    - Let me try
+    - Definitely
+    - Yes, I want to add more
+    - Yes, it was. Thank you
+    - Yes, I want to work it!
+    - I think that would help!
+    - Yes, sometimes...
+    - Ok, Let's start!
+    - Done
+    - Next
+    - Continue with session
+    - Set reminders for thought diary
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - NO
+    - No
+    - No.
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - I'm not sure
+    - im not sure
+    - No, I'm good
+    - no, im good 
+    - I don't understand...
+    - i dont understand
+    - No,I'm good
+    - no im good
+    - No, I'm done for today.
+    - Thank you. I'm looking forward to learning new things.
+
+- intent: mood_great
+  examples: |
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - What's that?
+    - whats that
+    - You too!
+    - you too
+    - You too
+    - exactly...
+    - More than a year
+    - More than a few months    -
+    - More than a week
+    - That sounds helpful!
+    - Sure, I will try them!
+    - I'm done for today!
+    - Why are they unhelpful?
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - Tell me more
+    - tell me more 
+    - Sadness? Doesn't everyone feel sad
+    - sadness
+    - Can you tell me more?
+    - can you tell me more
+    - Can you give me an examples?    
+    - CAN YOU GIVE ME A EXAMPLE  
+    - Really? How?
+    - Can I try it? 
+    - How does this work?
+
+- intent: deny1
+  examples: |
+    - deny1
+    - deny11
+
+- intent: deny_spell
+  examples: |
+    - deny_spell
+    - deny_spell1
+
+- intent: affirm_spell
+  examples: |
+    - affirm_spell
+    - affirm_spell1
+
+- intent: affirm_add
+  examples: |
+    - affirm_add
+    - affirm_add1    
+
+- intent: yes_story_part_1
+  examples: |
+    - yes story part 1
+    - yes. story.. part1
+
+- intent: deny_story_part_1
+  examples: |
+    - deny story part 1
+    - no story part 1
+
+# - intent: okay_story_part_2
+#   examples: |
+#     - okay story part 2
+#     - okay story.. part2 
+
+# - intent: okay_story_part_3
+#   examples: |
+#     - okay story part 3
+#     - okay story.. part3
+
+# - intent: umm_yes_exactly
+#   examples: |
+#     - umm_yes_exactly
+#     - umm_yes_exactly...
+
+- intent: okay_story_part_4
+  examples: |
+    - okay story part 4
+    - okay story.. part4
+ 
+
+- intent: 123son
+  examples: |  
+    - First son
+    - first son
+
+- intent: 123son1
+  examples: |   
+    - Second son
+    - second son
+    
+- intent: 123son2
+  examples: |    
+    - Third son
+    - third son
+
+- intent: let_try6
+  examples: |      
+    - More than a week back
+    - more than a week back
+
+- intent: let_try5
+  examples: |      
+    - Just a few days back
+    - just a few days back
+
+- intent: let_try7
+  examples: |      
+    - More than 2 weeks back
+    - more than 2 weeks back
+
+- intent: option
+  examples: |
+    - Palpitations
+    - Sweating
+    - Stomach pain
+    - Nausea
+    - Sleep issues
+    - Rapid breathing
+    - Shaking/Trembling
+    - Weakness/Dizziness
+    - Muscle pain        
+
+ 
+- intent: umm_exactly_yes
+  examples: |   
+    - umm_exactly_yes
+    - umm_exactly_yes..
+
+- intent: Guided meditation
+  examples: |  
+    - Guided meditation
+    - Guided meditation...
+
+- intent: Deep Breathing
+  examples: |  
+    - Deep Breathing
+    - Deep Breathing...
+
+- intent: Progressive_Muscle_Relaxation
+  examples: |  
+    - Progressive Muscle Relaxation
+    - Progressive_Muscle_Relaxation...
+
+- intent: Grounding 5-4-3-2-1
+  examples: |  
+    - Grounding 5-4-3-2-1
+    - Grounding 5-4-3-2-1...    
+
+
+- intent: option1
+  examples: |  
+    - Palpitations
+    - Palpitations...
+
+- intent: option1_a
+  examples: |  
+    - Sweating 
+    - Sweating...    
+
+- intent: option1_b
+  examples: |  
+    - Stomach pain
+    - Stomach pain...
+
+- intent: option1_c
+  examples: |  
+    - Nausea
+    - Nausea...
+
+- intent: option1_d
+  examples: |  
+    - Sleep issues
+    - Sleep issues...
+
+- intent: option1_e
+  examples: |  
+    - Rapid breathing
+    - Rapid breathing...
+
+- intent: option1_f
+  examples: |  
+    - Shaking/Trembling
+    - Shaking/Trembling...
+
+- intent: option1_g
+  examples: |  
+    - Weakness/Dizziness 
+    - Weakness/Dizziness...
+
+- intent: option1_h
+  examples: |  
+    - Muscle pain
+    - Muscle pain...
+
+- intent: affirm1
+  examples: |
+    - affirm1
+    - Go on... affirm1 
+    - Yes, I've noticed these sometimes... affirm1 
+
+- intent: affirm2
+  examples: |
+    - affirm2
+    - sure!...
+
+- intent: affirm3
+  examples: |    
+    - affirm3
+    - affirm3...
+
+- intent: affirm4
+  examples: |    
+    - affirm4
+    - affirm4...
+
+- intent: affirm5
+  examples: |    
+    - affirm5
+    - affirm5...
+
+- intent: affirm6
+  examples: |    
+    - affirm6
+    - affirm6...
+
+- intent: affirm7
+  examples: |    
+    - affirm7
+    - affirm7...
+
+- intent: affirm8
+  examples: |    
+    - affirm8
+    - affirm8...
+
+- intent: affirm9
+  examples: |    
+    - affirm9
+    - affirm9...
+
+- intent: affirm_yes
+  examples: |
+    - affirm_yes
+    - affirm_Yes!     
+
+- intent: affirm_yes1
+  examples: |
+    - affirm_yes1
+    - affirm_Yes1! 
+
+- intent: meter_1
+  examples: |
+    - 1. Slightly better than before
+    - 2. Better than before
+    - 1. Slightly better than Before
+    - 2. Better than Before
+ 
+- intent: meter_2
+  examples: |
+    - 3. No change
+    - nochange
+    - 3. No changeE
+    - nochangeE
+ 
+- intent: meter_3
+  examples: |
+    - 4. Slightly worse than before
+    - 5. Worse than before
+    - 4. Slightly worse than Before
+    - 5. Worse than Before    
+
+- intent: meter4
+  examples: |
+    - 1. Slightly better than before.
+    - 2. Better than before.
+    - slightly
+ 
+- intent: meter5
+  examples: |
+    - 3. No change.
+    - nochange.
+    - 3. No changeE.
+    - nochangeE,
+ 
+- intent: meter6
+  examples: |
+    - 4. Slightly worse than before.
+    - 5. Worse than before.
+    - worse than before   
+
+- intent: meter7
+  examples: |
+    - 1. Slightly better than before.
+    - 2. Better than before.
+    - slightly
+ 
+- intent: meter8
+  examples: |
+    - 3. No change.
+    - nochange.
+    - 3. No changeE.
+    - nochangeE
+ 
+- intent: meter9
+  examples: |
+    - 4. Slightly worse than before.
+    - 5. Worse than before.
+    - worse than before   
+
+- intent: meter10
+  examples: |
+    - 1. Slightly better than before.
+    - 2. Better than before.
+    - slightly
+ 
+- intent: meter11
+  examples: |
+    - 3. No change.
+    - nochange.
+    - 3. No changeE.
+    - nochangeE
+ 
+- intent: meter12
+  examples: |
+    - 4. Slightly worse than before.
+    - 5. Worse than before.
+    - worse than before  
+
+- intent: checklist
+  examples: |
+    - Grounding (5-4-3-2-1)
+    - Deep breathing
+    - Positive affirmations
+    - Progressive Muscle Relaxation
+
+- intent: click
+  examples: |
+    - click
+    - Click to know more symptoms.    
+
+- intent: okay_story_part_1
+  examples: |
+    - okay story part 1
+    - okay story.. part1
+
+- intent: okay_story_part_2
+  examples: |
+    - okay story part 2
+    - okay story.. part2 
+
+# - intent: exactly
+#   examples: |
+#     - exactly
+#     - exactly... 
+
+- intent: umm_yes_exactly
+  examples: |
+    - umm_yes_exactly
+    - umm_yes_exactly...
+
+- intent: okay_story_ok1
+  examples: |
+    - okay story ok1
+    - okay story.. ok1
+
+- intent: mood_unhappy_story
+  examples: |
+    - mood_unhappy_story
+    - mood_unhappy_story..
+
+- intent: chart
+  examples: |
+    - SITUATION
+    - situation
+    - SITUATIOn
+    - situatioN
+    - sITUATION
+    - Situation
+    - SITUATIONS
+    - situationS
+
+- intent: chart1
+  examples: |
+    - THOUGHTS/BELIEFS
+    - thoughts  
+    - THOUGHTS/BELIEFSS
+    - thoughtsS
+    - THOUGHTSS/BELIEFS
+    - thoughtsSS 
+    - THOUGHTTS/BELIEFS
+    - thoughtTs 
+
+- intent: chart2
+  examples: |
+    - EMOTIONS
+    - emotions
+    - EMOTIONs
+    - emotionS
+    - EMOTIONSS
+    - emotionsS
+    - EMOTIONNS
+    - emotionNs
+
+- intent: chart3
+  examples: |    
+    - BEHAVIOUR
+    - behaviour
+    - BEHAVIOURR
+    - behaviourR
+    - BEHAVIOUUR
+    - behaviouUr
+    - BEHAVIOURS
+    - behaviourSS
+
+- intent: chart4
+  examples: |    
+    - PHYSIOLOGICAL RESPONSE
+    - phy.response
+    - PHYSIOLOGICAL RESPONSES
+    - phy.responseS
+    - PHYSIOLOGICALL RESPONSE
+    - phy.responseSXS
+    - PHYSIOLOGICAL RESPONSE
+    - phy.responseX
+
+- intent: yes_i_can
+  examples: |
+    - yes_i_can 
+    - yes_i_can_think    
+
+- intent: continue_story
+  examples: |
+    - continue_story
+    - continue...  
+
+- intent: it_feels1_story
+  examples: |
+    - it_feels1_story   
+    - it_feels1_story.. 
+
+- intent: it_feels2_story
+  examples: |
+    - it_feels2_story   
+    - it_feels2_story..   
+
+- intent: okay_story_part_5
+  examples: |
+    - okay story part 5
+    - okay story.. part5
+
+- intent: thank_you_story
+  examples: |
+    - thank_you_story
+    - thank_you_story...
+
+- intent: week2
+  examples: |
+    - Continue to Session 2
+    - Continue to Session 2..
+
+- intent: week3
+  examples: |
+    - Continue to Session 0
+    - Continue to Session 3..
+
+- intent: session2
+  examples: |
+    - Continue to Session 44
+    - Continue to Session 4..
+
+- intent: mood_unhappy1
+  examples: |
+    - mood_unhappy1
+    - mood_unhappy11
+
+- intent: mood_unhappy2
+  examples: |
+    - mood_unhappy2
+    - mood_unhappy22
+
+- intent: mood_unhappy3
+  examples: |
+    - mood_unhappy3
+    - mood_unhappy33
+
+- intent: mood_unhappy4
+  examples: |
+    - mood_unhappy4
+    - mood_unhappy44
+
+- intent: mood_unhappy5
+  examples: |
+    - mood_unhappy5
+    - mood_unhappy55 
+
+- intent: mood_unhappy6
+  examples: |
+    - mood_unhappy6
+    - mood_unhappy66
+
+- intent: mood_unhappy7
+  examples: |
+    - mood_unhappy7
+    - mood_unhappy77
+
+- intent: mood_unhappy8
+  examples: |
+    - mood_unhappy8
+    - mood_unhappy88
+
+- intent: mood_unhappy9
+  examples: |
+    - mood_unhappy9
+    - mood_unhappy99
+
+- intent: mood_unhappy10
+  examples: |
+    - mood_unhappy10
+    - mood_unhappy1010
+
+- intent: mood_unhappy11
+  examples: |
+    - mood_unhappy11
+    - mood_unhappy8811
+
+- intent: mood_unhappy12
+  examples: |
+    - mood_unhappy12
+    - mood_unhappy9912
+
+- intent: mood_unhappy13
+  examples: |
+    - mood_unhappy13
+    - mood_unhappy1013
+
+- intent: week3_name1
+  examples: |
+    - week3_name1
+    - week3_name11
+
+- intent: week3_name2
+  examples: |
+    - week3_name2
+    - week3_name22   
+
+- intent: week3_name3
+  examples: |
+    - week3_name3
+    - week3_name33   
+
+- intent: week3_name4
+  examples: |
+    - week3_name4
+    - week3_name44   
+
+- intent: distortion1
+  examples: |
+    - distortion1
+    - distortion11 
+
+- intent: distortion2
+  examples: |
+    - distortion2
+    - distortion22
+
+- intent: distortion3
+  examples: |
+    - distortion3
+    - distortion33
+
+- intent: distortion4
+  examples: |
+    - distortion4
+    - distortion44   
+
+- intent: distortion5
+  examples: |
+    - distortion5
+    - distortion55 
+
+- intent: distortion6
+  examples: |
+    - distortion6
+    - distortion66
+
+- intent: distortion7
+  examples: |
+    - distortion7
+    - distortion77
+
+- intent: distortion8
+  examples: |
+    - distortion8
+    - distortion88 
+
+- intent: distortion9
+  examples: |
+    - distortion9
+    - distortion99
+
+- intent: distortion10
+  examples: |
+    - distortion10
+    - distortion1010
+
+- intent: distortion11
+  examples: |
+    - distortion11
+    - distortion1111   
+
+- intent: distortion12
+  examples: |
+    - distortion12
+    - All or None
+
+- intent: distortion13
+  examples: |
+    - distortion13
+    - Mind reading
+    - Fortune Telling
+    - Overgeneralization
+
+- intent: distortion14
+  examples: |
+    - distortion14
+    - distortion1414
+
+- intent: distortion15
+  examples: |
+    - distortion15
+    - distortion1515 
+
+- intent: distortion16
+  examples: |
+    - distortion16
+    - distortion1616
+
+- intent: distortion17
+  examples: |
+    - distortion17
+    - distortion1717
+
+- intent: distortion18
+  examples: |
+    - distortion18
+    - distortion1818
+
+- intent: session2
+  examples: |
+    - Continue to Session2.
+    - Continue to Session 3    
+
+- intent: affirm10
+  examples: |    
+    - affirm10
+    - affirm10...
+
+- intent: affirm11
+  examples: |    
+    - affirm11
+    - affirm11...
+
+- intent: affirm12
+  examples: |    
+    - affirm12
+    - affirm12...
+
+- intent: affirm13
+  examples: |    
+    - affirm13
+    - affirm13...
+
+- intent: affirm14
+  examples: |    
+    - affirm14
+    - affirm14...    
+
+- intent: affirm15
+  examples: |    
+    - affirm15
+    - affirm15...
+
+- intent: affirm16
+  examples: |    
+    - affirm16
+    - affirm16...  
+
+- intent: button1
+  examples: |    
+    - button1
+    - button1...      
+
+
+- intent: mood_great1
+  examples: |    
+    - mood_great1
+    - How will this help me? 
+
+- intent: mood_great2
+  examples: |    
+    - mood_great2
+    - Yes. this help me?    
+
+- intent: affirm01
+  examples: |    
+    - affirm01
+    - Yes, I was able to identify them.  
+
+- intent: affirm02
+  examples: |    
+    - affirm02
+    - All or None      
+

@@ -1,0 +1,872 @@
+version: '2.0'
+ 
+intents:
+- great
+- 123son
+- 123son1
+- 123son2
+- let_try5
+- let_try6
+- let_try7
+- option1
+- option1_a
+- option1_b
+- option1_c
+- option1_d
+- option1_e
+- option1_f
+- option1_g
+- option1_h
+- mood_unhappy
+- mood_unhappy1
+- mood_unhappy2
+- mood_unhappy3
+- mood_unhappy4
+- mood_unhappy5
+- mood_unhappy6
+- mood_unhappy7
+- mood_unhappy8
+- mood_unhappy9
+- mood_unhappy10
+- mood_unhappy11
+- mood_unhappy12
+- mood_unhappy13
+- week3_name1
+- week3_name2
+- week3_name3
+- week3_name4
+- distortion1
+- distortion2
+- distortion3
+- distortion4
+- distortion5
+- distortion6
+- distortion7
+- distortion8
+- distortion9
+- distortion10
+- distortion11
+# - distortion12
+# - distortion13
+# - distortion14
+# - distortion15
+# - distortion16
+# - distortion17
+# - distortion18
+- mood_unhappy_story
+- mood_great
+- goodbye
+- affirm
+- chart
+- chart1
+- it_feels2
+- chart2
+- chart3
+- chart4
+- it_feels1
+- deny
+- deny1
+- affirm_spell
+- deny_spell
+- umm_exactly_yes
+# - name
+- input1
+- input2
+- Guided meditation
+- Deep Breathing
+- Progressive_Muscle_Relaxation
+- Grounding 5-4-3-2-1
+- yes_story_part_1
+- deny_story_part_1
+- affirm_add
+- affirm01
+- affirm02
+- explore1
+- explore0
+- mood_great1
+- mood_great2
+- affirm1
+- affirm2
+- affirm3
+- affirm4
+- affirm5
+- affirm6
+- affirm7
+- affirm8
+- affirm9
+- affirm10
+- affirm11
+- affirm12
+- affirm13
+- affirm14
+- affirm15
+- affirm16
+- button1
+- affirm_yes
+- affirm_yes1
+- meter_1
+- meter_2
+- meter_3
+- meter4
+- meter5
+- meter6
+- meter7
+- meter8
+- meter9
+- meter10
+- meter11
+- meter12
+- checklist
+- click
+- okay_story_part_1
+- okay_story_part_2
+- umm_yes_exactly
+- okay_story_ok1
+- okay_story_part_4
+- yes_i_can
+- continue_story
+- it_feels1_story
+- it_feels2_story
+- okay_story_part_5
+- thank_you_story
+- week2
+- session1
+- session2
+# - chitchat
+
+responses:
+ 
+  utter_great_a:
+  - text: I'm Psybot! I'm going to be your mental health companion...What would you like to be called? (Please Enter Your Name).
+
+  utter_great_spell:
+  - text: Is {name} spelled correctly?
+    buttons:
+    - payload: /affirm_spell
+      title: Yes.
+    - payload: /deny_spell
+      title: No.
+
+  utter_great_enter_name:
+  - text: Please Enter Your Name
+
+  utter_name:
+  - text: Hi {name}! Nice to meet you!
+    buttons:
+    - payload: /mood_great
+      title: You too!
+ 
+  utter_user1_a:
+  - text: So {name}, from the answers above, it looks like you have mild anxiety.
+ 
+  utter_user2_a:
+  - text: Would you like to know more about it?
+    buttons:
+    - payload: /affirm
+      title: Yeah
+    - payload: /affirm
+      title: Go on...
+
+  utter_intro_link:
+  - text: Click on the link below to start.
+    attachment:
+      payload:
+        src: https://player.vimeo.com/video/702906712?h=33bb35379a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479?autoplay=1&mute=1
+      type: video
+      autoplay: true
+    buttons:
+    - payload: /affirm
+      title: Continue
+ 
+  utter_son_intro6:
+  - text: Would you like to start learning more about anxiety?
+    buttons:
+    - payload: /affirm
+      title: Sure
+    - payload: /affirm
+      title: I guess so 
+
+  utter_week1:
+  - text: So {name}, it seems that you feel worried or anxious frequently. Am I right?    
+    buttons:
+    - payload: /umm_exactly_yes
+      title: Umm yes
+    - payload: /umm_exactly_yes
+      title: Exactly
+
+  utter_week_more:
+  - text: Can you tell me more about what you were going through? 
+
+  utter_week_desc:
+  - text: Do you think this appropriately describes what you were going through? You can add something if you want to.
+    buttons:
+    - payload: /deny
+      title: No, I'm good
+    - payload: /affirm
+      title: Yes, I want to add more
+  
+  utter_input_right:
+  - text: Ok, Please enter it below.
+
+  utter_week_desc1:
+  - text: I understand what you're going through. Would you like to find out more about what you're experiencing?
+    buttons:
+    - payload: /affirm
+      title: Sure
+    - payload: /affirm
+      title: Let me try
+
+  utter_week_desc2:  
+  - text: How long have you been feeling this way?
+    buttons:
+    - payload: /mood_great
+      title: More than a year
+    - payload: /mood_great
+      title: More than a few months 
+    - payload: /mood_great
+      title: More than a week 
+
+  utter_week_desc3:  
+  - text: I see. Can you tell me the last time you felt this way?  
+    buttons:
+    - payload: /let_try5
+      title: Just a few days back
+    - payload: /let_try6
+      title: More than a week back 
+    - payload: /let_try7
+      title: More than 2 weeks back
+
+  utter_week_let1:
+  - text: That must have been scary. I'm sorry that happened. I can imagine how hard that would have been for you.        
+    buttons:
+    - payload: /affirm
+      title: Yes, it was.
+             Thank you
+
+  utter_week_let2:
+  - text: I understand how hard it must have been for you to deal with it.
+    buttons:
+    - payload: /affirm
+      title: Yes, it was.
+             Thank you
+
+  utter_week_let3:
+  - text: Oh, I hope you're feeling better now.
+    buttons:
+    - payload: /affirm
+      title: Maybe a little
+    - payload: /affirm
+      title:  Yes.      
+
+  utter_let_about:     
+  - text: |-
+      Let's talk about this more    
+
+      Have you noticed and physical signs in your body whenever you worry so much? 
+
+  utter_let_about_1:     
+  - text: Ex:- Shilpa's heart starts beating louder and faster, and her hands get sweaty when she's anxious.
+    attachment:
+      payload:
+        src: https://player.vimeo.com/video/731710183?h=33bb35379a&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479?autoplay=1&mute=1
+      type: video
+      autoplay: true
+    buttons:
+    - payload: /mood_unhappy
+      title: Can you tell me more?
+
+  utter_sure_example:
+  - text: Sure! Here are a few examples of such symptoms.
+
+  utter_option:
+  - text: Options:-
+    buttons:
+    - payload: /option1
+      title: Palpitations
+    - payload: /option1_a
+      title: Sweating 
+    - payload: /option1_b
+      title: Stomach pain
+    - payload: /option1_c
+      title: Nausea
+    - payload: /option1_d
+      title: Sleep issues
+    - payload: /option1_e
+      title: Rapid breathing
+    - payload: /option1_f
+      title: Shaking/Trembling
+    - payload: /option1_g
+      title: Weakness/Dizziness 
+    - payload: /option1_h
+      title: Muscle pain
+
+  utter_option1:
+  - text: |-
+      Palpitations - You may feel like your heart is racing, fluttering, pounding or skipping a beat.
+    buttons:
+    - payload: /affirm1
+      title: Yes, I've noticed these sometimes
+    - payload: /click
+      title: Click to know more symptoms.
+  utter_option1_a:
+  - text: |-
+      Sweating - Your palms and feet might feel cold and clammy or sweaty.
+    buttons:
+    - payload: /affirm1
+      title: Yes, I've noticed these sometimes
+    - payload: /click
+      title: Click to know more symptoms.  
+  utter_option1_b:
+  - text: |- 
+      Stomach pain - You might feel bloated or feel cramps in your abdomen. You might also experience diarrhea, constipation or indigestion.
+    buttons:
+    - payload: /affirm1
+      title: Yes, I've noticed these sometimes
+    - payload: /click
+      title: Click to know more symptoms.  
+  utter_option1_c:
+  - text: |- 
+      Nausea - You may feel like you're about to throw up.
+    buttons:
+    - payload: /affirm1
+      title: Yes, I've noticed these sometimes   
+    - payload: /click
+      title: Click to know more symptoms.  
+  utter_option1_d:
+  - text: |- 
+      Sleep issues - You might find it difficult to fall asleep due to the stress and worry.
+    buttons:
+    - payload: /affirm1
+      title: Yes, I've noticed these sometimes 
+    - payload: /click
+      title: Click to know more symptoms.  
+  utter_option1_e:
+  - text: |- 
+      Rapid breathing - You may feel like you can't catch your breath, tightness in your chest, or like you're suffocating or hungry for air.
+    buttons:
+    - payload: /affirm1
+      title: Yes, I've noticed these sometimes 
+    - payload: /click
+      title: Click to know more symptoms.  
+  utter_option1_f:
+  - text: |- 
+      Shaking/Trembling - Your might feel like your hands and knees are shaking.
+    buttons:
+    - payload: /affirm1
+      title: Yes, I've noticed these sometimes 
+    - payload: /click
+      title: Click to know more symptoms.  
+  utter_option1_g:
+  - text: |- 
+      Weakness/Dizziness - A sense of lightheadedness or wooziness. There may be a feeling of motion or spinning inside. Sometimes there is a sense of swaying even though you are standing still.
+    buttons:
+    - payload: /affirm1
+      title: Yes, I've noticed these sometimes  
+    - payload: /click
+      title: Click to know more symptoms.  
+  utter_option1_h:
+  - text: |- 
+      Muscle pain - Your muscles may feel stiff and painful. You might feel it in your neck, jaw, chest, or the stomach.    
+    buttons:
+    - payload: /affirm1
+      title: Yes, I've noticed these sometimes
+    - payload: /click
+      title: Click to know more symptoms.  
+
+  utter_option2:
+  - text: |-
+      I know how overwhelming it can be to experience these, {name}. Don't worry, I'm here for you!
+     
+      We can work on this together, and come to a stage where these symptoms don't bother you anymore.     
+    buttons:
+    - payload: /affirm
+      title: Yes, I want to work it!
+    - payload: /affirm
+      title: I think that would help!
+
+  utter_option3:
+  - text: You see, {name}, anxiety is a fear reaction. Your body reacts to this fear and what you feel is heightened physical arousal.
+
+  # utter_option3:
+  # - text: Anxiety is a fear reaction. Your body reacts to this fear and what you feel is heightened physical arousal.
+
+  utter_option4:
+  - text: Your physical symptoms also make it much harder for you to move past your anxiety.
+    buttons:
+    - payload: /affirm
+      title: I understand what you mean...
+    - payload: /affirm
+      title: Ok...
+
+  utter_option5:
+  - text: Anxiety is the opposite of relaxation. Just how you cannot be at the North and South Pole together, you cannot be anxious and relaxed at the same time. Thus learning how to relax can help you relieve your anxiety.
+
+  utter_option6:
+  - text: Have you ever tried doing anything to relax yourself while experiencing these symptoms?
+    buttons:
+    - payload: /yes_story_part_1
+      title: Yes.
+    - payload: /deny
+      title: No.
+  
+  utter_great_0:
+  - text: That's great! Did any of the exercises work for you?
+    buttons:
+    - payload: /affirm
+      title: Yes.
+    - payload: /deny_story_part_1
+      title: No.
+
+  utter_great1_1:
+  - text: I can imagine how frustrating it must be to be going through this.
+
+  utter_great1_2:
+  - text: Would you like to try some relaxation exercises to help you cope with these symptoms?
+    buttons:
+    - payload: /affirm
+      title: Definitely
+    - payload: /affirm
+      title: I guess so
+
+  utter_great1_3:
+  - text: Select the one you would like to try.
+    buttons:
+    - payload: /Guided meditation
+      title: Guided meditation
+    - payload: /Deep Breathing
+      title: Deep Breathing
+    - payload: /Progressive_Muscle_Relaxation
+      title: Progressive Muscle Relaxation
+    - payload: /Grounding 5-4-3-2-1
+      title: Grounding 5-4-3-2-1
+
+  utter_great1:
+  - text: I'm happy they worked out for you! Here are a few more exercises that I think would help you more. You can experiment with the ones you haven't tried before, and see what works out for you!
+ 
+  utter_great2:
+  - text: |- 
+      I'm sorry to hear that:(Can you select which ones did not work for you from the list below?
+    buttons:
+    - payload: /checklist
+      title: Grounding (5-4-3-2-1)
+    - payload: /checklist
+      title: Deep breathing
+    - payload: /checklist
+      title: Positive affirmations
+    - payload: /checklist
+      title: Progressive Muscle Relaxation
+
+  utter_great2_1:
+  - text: I can imagine how frustrating it must be to not see any results, {name}.
+
+  utter_great2_2:
+  - text: There are a few more exercises that have worked for a lot of people.
+
+  utter_great2_3:
+  - text: Would you like to give it a try? 
+    buttons:
+    - payload: /affirm
+      title: Definitely
+    - payload: /affirm
+      title: I guess so
+
+  utter_great_guided:
+  - text: Great! Let's begin!
+  
+  utter_great_deep:
+  - text: Great! Let's begin!
+
+  utter_great_progressive:
+  - text: Great! Let's begin!
+
+  utter_great_grounding:
+  - text: Great! Let's begin!
+
+
+  utter_guided:
+  - text: Meditation can help you wipe away the day's stress, bringing with it inner peace.
+    buttons:
+    - payload: /mood_great
+      title: That sounds helpful!
+
+  utter_guided1:
+  - text: In guided meditation, you form mental images of places or situations you find relaxing.
+
+  utter_guided2:
+  - text: Click on the link below to start.
+    attachment:
+      payload:
+        src: https://www.youtube.com/embed/W19PdslW7iw?autoplay=1&mute=1
+      type: video
+      autoplay: true
+    buttons:
+    - payload: /affirm
+      title: Continue
+
+  utter_guided3:
+  - text: You did amazing,{name}!
+
+  utter_guided_trymore0:
+  - text: Would you like to try more exercises?
+    buttons:
+    - payload: /affirm_yes
+      title: Yes!
+    - payload: /deny
+      title: No, I'm done for today.
+
+  utter_guided_trymore1:
+  - text: OK
+
+  utter_guided4:
+  - text: It's great to see you taking these steps to improve your emotional health, {name}!
+
+  utter_guided4_1:
+  - text: How do you feel after trying out these relaxation techniques?
+
+  utter_guided5:
+  - text: It's these small steps that will help us reach our destination.
+
+  utter_guided6:
+  - text: |- 
+      You can try these techniques regularly and see which ones work for you! You can also save your favourites!
+    buttons:
+    - payload: /mood_great
+      title: Sure, I will try them!
+
+  utter_guided6_a:
+  - text: |- 
+      Next time you feel your anxiety creeping up, make sure to take a few deep breaths, and ground yourself.
+ 
+  utter_guided7:
+  - text: Also, try to make a note of your thoughts frequently. We will work more on them when we connect again! 
+    buttons:
+    - payload: /affirm
+      title: Sure!
+
+  utter_deep:
+  - text: When you were stressed, you might have heard many people tell you...
+
+  utter_deep1:
+  - text: "Take a few deep breaths"
+    buttons:
+    - payload: /affirm
+      title: Yes, sometimes...
+
+  utter_deep2:
+  - text: Guess what? This actually works!
+    buttons:
+    - payload: /mood_unhappy
+      title: Really? How?
+
+  utter_deep3:
+  - text: Changing the speed of your breathing can affect you anxious body response.
+
+  utter_deep3_a:
+  - text: Taking slow, deep breaths will help your body tell your brain that you're "safe"
+   
+  utter_deep4:
+  - text: Click the link below to try this out! 
+    attachment:
+      payload:
+        src: https://www.youtube.com/embed/g2wo2Impnfg?autoplay=1&mute=1
+      type: video
+      autoplay: true
+    buttons:
+    - payload: /affirm
+      title: Continue
+
+  utter_progress:
+  - text: Relaxation is essentially the opposite of anxiety. Learning a relaxation technique will help you unwind and bring your anxiety under control.
+    buttons:
+    - payload: /affirm
+      title: Okay...
+
+  utter_progress1:
+  - text: One such technique is Progressive Muscle Relaxation. By tensing and relaxing groups of muscle, you will understand the difference between a relaxed state and a tensed state.
+
+  utter_progress1_a:
+  - text: You will have much better control over your body parts and will start feeling more calm.
+    buttons:
+    - payload: /mood_unhappy
+      title: Can I try it? 
+
+  utter_progress2:
+  - text: Sure! Click on the  video below!
+    attachment:
+      payload:
+        src: https://www.youtube.com/embed/ihO02wUzgkc?autoplay=1&mute=1
+      type: video   
+      autoplay: true
+    buttons: 
+    - payload: /affirm
+      title: Continue
+
+  utter_grounding:
+  - text: Grounding is a five-step exercise can help you during periods of anxiety or panic.
+    buttons: 
+    - payload: /mood_unhappy
+      title: How does this work?
+
+  utter_grounding1:
+  - text: Grounding helps you stay in the present when your mind is bouncing around between various anxious thoughts.
+    buttons: 
+    - payload: /affirm
+      title: Ok, Let's start!
+
+  utter_grounding2:
+  - text: |-
+      Ok!
+      
+      Before starting, pay attention to your breathing.
+
+  utter_grounding3:
+  - text: Take a few slow, deep and long breaths. Try breathing with this circle.
+    image: https://i.ibb.co/4TH3sBZ/circle-gif-2.gif
+    buttons:
+    - payload: /affirm
+      title: Continue
+                     
+  utter_grounding4:
+  - text: Now, notice 5 things you see around you. It could be a pen, a spot on the ceiling, anything in your surroundings.
+    buttons:
+    - payload: /affirm
+      title: Next
+                     
+  utter_grounding5:
+  - text: Notice 4 things you can touch.  It could be your hair, a pillow, or the ground under your feet.
+    buttons:
+    - payload: /affirm
+      title: Next
+                     
+  utter_grounding6:
+  - text: Great work! Keep going {name}. Now try to notice 3 things you can hear. This could be any external sound. If you can hear your belly rumbling that counts! Focus on things you can hear outside of your body.
+    buttons:
+    - payload: /affirm
+      title: Next
+                     
+  utter_grounding7:
+  - text: Notice 2 things you can smell. If you need to, you can take a brief walk to find a scent you could smell soap in your bathroom, or the nature outside.
+    buttons:
+    - payload: /affirm
+      title: Next
+                     
+  utter_grounding8:
+  - text: You're doing great {name}! Now, Acknowledge 1 thing you can taste. What does the inside of your mouth taste like — gum, coffee?
+    buttons:
+    - payload: /affirm
+      title: Done
+                     
+  utter_meter:
+  - text: Mood meter:-
+    buttons:
+    - payload: /meter_1
+      title: 1. Slightly better than before
+    - payload: /meter_1
+      title: 2. Better than before
+    - payload: /meter_2
+      title: 3. No change
+    - payload: /meter_3
+      title: 4. Slightly worse than before
+    - payload: /meter_3
+      title: 5. Worse than before
+
+  utter_meter_1:
+  - text: That's great!
+  
+  utter_meter_3:
+  - text: I'm sorry to hear that. We will try to work on these regularly to make sure you feel better.
+  
+  utter_meter_2:
+  - text: That's too bad. But don't worry! It takes time to get used to the process.
+  
+  utter_meter_2_1:
+  - text: I'll be here to help you through it, step-by-step.
+ 
+  utter_chitchat/bot_challenge:
+  - text: I am your IWill assistant (POWERED BY EPSYCLINIC) design by a RASA.AI Team!!
+  utter_chitchat/ask_builder:
+  - text: I was design by a RASA.AI Team!
+  utter_chitchat/handleinsult:
+  - text: I'll pretend I didn't process that mean comment. Could you rephrase?
+  utter_chitchat/nicetomeeyou:
+  - text: Nice to meet you too!!!
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_addmore1:
+  - text: That's it for this session, {name}!
+  
+  utter_addmore1_a:
+  - text:  |-
+       Great job, {name}!
+      
+       Try and stick to this schedule, and trust me you will feel much better!   
+ 
+       That's it for this session, {name}!
+
+  utter_addmore2:
+  - text: Bye! 
+    buttons:
+    - payload: /goodbye
+      title: Bye!
+  
+  utter_addmore3:
+  - text: See you later!
+    buttons:
+    - payload: /mood_great
+      title: I'm done for today!
+    - payload: /week2
+      title: Continue to Session 2
+
+  utter_addmore3_a:
+  - text: See you later!
+    buttons:
+    - payload: /mood_great
+      title: I'm done for today!
+    - payload: /session1
+      title: Continue to Session 3   
+
+  utter_addmore4:
+  - text: OK, Thanks.
+
+# -------------------------------------------------------------
+ 
+entities:
+  - name
+  - input0  
+  - input1
+  - input2
+  - input3
+  - input4
+  - input5
+  - input6
+  - input7
+ 
+
+
+slots:
+
+  name:
+    type: text
+    # initial_value: null 
+    # auto_fill: true
+    influence_conversation: False
+
+  input0:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False 
+
+  input1:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False    
+
+  input2:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input3:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input4:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input5:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False    
+
+  input6:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input7:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+ 
+
+
+forms:
+
+  name_form:
+    required_slots:
+      name:
+      - type: from_text
+
+  input0_form:
+    required_slots:
+      input0:
+      - type: from_text
+
+  input1_form:
+    required_slots:
+      input1:
+      - type: from_text
+
+  input2_form:
+    required_slots:
+      input2:
+      - type: from_text    
+
+  input3_form:
+    required_slots:
+      input3:
+      - type: from_text
+
+  input4_form:
+    required_slots:
+      input4:
+      - type: from_text
+
+  input5_form:
+    required_slots:
+      input5:
+      - type: from_text
+
+  input6_form:
+    required_slots:
+      input6:
+      - type: from_text
+
+  input7_form:
+    required_slots:
+      input7:
+      - type: from_text
+
+  
+
+actions:
+- action_set_name_slot_none
+- action_set_input0_slot_none
+- action_set_input1_slot_none
+- action_set_input2_slot_none
+- action_set_input3_slot_none
+- action_set_input4_slot_none
+- action_set_input5_slot_none
+- action_set_input6_slot_none
+- action_set_input7_slot_none
+- action_input0_1_2_3 
+- action_set_input3_slot 
+ 
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true  

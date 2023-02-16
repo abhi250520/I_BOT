@@ -1,0 +1,320 @@
+version: "2.0"
+
+stories:
+
+- story: story 1 
+  steps:
+  - intent: great
+  - action: utter_great
+  # - intent: name
+  #   entities:
+  #     - name
+  - action: name_form
+  - action: utter_great_spell
+  - intent: affirm_spell
+  - action: utter_name
+  - intent: mood_great
+  - action: utter_user1
+  - action: utter_user2
+  - intent: affirm
+  - action: utter_intro_how
+  - intent: mood_unhappy
+  - action: utter_mood_sad 
+  - intent: mood_great
+  - action: utter_understand
+  - intent: affirm
+  - action: utter_understand1
+
+- story: story 1 action
+  steps: 
+  - intent: deny_spell
+  - action: action_set_name_slot_none
+  - action: utter_great_enter_name
+  - action: name_form
+  - action: utter_great_spell
+
+- story: OKay story [ SAD PATH ]
+  steps: 
+  - intent: okay_story_part_1
+  - action: utter_ok1
+  - intent: deny
+  - action: utter_not_sure
+  - intent: affirm
+  - action: utter_sure_yes
+  - action: utter_sure_yes1
+  - intent: mood_great
+  - action: utter_what
+  - intent: affirm
+  - action: utter_red_blue_yellow
+  - action: utter_red_blue_yellow1
+  - intent: mood_unhappy
+  - action: utter_sure_chart
+
+
+
+- story: OKay story [ Happy PATH ]
+  steps: 
+  - intent: okay_story_part_1
+  - action: utter_ok1
+  - intent: affirm
+  - action: utter_sure_yes
+  - action: utter_sure_yes1
+  - intent: mood_great
+  - action: utter_what
+  - intent: affirm
+  - action: utter_red_blue_yellow
+  - action: utter_red_blue_yellow1
+  - intent: mood_unhappy
+  - action: utter_sure_chart
+
+- story: situation
+  steps:    
+  - intent: chart
+  - action: utter_chart
+  - intent: affirm
+  - action: utter_ok
+  - action: utter_last3
+  - intent: affirm
+  - action: utter_last2
+  - action: utter_last1
+  # - intent: affirm
+  # - action: utter_begin 
+
+- story: thoughts
+  steps:    
+  - intent: chart1
+  - action: utter_chart1
+  - intent: affirm
+  - action: utter_ok
+  - action: utter_last3
+  - intent: affirm
+  - action: utter_last2
+  - action: utter_last1
+  # - intent: affirm
+  # - action: utter_begin 
+
+- story: emotions
+  steps:    
+  - intent: chart2
+  - action: utter_chart2 
+  - intent: affirm
+  - action: utter_ok
+  - action: utter_last3
+  - intent: affirm
+  - action: utter_last2
+  - action: utter_last1
+  # - intent: affirm
+  # - action: utter_begin  
+
+- story: behaviour
+  steps:    
+  - intent: chart3
+  - action: utter_chart5
+  - intent: affirm
+  - action: utter_ok
+  - action: utter_last3
+  - intent: affirm
+  - action: utter_last2
+  - action: utter_last1
+  # - intent: affirm
+  # - action: utter_begin 
+
+- story: physiological
+  steps:    
+  - intent: chart4
+  - action: utter_chart4 
+  - intent: affirm
+  - action: utter_ok
+  - action: utter_last3
+  - intent: affirm
+  - action: utter_last2
+  - action: utter_last1
+  # - intent: affirm
+  # - action: utter_begin   
+
+- story: story Manual Input scenario [ HAPPY Path ]
+  steps:  
+  - intent: okay_story_part_2
+  - action: utter_begin
+  - intent: umm_yes_exactly
+  - action: utter_umm_yes
+  - action: utter_umm_yes1
+  - intent: affirm
+  - action: utter_umm_yes2
+  - action: input0_form
+  - action: utter_input1
+  - intent: affirm
+  # - action: action_set_input1_slot_none
+  - action: utter_rightin
+  - action: input1_form
+  - action: utter_good_like
+  - action: utter_good_like1
+
+- story: story Manual Input scenario [ SAD Path ]
+  steps:
+  - intent: okay_story_part_2
+  - action: utter_begin
+  - intent: umm_yes_exactly
+  - action: utter_umm_yes
+  - action: utter_umm_yes1
+  - intent: affirm
+  - action: utter_umm_yes2
+  - action: input0_form
+  - action: utter_input1
+  - intent: deny
+  - action: utter_good_like
+  - action: utter_good_like1
+
+
+- story: story Manual Input 2 story
+  steps:
+  - intent: okay_story_part_3
+  - action: utter_good_like2
+  - intent: affirm
+  - action: utter_good_like3
+  - action: utter_good_like4  
+  - action: input2_form
+  - action: utter_input2  
+  - intent: affirm
+  - action: utter_input2_1
+
+- story: story Manual Input 3 story 
+  steps:
+  - intent: continue_story
+  - action: utter_input2_2 
+  - action: utter_input2_3  
+  - action: input3_form 
+  - action: action_set_input3_slot
+  - intent: deny   
+  - action: utter_input3
+  - action: action_input0_1_2_3  
+
+- story: story Manual Input 4 story sad
+  steps: 
+  - intent: okay_story_part_4
+  - action: action_set_input0_slot_none
+  - action: action_set_input1_slot_none
+  - action: utter_input3_2    
+  - intent: deny
+  - action: action_set_input2_slot_none
+  - action: action_set_input3_slot_none
+  - action: utter_more_under
+  - intent: affirm
+  - action: utter_more_under1 
+  - action: input4_form
+  - action: utter_manual_input
+  - action: utter_manual_input1 
+
+- story: story Manual Input 4 story happy
+  steps: 
+  - intent: okay_story_part_4
+  - action: action_set_input0_slot_none
+  - action: action_set_input1_slot_none
+  - action: utter_input3_2   
+  - intent: mood_unhappy
+  - action: action_set_input2_slot_none
+  - action: action_set_input3_slot_none
+  - action: utter_more_under
+  - intent: affirm
+  - action: utter_more_under1 
+  - action: input4_form
+  - action: utter_manual_input
+  - action: utter_manual_input1   
+
+- story: story feels2
+  steps: 
+  - intent: it_feels2_story
+  - action: action_set_input4_slot_none
+  - action: utter_it_feelings
+  - intent: affirm
+  - action: utter_it_feelings1  
+
+- story: story feels 1 and 3
+  steps:
+  - intent: it_feels1_story
+  - action: utter_it_feels
+  - intent: affirm
+  - action: action_set_input4_slot_none
+  - action: utter_it_feelings
+  - intent: affirm
+  - action: utter_it_feelings1 
+
+- story: story Manual Input 5 [happy]
+  steps:
+  - intent: okay_story_part_5  
+  - action: utter_it_feelings2
+  - action: input5_form
+  - action: utter_think
+  - intent: affirm
+  - action: action_set_input5_slot_none
+  - action: utter_enter
+  - action: input6_form
+  - action: utter_think1
+  - intent: affirm
+  - action: action_set_input6_slot_none
+  - action: utter_think2
+  - action: utter_meter
+
+- story: story Manual Input 5 [sad]
+  steps:
+  - intent: okay_story_part_5  
+  - action: utter_it_feelings2
+  - action: input5_form
+  - action: utter_think
+  - intent: deny
+  - action: action_set_input5_slot_none
+  - action: utter_think1
+  - intent: affirm
+  - action: utter_think2
+  - action: utter_meter  
+
+- story: meter 1
+  steps:  
+  - intent: meter_1
+  - action: utter_meter_1
+  - action: utter_meter_2_2
+
+- story: meter 2
+  steps: 
+  - intent: meter_2
+  - action: utter_meter_2
+  - action: utter_meter_2_1
+  - action: utter_meter_2_2
+
+- story: meter 3
+  steps: 
+  - intent: meter_3
+  - action: utter_meter_3
+  - action: utter_meter_2_2
+
+- story: story 41
+  steps: 
+  - intent: thank_you_story
+  - action: utter_meter_2_3
+  - action: utter_meter_2_4
+  - intent: affirm
+  - action: utter_meter_2_5
+  - action: utter_meter_2_6
+  - intent: affirm
+  - action: utter_meter_2_7
+  - action: utter_meter_2_8  
+  - intent: affirm
+  - action: utter_addmore_session
+  - action: utter_addmore2
+  - intent: goodbye
+  - action: utter_addmore3
+  - intent: mood_great
+  - action: utter_addmore4
+
+- story: story try_more
+  steps:
+  - intent: affirm_yes
+  - action: action_set_input3_slot_none  
+  - action: utter_input2_3
+  - action: input3_form 
+  - action: action_set_input3_slot
+  - intent: deny   
+  - action: utter_input3
+  - action: action_input0_1_2_3 
+
+ 

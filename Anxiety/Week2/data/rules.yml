@@ -1,0 +1,164 @@
+version: "2.0"
+
+rules:
+
+# - rule: Say goodbye anytime the user says goodbye
+#   steps:
+#   - intent: goodbye
+#   - action: utter_goodbye
+
+# #- rule: Say 'I am a bot' anytime the user challenges
+# #  steps:
+# #  - intent: bot_challenge
+# #  - action: utter_iamabot
+
+# # - rule: user right
+# #   steps:
+# #   - intent: input_right
+# #   - action: utter_good_like
+# #   - action: utter_good_like1
+
+# # - rule: user input2
+# #   steps:
+# #   - intent: input2
+# #   - action: utter_input2
+
+# # - rule: user input3
+# #   steps:
+# #   - intent: input3
+# #   - action: utter_input3
+# #   - action: utter_input3_1
+
+# # - rule: user input4
+# #   steps:
+# #   - intent: manual_input
+# #   - action: utter_manual_input
+# #   - action: utter_manual_input1
+
+# # - rule: user input5
+# #   steps:
+# #   - intent: manual_input_1
+# #   - action: utter_think
+
+# # - rule: user left
+# #   steps:
+# #   - intent: input_left
+# #   - action: utter_think1 
+
+# - rule: respond to chitchat
+#   steps:
+#   - intent: chitchat
+#   - action: utter_chitchat 
+
+# # - rule: Rule to handle messages with low NLU confidence (automated conversion from 'FallbackPolicy')
+# #   steps:
+# #   - intent: nlu_fallback
+# #   - action: action_replay_to_fallback  
+
+# # - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+# #   steps:
+# #   - intent: nlu_fallback
+# #   - action: utter_please_rephrase  
+
+# # - rule: Rule to handle name
+# #   steps:
+# #   - action: name_form
+# #   - active_loop: name_form   
+# #   - intent: name
+# #   - slot_was_set:
+# #     - requested_slot: name
+# #   - action: utter_name
+# #   - slot_was_set:
+# #     - requested_slot: null
+# #   - active_loop: null
+
+
+# # - rule: Rule to handle 1
+# #   steps:
+# #   - action: input1_form
+# #   - active_loop: input1_form   
+# #   - intent: input1
+# #   - slot_was_set:
+# #     - requested_slot: input1
+# #   - action: utter_input1
+# #   - slot_was_set:
+# #     - requested_slot: null
+# #   - active_loop: null
+
+# # - rule: Rule to handle 2
+# #   steps:
+# #   - action: input2_form
+# #   - active_loop: input2_form 
+# #   - intent: input1
+# #   - slot_was_set:
+# #     - requested_slot: input1
+# #   - action: utter_good_like
+# #   - action: utter_good_like1
+# #   - slot_was_set:
+# #     - requested_slot: null
+# #   - active_loop: null  
+   
+# # - rule: Rule to handle 3
+# #   steps:
+# #   - action: input3_form
+# #   - active_loop: input3_form  
+# #   - intent: input2
+# #   - slot_was_set:
+# #     - requested_slot: input2  
+# #   - action: utter_input2
+# #   - slot_was_set:
+# #     - requested_slot: null 
+# #   - active_loop: null 
+
+# # - rule: Rule to handle 4
+# #   steps:
+# #   - action: input4_form
+# #   - active_loop: input4_form 
+# #   - intent: input3
+# #   - slot_was_set:
+# #     - requested_slot: input3
+# #   - action: utter_input3
+# #   - action: utter_input3_1  
+# #   - slot_was_set:
+# #     - requested_slot: null 
+# #   - active_loop: null     
+
+# # - rule: Rule to handle 5
+# #   steps:
+# #   - action: input5_form
+# #   - active_loop: input5_form 
+# #   - intent: manual_input
+# #   - slot_was_set:
+# #     - requested_slot: manual_input
+# #   - action: utter_manual_input
+# #   - action: utter_manual_input1
+# #   - slot_was_set:
+# #     - requested_slot: null
+# #   - active_loop: null       
+
+# # - rule: Rule to handle 6
+# #   steps:  
+# #   - action: input6_form
+# #   - active_loop: input6_form
+# #   - intent: manual_input_1
+# #   - slot_was_set:
+# #     - requested_slot: manual_input_1
+# #   - action: utter_think
+# #   - slot_was_set:
+# #     - requested_slot: null
+# #   - active_loop: null     
+
+# # - rule: Rule to handle 7
+# #   steps:  
+# #   - action: input7_form
+# #   - active_loop: input7_form
+# #   - intent: manual_input_1
+# #   - slot_was_set:
+# #     - requested_slot: manual_input_1
+# #   - action: utter_think1  
+# #   - slot_was_set:
+# #     - requested_slot: null
+# #   - active_loop: null  
+
+
+  
