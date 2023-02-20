@@ -6,9 +6,6 @@ stories:
   steps:
   - intent: great
   - action: utter_great_a
-  # - intent: name
-  #   entities:
-  #     - name
   - action: name_form
   - action: utter_great_spell
   - intent: affirm_spell
@@ -74,7 +71,6 @@ stories:
   - action: utter_sure_example
   - action: utter_option
 
-
 - story: story 17
   steps: 
   - intent: let_try6
@@ -86,7 +82,6 @@ stories:
   - action: utter_sure_example
   - action: utter_option
  
-
 - story: story 18
   steps: 
   - intent: let_try7
