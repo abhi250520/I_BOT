@@ -39,8 +39,6 @@ stories:
   steps:
   - intent: okay_story_ok1
   - action: utter_user12
-  # - action: utter_user13
-  # - action: utter_user14
   - action: input2_form
   - action: utter_user15
   - intent: affirm
