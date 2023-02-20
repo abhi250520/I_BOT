@@ -426,20 +426,37 @@ class ActionHelloWorld29(Action):
         input29 = tracker.get_slot("input29")
         all_input_len = len(all_input)
         if int(all_input_len) <= 3 :
-            print("-------------------------------------")
-            print("input29_slot",input29) 
-            input_all.append(input29) 
-            self.input_all_1.append(input29)
-            print("input_all",input_all)
-            print("self.input_all_1",self.input_all_1)
-            print("-------------------------------------")
+ 
             dispatcher.utter_message(text = "Please think of a few more things to add. You can add them even if the chance is very low! ")
             dispatcher.utter_message(buttons = [{"payload": "/affirm8", "title": "Yes."}])
+ 
         else:
             print("input29",input29)    
             # dispatcher.utter_message(template="utter_week4_s86_b")
             dispatcher.utter_message(text = "Here is what you typed:- "+'"'+", ".join(all_input)+'"'+".") 
- 
+            dispatcher.utter_message(buttons = [{"payload": "/affirm9", "title": "Yes."}])
         print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
         return [SlotSet("input29", None)]     
     
+    
+class ActionHelloWorld29_1(Action):
+    
+    def name(self) -> Text:
+        self.input_all_1 = [ ]
+        print("hello")
+        return "action_input29_1_slot"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+            
+
+        input29 = tracker.get_slot("input29")
+        last_input = all_input[-1]
+        if last_input :
+            print("-------------------------------------")
+            dispatcher.utter_message(text = "1." +str(last_input))
+
+        print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
+        return [SlotSet("input29", None)]     
+        

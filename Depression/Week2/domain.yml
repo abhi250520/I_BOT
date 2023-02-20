@@ -99,9 +99,9 @@ intents:
   - okay_story_part_5
   - thank_you_story
   - affirm_yes
-  - week2
-  - week2_1
-  - week3
+  - session0
+  - session1
+  - session2
   - session3
   - affirm7
   - affirm8
@@ -213,7 +213,7 @@ responses:
     buttons:
     - payload: /mood_great
       title: I'm done for today!
-    - payload: /week2
+    - payload: /session0
       title: Continue to Session 2, Part 1
 
   utter_addmore3_a:
@@ -221,7 +221,7 @@ responses:
     buttons:
     - payload: /mood_great
       title: I'm done for today!
-    - payload: /week2_1
+    - payload: /session1
       title: Continue to Session 2, Part 2   
   
   utter_addmore3_b:
@@ -229,7 +229,7 @@ responses:
     buttons:
     - payload: /mood_great
       title: I'm done for today!
-    - payload: /week3
+    - payload: /session2
       title: Continue to Session 3
 
   utter_addmore4:

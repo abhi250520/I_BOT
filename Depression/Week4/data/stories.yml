@@ -6,7 +6,7 @@ stories:
 
 - story: anxty 4 start
   steps: 
-  - intent: week4
+  - intent: great
   - action: utter_week4_s1
   - action: utter_week4_s2
 

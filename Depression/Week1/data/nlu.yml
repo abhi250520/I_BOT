@@ -476,9 +476,9 @@ nlu:
     - affirm_yes
     - affirm_Yes! 
     
-- intent: week2
+- intent: session0
   examples: |
-    - Continue to week2
+    - Continue to Session0
     - Continue to Session 2 part 1
 
 - intent: session1
@@ -488,7 +488,7 @@ nlu:
 
 - intent: session2
   examples: |
-    - Continue to Session2.
+    - Continue to Session3.
     - Continue to Session 3
 
 - intent: meter_7
@@ -687,10 +687,10 @@ nlu:
     - distortion10
     - distortion1010
 
-# - intent: session3
-#   examples: |
-#     - Continue to Session4.
-#     - Continue to Session 4   
+- intent: session3
+  examples: |
+    - Continue to Session4.
+    - Continue to Session 4   
 
 # - intent: affirm_ok9
 #   examples: |

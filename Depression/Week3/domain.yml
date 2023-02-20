@@ -101,7 +101,7 @@ intents:
   - affirm_yes
   - session0
   - session1
-  - week3
+  - session2
   - session3
   - affirm7
   - affirm8
@@ -1210,7 +1210,7 @@ responses:
   - text: |- 
       See you in the next session!
     buttons:
-    - payload: /week4
+    - payload: /session3
       title: Continue to Session 4 
 
   # fallback

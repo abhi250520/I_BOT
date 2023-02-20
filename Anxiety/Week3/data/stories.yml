@@ -6,7 +6,7 @@ stories:
 
 - story: anxty 3
   steps: 
-  - intent: week3
+  - intent: session2
   - action: utter_week3_start
 
 - story: anxty 3_a1

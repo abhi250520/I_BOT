@@ -6,7 +6,7 @@ stories:
 
 - story: story 1
   steps:
-  - intent: week2
+  - intent: session0
   - action: utter_great
   - action: utter_user0
   - action: utter_user1

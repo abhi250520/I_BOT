@@ -99,7 +99,7 @@ intents:
   - okay_story_part_5
   - thank_you_story
   - affirm_yes
-  - week2
+  - session0
   - session1
   - session2
   - session3
@@ -543,7 +543,7 @@ responses:
     buttons:
     - payload: /mood_great
       title: I'm done for today!
-    - payload: /week2
+    - payload: /session0
       title: Continue to Session 2, Part 1
 
   utter_addmore3_a:

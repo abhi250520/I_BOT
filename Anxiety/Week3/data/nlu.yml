@@ -423,24 +423,6 @@ nlu:
     - 4. Slightly worse than Before
     - 5. Worse than Before    
 
-- intent: meter4
-  examples: |
-    - 1. Slightly better than before.
-    - 2. Better than before.
-    - slightly
- 
-- intent: meter5
-  examples: |
-    - 3. No change.
-    - nochange.
-    - 3. No changeE.
-    - nochangeE,
- 
-- intent: meter6
-  examples: |
-    - 4. Slightly worse than before.
-    - 5. Worse than before.
-    - worse than before   
 
 - intent: meter7
   examples: |
@@ -607,17 +589,17 @@ nlu:
     - thank_you_story
     - thank_you_story...
 
-- intent: week2
+- intent: session0
   examples: |
     - Continue to Session 2
     - Continue to Session 2..
 
-- intent: week3
+- intent: session2
   examples: |
-    - Continue to Session 0
+    - Continue to Session 3
     - Continue to Session 3..
 
-- intent: week4
+- intent: session3
   examples: |
     - Continue to Session 44
     - Continue to Session 4..
@@ -761,79 +743,7 @@ nlu:
   examples: |
     - distortion11
     - distortion1111   
-
-- intent: distortion12
-  examples: |
-    - distortion12
-    - All or None
-
-- intent: distortion13
-  examples: |
-    - distortion13
-    - Mind reading
-    - Fortune Telling
-    - Overgeneralization
-
-- intent: distortion14
-  examples: |
-    - distortion14
-    - distortion1414
-
-- intent: distortion15
-  examples: |
-    - distortion15
-    - distortion1515 
-
-- intent: distortion16
-  examples: |
-    - distortion16
-    - distortion1616
-
-- intent: distortion17
-  examples: |
-    - distortion17
-    - distortion1717
-
-- intent: distortion18
-  examples: |
-    - distortion18
-    - distortion1818
  
-
-- intent: affirm10
-  examples: |    
-    - affirm10
-    - affirm10...
-
-- intent: affirm11
-  examples: |    
-    - affirm11
-    - affirm11...
-
-- intent: affirm12
-  examples: |    
-    - affirm12
-    - affirm12...
-
-- intent: affirm13
-  examples: |    
-    - affirm13
-    - affirm13...
-
-- intent: affirm14
-  examples: |    
-    - affirm14
-    - affirm14...    
-
-- intent: affirm15
-  examples: |    
-    - affirm15
-    - affirm15...
-
-- intent: affirm16
-  examples: |    
-    - affirm16
-    - affirm16...  
 
 - intent: button1
   examples: |    

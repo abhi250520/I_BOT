@@ -4,7 +4,7 @@ stories:
 
 - story: week3 strat
   steps:
-  - intent: week3
+  - intent: session2
   - action: utter_week3_start
 
 - story: wee3 meter 1 affirm

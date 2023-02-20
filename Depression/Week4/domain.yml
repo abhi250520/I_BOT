@@ -30,7 +30,8 @@ intents:
 - meter10
 - meter11
 - meter12
-- week4
+- session2
+- session3
 # - chitchat
 
 responses:
@@ -40,7 +41,7 @@ responses:
   - text: |- 
       See you in the next session!
     buttons:
-    - payload: /week4
+    - payload: /session3
       title: Continue to Session 4    
 
 # =================== * week 4 * =========================
@@ -430,7 +431,7 @@ responses:
   - text: |- 
       See you in the next session!
     buttons:
-    - payload: /session3
+    - payload: /session4
       title: Continue to Session 5  
 
 # # ================== 2nd ======================================================================================================================================================

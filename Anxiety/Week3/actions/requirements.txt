@@ -1,3 +1,0 @@
-rasa>=2.8.26
-rasa-sdk>=2.8.4
-rasa-x

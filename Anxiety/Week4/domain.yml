@@ -30,7 +30,7 @@ intents:
 - meter10
 - meter11
 - meter12
-- week4
+- session3
 # - chitchat
 
 responses:
@@ -40,7 +40,7 @@ responses:
   - text: |- 
       See you in the next session!
     buttons:
-    - payload: /week4
+    - payload: /session3
       title: Continue to Session 4    
 
 # =================== * week 4 * =========================
@@ -430,7 +430,7 @@ responses:
   - text: |- 
       See you in the next session!
     buttons:
-    - payload: /session3
+    - payload: /session4
       title: Continue to Session 5  
 
 # # ================== 2nd ======================================================================================================================================================
@@ -665,16 +665,19 @@ responses:
     - payload: /affirm7
       title: No, I'm good
 
-  utter_week4_s86_a:
-  - text: If would you like to add more few things ?
-    buttons:
-    - payload: /affirm9
-      title: Yes.
-    - payload: /deny
-      title: No, I'm good
+  # utter_week4_s86_a:
+  # - text: If would you like to add more few things ?
+  #   buttons:
+  #   - payload: /affirm9
+  #     title: Yes.
+  #   - payload: /deny
+  #     title: No, I'm good
 
   utter_week4_s86_b:
   - text: Here is what you typed:- "{input29}".
+    buttons:
+    - payload: /affirm9
+      title: Yes.
 
   utter_week4_s86_c:
   - text: Now, lets try to assign percentages to each of these reasons. How much do you think each reason could have contributed to the situation?
@@ -1325,6 +1328,7 @@ actions:
 - action_set_input29_slot_none
 - action_set_input29_slot
 - action_input29_slot
+- action_input29_1_slot
 - action_set_input30_slot_none
 # - action_set_input31_slot_none
 - action_set_input32_slot_none

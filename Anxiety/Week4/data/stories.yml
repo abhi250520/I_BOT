@@ -6,7 +6,7 @@ stories:
 
 - story: anxty 4 start
   steps: 
-  - intent: week4
+  - intent: session3
   - action: utter_week4_s1
   - action: utter_week4_s2
 
@@ -379,10 +379,15 @@ stories:
 - story: anxty 4_distortion15_first
   steps:   
   - intent: affirm7
-  - action: utter_week4_s86_a
-  - intent: deny
+  # - action: utter_week4_s86_a
+  # - intent: deny
   - action: action_input29_slot
+
+- story: anxty 4_distortion15_first_A
+  steps:   
+  - intent: affirm9
   - action: utter_week4_s86_c
+  - action: action_input29_1_slot
   - action: input30_form
   - action: utter_week4_s86_d
   - intent: affirm
@@ -407,13 +412,24 @@ stories:
   - action: input29_form
   - action: action_set_input29_slot
 
-- story: anxty 4_distortion15_third
-  steps: 
-  - intent: affirm9
-  - action: utter_week4_s087_1
-  - action: action_set_input29_slot_none  
-  - action: input29_form
-  - action: action_set_input29_slot
+# - story: anxty 4_distortion15_third_a
+#   steps:
+#   - intent: affirm7
+#   - action: action_input29_slot   
+#   - intent: affirm8
+#   - action: action_set_input29_slot_none
+#   - action: utter_week4_s87_a
+#   - action: input29_form
+#   - action: action_set_input29_slot
+
+
+# - story: anxty 4_distortion15_third
+#   steps: 
+#   - intent: affirm9
+#   - action: utter_week4_s087_1
+#   - action: action_set_input29_slot_none  
+#   - action: input29_form
+#   - action: action_set_input29_slot
 
 # # ================== 5th ======================================================================================================================================================
 

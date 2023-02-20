@@ -46,13 +46,6 @@ intents:
 - distortion9
 - distortion10
 - distortion11
-# - distortion12
-# - distortion13
-# - distortion14
-# - distortion15
-# - distortion16
-# - distortion17
-# - distortion18
 - mood_unhappy_story
 - mood_great
 - goodbye
@@ -94,13 +87,6 @@ intents:
 - affirm7
 - affirm8
 - affirm9
-- affirm10
-- affirm11
-- affirm12
-- affirm13
-- affirm14
-- affirm15
-- affirm16
 - button1
 - affirm_yes
 - affirm_yes1
@@ -129,9 +115,9 @@ intents:
 - it_feels2_story
 - okay_story_part_5
 - thank_you_story
-- week2
-- week3
-- week4
+- session0
+- session2
+- session3
 # - chitchat
 
 responses:
@@ -171,7 +157,7 @@ responses:
     buttons:
     - payload: /mood_great
       title: I'm done for today!
-    - payload: /week2
+    - payload: /session0
       title: Continue to Session 2
 
   utter_addmore3_a:
@@ -179,7 +165,7 @@ responses:
     buttons:
     - payload: /mood_great
       title: I'm done for today!
-    - payload: /week3
+    - payload: /session2
       title: Continue to Session 3   
 
   utter_addmore4:
@@ -1269,7 +1255,7 @@ responses:
   - text: |- 
       See you in the next session!
     buttons:
-    - payload: /week4
+    - payload: /session3
       title: Continue to Session 4    
 
   

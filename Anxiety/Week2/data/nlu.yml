@@ -607,17 +607,17 @@ nlu:
     - thank_you_story
     - thank_you_story...
 
-- intent: week2
+- intent: session0
   examples: |
     - Continue to Session 2
     - Continue to Session 2..
 
-- intent: week3
+- intent: session2
   examples: |
-    - Continue to Session 0
+    - Continue to Session 3
     - Continue to Session 3..
 
-- intent: session2
+- intent: session3
   examples: |
     - Continue to Session 44
     - Continue to Session 4..
@@ -799,10 +799,10 @@ nlu:
     - distortion18
     - distortion1818
 
-- intent: session2
-  examples: |
-    - Continue to Session2.
-    - Continue to Session 3    
+# - intent: session2
+#   examples: |
+#     - Continue to Session2.
+#     - Continue to Session 3    
 
 - intent: affirm10
   examples: |    

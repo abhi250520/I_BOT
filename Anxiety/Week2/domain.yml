@@ -129,8 +129,7 @@ intents:
 - it_feels2_story
 - okay_story_part_5
 - thank_you_story
-- week2
-- week3
+- session0
 - session2
 # - chitchat
 
@@ -162,7 +161,7 @@ responses:
     buttons:
     - payload: /mood_great
       title: I'm done for today!
-    - payload: /week2
+    - payload: /session0
       title: Continue to Session 2
 
   utter_addmore3_a:
@@ -170,7 +169,7 @@ responses:
     buttons:
     - payload: /mood_great
       title: I'm done for today!
-    - payload: /week3
+    - payload: /session2
       title: Continue to Session 3   
 
   utter_addmore4:

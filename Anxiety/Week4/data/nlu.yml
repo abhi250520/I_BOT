@@ -203,7 +203,7 @@ nlu:
 
  
 
-- intent: week4
+- intent: session3
   examples: |
     - Continue to Session 44
     - Continue to Session 4..

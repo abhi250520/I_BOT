@@ -4,7 +4,7 @@ stories:
 
 - story: story 1 convo1 start.................................................
   steps:
-  - intent: week2
+  - intent: session0
   - action: utter_user1c
   - action: utter_user2c
 
@@ -334,7 +334,7 @@ stories:
 
 - story: story 2 convo2 start.................................................
   steps:
-  - intent: week2_1
+  - intent: session1
   - action: utter_user1d
   - action: utter_user2d
 

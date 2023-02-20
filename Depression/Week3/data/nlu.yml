@@ -486,15 +486,10 @@ nlu:
     - Continue to Session1..
     - Continue to Session 2 part 2
 
-- intent: week3
+- intent: session2
   examples: |
-    - Continue to week3.
+    - Continue to Session3.
     - Continue to Session 3
-
-- intent: week4
-  examples: |
-    - Continue to week4.
-    - Continue to Session 4
 
 - intent: meter_7
   examples: |
@@ -692,10 +687,10 @@ nlu:
     - distortion10
     - distortion1010
 
-# - intent: session3
-#   examples: |
-#     - Continue to Session4.
-#     - Continue to Session 4   
+- intent: session3
+  examples: |
+    - Continue to Session4.
+    - Continue to Session 4   
 
 # - intent: affirm_ok9
 #   examples: |
