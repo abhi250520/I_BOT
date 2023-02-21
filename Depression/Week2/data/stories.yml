@@ -4,7 +4,7 @@ stories:
 
 - story: story 1 convo1 start.................................................
   steps:
-  - intent: great
+  - intent: session0
   - action: utter_user1c
   - action: utter_user2c
 
