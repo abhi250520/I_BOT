@@ -4,7 +4,7 @@ stories:
 
 - story: story 1 convo1 start.................................................
   steps:
-  - intent: session0
+  - intent: great
   - action: utter_user1c
   - action: utter_user2c
 
@@ -418,10 +418,10 @@ stories:
   - action: input15_form
   - action: action_set_input15_slot
   - intent: affirm
+  - action: action_set_input15_slot_none
   - action: utter_convo2_5
   - action: utter_convo2_6
   - intent: affirm
-  - action: action_set_input15_slot_none
   - action: utter_addmore1_a
   - action: utter_addmore2
   - intent: goodbye
@@ -437,10 +437,10 @@ stories:
   - action: input15_form
   - action: action_set_input15_slot
   - intent: affirm
+  - action: action_set_input15_slot_none
   - action: utter_convo2_5
   - action: utter_convo2_6
   - intent: affirm
-  - action: action_set_input15_slot_none
   - action: utter_addmore1_a
   - action: utter_addmore2
   - intent: goodbye
@@ -451,10 +451,10 @@ stories:
 - story: story 4 deny
   steps:
   - intent: deny6
+  - action: action_set_input15_slot_none
   - action: utter_convo2_5
   - action: utter_convo2_6
   - intent: affirm
-  - action: action_set_input15_slot_none
   - action: utter_addmore1_a
   - action: utter_addmore2
   - intent: goodbye
