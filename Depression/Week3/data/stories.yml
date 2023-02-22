@@ -537,6 +537,7 @@ stories:
   - action: utter_week3_last2
   - action: utter_week3_last3
   - intent: affirm
+  - action: action_set_input9_slot_none
   - action: utter_week3_last4
   - action: utter_week3_last5
   - intent: affirm
@@ -553,6 +554,7 @@ stories:
   - action: utter_week3_last2
   - action: utter_week3_last3
   - intent: affirm
+  - action: action_set_input9_slot_none  
   - action: utter_week3_last4
   - action: utter_week3_last5
   - intent: affirm

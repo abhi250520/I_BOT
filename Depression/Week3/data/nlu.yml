@@ -194,297 +194,7 @@ nlu:
     - Options
     - I didn't feel better even after doing most/half of the steps
     - I got overwhelmed with one/most of the steps
-
-- intent: explore1
-  examples: |
-    - A was humiliated by his teacher for scoring low marks.
-    - explore1
-
-- intent: explore2
-  examples: |
-    - B's partner just ended their long term relationship.
-    - explore2
-
-- intent: explore3
-  examples: |
-    - Bharat just got rejected in an interview in his dream company.
-    - explore3
-
-- intent: explore4
-  examples: |
-    - D just got diagnosed with a terminal illness.   
-    - explore4 
-
-- intent: affirm1
-  examples: |
-    - affirm1
-    - I'll make sure to do that
-    - I will work on it!
-
-- intent: chart5
-  examples: |
-    - FEELINGS
-    - FEELING
-
-- intent: chart6
-  examples: |
-    - THOUGHTS
-    - THOUGHT
  
-- intent: chart7
-  examples: |    
-    - BEHAVIOURS
-    - behaviour
- 
-- intent: mood_great1
-  examples: |    
-    - mood_great1
-    - I relate with this character
-
-- intent: mood_great2
-  examples: |    
-    - mood_great2
-    - I relate with this character .
-
-- intent: mood_great3
-  examples: |    
-    - mood_great3
-    - I relate with this character ..
-
-- intent: mood_great4
-  examples: |    
-    - mood_great4
-    - I relate with this character ...   
-
-- intent: affirm2
-  examples: |    
-    - affirm2
-    - affirm2...
-
-- intent: mood_great5
-  examples: |    
-    - mood_great5
-    - Next Step .  
-
-- intent: mood_great6
-  examples: |    
-    - mood_great6
-    - Next Step .. 
-
-- intent: affirm3
-  examples: |    
-    - affirm3
-    - affirm3...
-    - That makes sense!
-
-- intent: mood_great0
-  examples: |    
-    - mood_great0
-    - mood_great0...
-
-- intent: deny1
-  examples: |    
-    - deny1
-    - deny1...
-    - No, I want to change it
-
-- intent: affirm4
-  examples: |    
-    - affirm4
-    - affirm4...
-
-- intent: deny2
-  examples: |    
-    - deny2
-    - deny2...
-
-- intent: deny_spell
-  examples: |
-    - deny_spell
-    - deny_spell1
-
-- intent: affirm_spell
-  examples: |
-    - affirm_spell
-    - affirm_spell1
-
-- intent: affirm5
-  examples: |    
-    - affirm5
-    - affirm5...
-
-- intent: deny3
-  examples: |    
-    - deny3
-    - deny3...
-
-- intent: affirm6
-  examples: |    
-    - affirm6
-    - affirm6...
-
-- intent: okay_story_part_1
-  examples: |
-    - okay story part 1
-    - okay story.. part1
-
-- intent: okay_story_part_2
-  examples: |
-    - okay story part 2
-    - okay story.. part2 
-
-- intent: okay_story_part_3
-  examples: |
-    - okay story part 3
-    - okay story.. part3
-
-- intent: umm_yes_exactly
-  examples: |
-    - umm_yes_exactly
-    - umm_yes_exactly...
-
-- intent: okay_story_part_4
-  examples: |
-    - okay story part 4
-    - okay story.. part4
-
-- intent: chart
-  examples: |
-    - SITUATION
-    - situation
-    - SITUATIOn
-    - situatioN
-    - sITUATION
-    - Situation
-    - SITUATIONS
-    - situationS
-- intent: chart1
-  examples: |
-    - THOUGHTS/BELIEFS
-    - thoughts  
-    - THOUGHTS/BELIEFSS
-    - thoughtsS
-    - THOUGHTSS/BELIEFS
-    - thoughtsSS 
-    - THOUGHTTS/BELIEFS
-    - thoughtTs 
-- intent: chart2
-  examples: |
-    - EMOTIONS
-    - emotions
-    - EMOTIONs
-    - emotionS
-    - EMOTIONSS
-    - emotionsS
-    - EMOTIONNS
-    - emotionNs
-- intent: chart3
-  examples: |    
-    - BEHAVIOUR
-    - behaviour
-    - BEHAVIOURR
-    - behaviourR
-    - BEHAVIOUUR
-    - behaviouUr
-    - BEHAVIOURS
-    - behaviourSS
-- intent: chart4
-  examples: |    
-    - PHYSIOLOGICAL RESPONSE
-    - phy.response
-    - PHYSIOLOGICAL RESPONSES
-    - phy.responseS
-    - PHYSIOLOGICALL RESPONSE
-    - phy.responseSXS
-    - PHYSIOLOGICAL RESPONSE
-    - phy.responseX
-
-- intent: yes_i_can
-  examples: |
-    - yes_i_can 
-    - yes_i_can_think    
-
-- intent: continue_story
-  examples: |
-    - continue_story
-    - continue...  
-
-- intent: it_feels1_story
-  examples: |
-    - it_feels1_story   
-    - it_feels1_story.. 
-
-- intent: it_feels2_story
-  examples: |
-    - it_feels2_story   
-    - it_feels2_story..   
-
-- intent: okay_story_part_5
-  examples: |
-    - okay story part 5
-    - okay story.. part5   
-
-- intent: meter_1
-  examples: |
-    - 1. Slightly better than before
-    - 2. Better than before
-    - 1. Slightly better than Before
-    - 2. Better than Before
- 
-- intent: meter_2
-  examples: |
-    - 3. No change
-    - nochange
-    - 3. No changeE
-    - nochangeE
- 
-- intent: meter_3
-  examples: |
-    - 4. Slightly worse than before
-    - 5. Worse than before
-    - 4. Slightly worse than Before
-    - 5. Worse than Before
- 
-- intent: meter_4
-  examples: |
-    - 1. Slightly better than before...
-    - 2. Better than before...
-    - 1. Slightly better than Before...
-    - 2. Better than Before...
- 
-- intent: meter_5
-  examples: |
-    - 3. No change...
-    - nochange...
-    - 3. No changeE...
-    - nochangeE...
- 
-- intent: meter_6
-  examples: |
-    - 4. Slightly worse than before...
-    - 5. Worse than before...
-    - 4. Slightly worse than Before...
-    - 5. Worse than Before...
- 
-- intent: thank_you_story
-  examples: |
-    - thank_you_story
-    - thank_you_story...
-
-- intent: affirm_yes
-  examples: |
-    - affirm_yes
-    - affirm_Yes! 
-    
-- intent: session0
-  examples: |
-    - Continue to Session0
-    - Continue to Session 2 part 1
-
-- intent: session1
-  examples: |
-    - Continue to Session1..
-    - Continue to Session 2 part 2
 
 - intent: session2
   examples: |
@@ -512,25 +222,6 @@ nlu:
     - 4. Slightly worse than Before...
     - 5. Worse than Before...
 
-- intent: affirm0
-  examples: |    
-    - affirm0
-    - affirm0...
-
-- intent: affirm7
-  examples: |    
-    - affirm7
-    - affirm7...
-
-- intent: affirm8
-  examples: |    
-    - affirm8
-    - affirm8...
-
-- intent: affirm9
-  examples: |    
-    - affirm9
-    - affirm9...  
 
 - intent: affirm13
   examples: |    
@@ -546,41 +237,7 @@ nlu:
   examples: |
     - affirm_3in1
     - affirm_3in1! 
-
-- intent: deny9
-  examples: |    
-    - deny9
-    - deny9... 
-
-- intent: deny4
-  examples: |    
-    - deny4
-    - deny4... 
-
-- intent: deny5
-  examples: |    
-    - deny5
-    - deny5...
-
-- intent: deny6
-  examples: |    
-    - deny6
-    - deny6...  
-
-- intent: mood_great7
-  examples: |    
-    - mood_great7
-    - Next Step7 .    
-
-- intent: mood_great8
-  examples: |    
-    - mood_great8
-    - Next Step8 . 
-
-- intent: mood_great9
-  examples: |    
-    - mood_great9
-    - Next Activity . 
+ 
 
 - intent: affirm_ok1
   examples: |    
@@ -626,11 +283,6 @@ nlu:
   examples: |    
     - affirm_ok
     - affirm_ok...  
-
-- intent: explore5
-  examples: |
-    - It is her responsibility to make sure she doesn't get sick. She is right in blaming herself. 
-    - explore5     
 
 - intent: distortion1
   examples: |
@@ -692,12 +344,79 @@ nlu:
     - Continue to Session4.
     - Continue to Session 4   
 
-# - intent: affirm_ok9
-#   examples: |
-#     - affirm_ok9
-#     - Continue       
+- intent: affirm_ok9
+  examples: |
+    - affirm_ok9
+    - Continue       
 
-# - intent: affirm_ok10
-#   examples: |
-#     - affirm_ok10
-#     - I understood a little     
+- intent: affirm_ok10
+  examples: |
+    - affirm_ok10
+    - I understood a little     
+    
+- intent: mood_unhappy0
+  examples: |    
+    - mood_unhappy0
+    - mood_unhappy0...     
+
+- intent: mood_unhappy6
+  examples: |    
+    - mood_unhappy6
+    - mood_unhappy6... 
+    
+- intent: mood_unhappy2
+  examples: |    
+    - mood_unhappy2
+    - mood_unhappy2...     
+
+- intent: mood_unhappy3
+  examples: |    
+    - mood_unhappy3
+    - mood_unhappy3... 
+    
+- intent: mood_unhappy4
+  examples: |    
+    - mood_unhappy4
+    - mood_unhappy4...     
+
+- intent: mood_unhappy5
+  examples: |    
+    - mood_unhappy5
+    - mood_unhappy5... 
+    
+- intent: mood_unhappy7
+  examples: |    
+    - mood_unhappy7
+    - mood_unhappy7..     
+
+- intent: mood_unhappy8
+  examples: |    
+    - mood_unhappy9
+    - mood_unhappy9.. 
+    
+- intent: mood_unhappy9
+  examples: |    
+    - mood_unhappy9
+    - mood_unhappy9...     
+
+- intent: week3_name1
+  examples: |    
+    - week3_name1
+    - week3_name1...         
+
+- intent: week3_name2
+  examples: |    
+    - week3_name2
+    - week3_name2... 
+
+- intent: week3_name3
+  examples: |    
+    - week3_name3
+    - week3_name3...         
+
+- intent: week3_disha
+  examples: |    
+    - week3_disha
+    - week3_name4...     
+
+ 

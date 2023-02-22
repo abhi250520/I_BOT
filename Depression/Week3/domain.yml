@@ -1,46 +1,20 @@
 version: "2.0"
 
 intents:
-  - chitchat
+ 
   - great
   - goodbye
   - affirm
-  - affirm0
-  - affirm1
-  - affirm2
-  - affirm3
-  - affirm4
-  - affirm5
-  - affirm6
   - deny
-  - deny1
-  - deny2
-  - deny3
-  - deny_spell
-  - affirm_spell
   - mood_great
-  - mood_great0
-  - mood_great1
-  - mood_great2
-  - mood_great3
-  - mood_great4
-  - mood_great5
-  - mood_great6
   - mood_unhappy
-  - mood_unhappy1
   - mood_unhappy2
   - mood_unhappy3
   - mood_unhappy4
-  - mood_unhappy5
   - mood_unhappy6
   - mood_unhappy7 
   - mood_unhappy8
   - mood_unhappy9
-  - mood_unhappy10
-  - mood_unhappy11
-  # - mood_unhappy12
-  - mood_unhappy13
-  - mood_unhappy14
   - affirm_ok2
   - affirm_ok3
   - affirm_ok4
@@ -48,75 +22,25 @@ intents:
   - affirm_ok6
   - affirm_ok7  
   - affirm_ok8 
-  - affirm_ok01
   - week3_name1
   - week3_name2
   - week3_name3
   - week3_disha
   - mood_unhappy0  
-  - explore1
-  - explore2
-  - explore3
-  - explore4
-  - explore5
-  - chart
-  - chart1
-  - chart2
-  - chart3
-  - chart4
-  - chart5
-  - chart6
-  - chart7
-  - it_feels1
-  - it_feels2
-  - meter_1
-  - meter_2
-  - meter_3
-  - meter_4
-  - meter_5
-  - meter_6
   - meter_7
   - meter_8
   - meter_9   
   - affirm_ok1
   - affirm_ok0
   - affirm_ok
-  # - name
-  - input1
-  - input2
-  - input3
-  - manual_input
-  - manual_input_1
-  - okay_story_part_1
-  - okay_story_part_2
-  - umm_yes_exactly
-  - okay_story_part_3
-  - okay_story_part_4
-  - yes_i_can
-  - continue_story
-  - it_feels1_story
-  - it_feels2_story
-  - okay_story_part_5
-  - thank_you_story
-  - affirm_yes
-  - session0
-  - session1
+  - name
   - session2
-  - session3
-  - affirm7
-  - affirm8
-  - affirm9
+  # - session3
   - affirm13
   - affirm_3in1
   - affirm_w3_yes
-  - deny4
-  - deny5
-  - deny6
   - affirm_ok9
   - affirm_ok10
-  - mood_great7
-  - mood_great8
-  - mood_great9
   - distortion1
   - distortion2
   - distortion3
@@ -1221,22 +1145,7 @@ responses:
 
 entities:
   - name
-  - input0
-  - input1
-  - input2
-  - input3
-  - input4
-  - input5
-  - input6
-  - input7
-  - input8
   - input9
-  - input10
-  - input11
-  - input12
-  - input13
-  - input14
-  - input15
   - input16
   - input17
   - input18
@@ -1249,102 +1158,6 @@ slots:
     # initial_value: null 
     # auto_fill: true
     influence_conversation: False
-
-  input0:
-    type: text
-    # initial_value: null
-    # auto_fill: true
-    influence_conversation: False  
-
-  input1:
-    type: text
-    # initial_value: null
-    # auto_fill: true
-    influence_conversation: False    
-
-  input2:
-    type: text
-    # initial_value: null
-    # auto_fill: true
-    influence_conversation: False
-
-  input3:
-    type: text
-    # initial_value: null
-    # auto_fill: true
-    influence_conversation: False
-
-  input4:
-    type: text
-    # initial_value: null
-    # auto_fill: true
-    influence_conversation: False
-
-  input5:
-    type: text
-    # initial_value: null
-    # auto_fill: true
-    influence_conversation: False 
-
-  input6:
-    type: text
-    # initial_value: null
-    # auto_fill: true
-    influence_conversation: False     
-
-  input7:
-    type: text
-    # initial_value: null
-    # auto_fill: true
-    influence_conversation: False
-
-  input8:
-    type: text
-    # initial_value: null
-    # auto_fill: true
-    influence_conversation: False
-
-  input9:
-    type: text
-    # initial_value: null
-    # auto_fill: true
-    influence_conversation: False
-
-  input10:
-    type: text
-    # initial_value: null
-    # auto_fill: true
-    influence_conversation: False 
-
-  input11:
-    type: text
-    # initial_value: null
-    # auto_fill: true
-    influence_conversation: False
-
-  input12:
-    type: text
-    # initial_value: null
-    # auto_fill: true
-    influence_conversation: False
-
-  input13:
-    type: text
-    # initial_value: null
-    # auto_fill: true
-    influence_conversation: False
-
-  input14:
-    type: text
-    # initial_value: null
-    # auto_fill: true
-    influence_conversation: False
-
-  input15:
-    type: text
-    # initial_value: null
-    # auto_fill: true
-    influence_conversation: False 
  
   input16:
     type: text
@@ -1370,92 +1183,18 @@ slots:
     # auto_fill: true
     influence_conversation: False 
 
+  input9:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+     
 forms:
 
   name_form:
     required_slots:
       name:
       - type: from_text
-
-  input0_form:
-    required_slots:
-      input0:
-      - type: from_text    
-
-  input1_form:
-    required_slots:
-      input1:
-      - type: from_text
-
-  input2_form:
-    required_slots:
-      input2:
-      - type: from_text    
-
-  input3_form:
-    required_slots:
-      input3:
-      - type: from_text
-
-  input4_form:
-    required_slots:
-      input4:
-      - type: from_text
-
-  input5_form:
-    required_slots:
-      input5:
-      - type: from_text
-
-  input6_form:
-    required_slots:
-      input6:
-      - type: from_text
-
-  input7_form:
-    required_slots:
-      input7:
-      - type: from_text  
-
-  input8_form:
-    required_slots:
-      input8:
-      - type: from_text    
-
-  input10_form:
-    required_slots:
-      input10:
-      - type: from_text
-
-  input11_form:
-    required_slots:
-      input11:
-      - type: from_text
-
-  input9_form:
-    required_slots:
-      input9:
-      - type: from_text
-
-  input12_form:
-    required_slots:
-      input12:
-      - type: from_text 
-  
-  input13_form:
-    required_slots:
-      input13:
-      - type: from_text
-
-  input14_form:
-    required_slots:
-      input14:
-      - type: from_text
-
-  input15_form:
-    required_slots:
-      input15:
-      - type: from_text 
 
   input16_form:
     required_slots:
@@ -1477,35 +1216,18 @@ forms:
       input19:
       - type: from_text 
 
+  input9_form:
+    required_slots:
+      input9:
+      - type: from_text
+
 actions:
 - action_set_name_slot_none
-- action_set_input0_slot_none
-- action_set_input1_slot_none
-- action_set_input2_slot_none
-- action_set_input3_slot_none
-- action_set_input4_slot_none
-- action_set_input5_slot_none
-- action_set_input6_slot_none
-- action_set_input7_slot_none
-- action_set_input8_slot_none
-- action_set_input10_slot_none
-- action_set_input11_slot_none
-- action_set_input12_slot_none
-- action_set_input13_slot_none
-- action_set_input14_slot_none
-- action_set_input15_slot_none
-- action_set_input3_slot
-- action_input0_1_2_3
-- action_set_input10_slot
-- action_set_input11_slot
-- action_set_input14_slot
-- action_set_input15_slot
-- action_set_input7_slot
-- action_input7_slot
 - action_set_input16_slot_none
 - action_set_input17_slot_none
 - action_set_input18_slot_none
 - action_set_input19_slot_none 
+- action_set_input9_slot_none
 
 session_config:
   session_expiration_time: 60
