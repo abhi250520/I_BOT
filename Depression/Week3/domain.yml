@@ -1137,12 +1137,7 @@ responses:
     - payload: /session3
       title: Continue to Session 4 
 
-  # fallback
-  # utter_please_rephrase:
-  # - text: I'm sorry, I didn't quite understand that. Could you rephrase?
-  # utter_default:
-  # - text: Sorry I didn't get that. Can you rephrase?
-
+ 
 entities:
   - name
   - input9
