@@ -542,9 +542,13 @@ stories:
   - action: utter_week3_last5
   - intent: affirm
   - action: utter_week3_last6
+  - action: utter_week3_last6_image
+  - action: utter_week3_last6_manual
   - action: input9_form 
+  - action: utter_week3_last6_manual_input
+  - intent: affirm
   - action: utter_week3_last6_etc
-  - action: utter_week3_last6a
+  - action: utter_week3_last6_end
 
 - story: dep3_last_b
   steps:   
@@ -559,9 +563,13 @@ stories:
   - action: utter_week3_last5
   - intent: affirm
   - action: utter_week3_last6
+  - action: utter_week3_last6_image
+  - action: utter_week3_last6_manual
   - action: input9_form 
+  - action: utter_week3_last6_manual_input
+  - intent: affirm
   - action: utter_week3_last6_etc
-  - action: utter_week3_last6a
+  - action: utter_week3_last6_end
 
 
 

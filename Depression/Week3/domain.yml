@@ -35,7 +35,7 @@ intents:
   - affirm_ok
   - name
   - session2
-  # - session3
+  - session3
   - affirm13
   - affirm_3in1
   - affirm_w3_yes
@@ -1122,22 +1122,31 @@ responses:
 
       So {name}, how are you feeling after this session?
       
-      Feelings wheel.
+  utter_week3_last6_image:
+  - text: Like before, try to identify your emotions from the center of the wheel, and move outwards.
+    image: https://i.ibb.co/xD2GM6W/Charts-wheel.png   
+ 
+  utter_week3_last6_manual:
+  - text: Once you've identified your emotions, write them down below. 
 
-      Please enter your emotion/feeling below
+  utter_week3_last6_manual_input:
+  - text: Click the Done button to continue.
+    buttons:
+    - payload: /affirm
+      title: Done
 
   utter_week3_last6_etc:
   - text: |- 
       Good job, {name}! I hope you feel better soon!
 
-  utter_week3_last6a:
+  utter_week3_last6_end:
   - text: |- 
       See you in the next session!
     buttons:
     - payload: /session3
       title: Continue to Session 4 
 
- 
+
 entities:
   - name
   - input9

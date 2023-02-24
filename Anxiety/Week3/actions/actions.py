@@ -205,6 +205,17 @@ class ActionSetInput11(Action):
    
         return [SlotSet("input11", None)]   
 
+class ActionSetInput11_a(Action):
+    
+    def name(self) -> Text:
+        return "action_set_input11_a_slot_none"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+   
+        return [SlotSet("input11_a", None)]  
+
 class ActionHelloWorld(Action):
     
     def name(self) -> Text:

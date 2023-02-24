@@ -1175,16 +1175,29 @@ responses:
 
       So {name}, how are you feeling after this session?
       
-      Feelings wheel.
-
-      Ok, I'll add this to your mood diary! Hope you feel better!
+  utter_week3_last6_image:
+  - text: Like before, try to identify your emotions from the center of the wheel, and move outwards.
+    image: https://i.ibb.co/xD2GM6W/Charts-wheel.png   
  
-  utter_week3_last6a:
+  utter_week3_last6_manual:
+  - text: Once you've identified your emotions, write them down below. 
+
+  utter_week3_last6_manual_input:
+  - text: Click the Done button to continue.
+    buttons:
+    - payload: /affirm
+      title: Done
+
+  utter_week3_last6_etc:
+  - text: |- 
+      Good job, {name}! I hope you feel better soon!
+
+  utter_week3_last6_a:
   - text: |- 
       See you in the next session!
     buttons:
     - payload: /session3
-      title: Continue to Session 4    
+      title: Continue to Session 4  
 
   
 entities:
@@ -1201,6 +1214,7 @@ entities:
   - input9
   - input10  
   - input11
+  - input11_a
  
 
 
@@ -1283,7 +1297,12 @@ slots:
     # initial_value: null
     # auto_fill: true
     influence_conversation: False   
-    
+
+  input11_a:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False    
 
 forms:
 
@@ -1352,7 +1371,10 @@ forms:
       input11:
       - type: from_text      
 
-        
+  input11_a_form:
+    required_slots:
+      input11_a:
+      - type: from_text        
 
 actions:
 - action_set_name_slot_none
@@ -1368,6 +1390,7 @@ actions:
 - action_set_input9_slot_none
 - action_set_input10_slot_none
 - action_set_input11_slot_none
+- action_set_input11_a_slot_none
 - action_input0_1_2_3 
 - action_set_input3_slot 
  
