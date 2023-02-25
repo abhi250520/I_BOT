@@ -273,7 +273,40 @@ class ActionSetInput22(Action):
    
         return [SlotSet("input22", None)] 
  
+ 
+class ActionSetInput22_a(Action):
+    
+    def name(self) -> Text:
+        return "action_set_input22_a_slot_none"
 
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+   
+        return [SlotSet("input22_a", None)]  
+
+class ActionSetInput22_b(Action):
+    
+    def name(self) -> Text:
+        return "action_set_input22_b_slot_none"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+   
+        return [SlotSet("input22_b", None)]  
+    
+class ActionSetInput22_c(Action):
+    
+    def name(self) -> Text:
+        return "action_set_input22_c_slot_none"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+   
+        return [SlotSet("input22_c", None)] 
+        
 class ActionSetInput23(Action):
     
     def name(self) -> Text:
@@ -306,6 +339,39 @@ class ActionSetInput24(Action):
    
         return [SlotSet("input24", None)]        
 
+class ActionSetInput24_a(Action):
+    
+    def name(self) -> Text:
+        return "action_set_input24_a_slot_none"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+   
+        return [SlotSet("input24_a", None)]  
+
+class ActionSetInput24_b(Action):
+    
+    def name(self) -> Text:
+        return "action_set_input24_b_slot_none"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+   
+        return [SlotSet("input24_b", None)]  
+    
+class ActionSetInput24_c(Action):
+    
+    def name(self) -> Text:
+        return "action_set_input24_c_slot_none"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+   
+        return [SlotSet("input24_c", None)] 
+
     
 class ActionSetInput25(Action):
     
@@ -317,7 +383,41 @@ class ActionSetInput25(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
    
         return [SlotSet("input25", None)]
-     
+
+class ActionSetInput25_a(Action):
+    
+    def name(self) -> Text:
+        return "action_set_input25_a_slot_none"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+   
+        return [SlotSet("input25_a", None)]  
+
+class ActionSetInput25_b(Action):
+    
+    def name(self) -> Text:
+        return "action_set_input25_b_slot_none"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+   
+        return [SlotSet("input25_b", None)]  
+    
+class ActionSetInput25_c(Action):
+    
+    def name(self) -> Text:
+        return "action_set_input25_c_slot_none"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+   
+        return [SlotSet("input25_c", None)] 
+
+        
 class ActionSetInput26(Action):
     
     def name(self) -> Text:

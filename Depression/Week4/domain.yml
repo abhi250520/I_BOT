@@ -467,26 +467,39 @@ responses:
       title: Go to Step 3
 
   utter_week4_s54:
-  - text: Can you tell me how much you believe in this thought?
-    buttons:
-    - payload: /affirm
-      title: Sliding scale of percentage.
-
+  - text: |- 
+      Can you tell me how much you believe in this thought?
+   
+      Enter it as a percentage - 1% being the lowest and 100% being the highest
+ 
   utter_week4_s55:
   - text: It must have been hard to deal with that thought, {name}.
+    buttons:
+    - payload: /affirm
+      title: Go to Next Step
 
   utter_week4_s56:
-  - text: Can you tell me how this negative thought makes you feel?
+  - text: Can you tell me how this negative thought makes you feel? Can you tell me how this negative thought makes you feel? Write one emotion that you think is the most accurate from the feelings wheel.
+    image: https://i.ibb.co/xD2GM6W/Charts-wheel.png 
+
+  utter_week4_s56_a:
+  - text: Continue, {name}.
     buttons:
     - payload: /affirm
-      title: List of emotions
+      title: Go to Next Step
 
   utter_week4_s57:
-  - text: How intensely are you feeling this emotion?
+  - text: |- 
+      How intensely are you feeling this emotion?
+     
+      Enter it as a percentage - 1% being the lowest and 100% being the highest
+ 
+  utter_week4_s57_a:
+  - text: Continue, {name}.
     buttons:
     - payload: /affirm
-      title: Sliding scale of percentage.
- 
+      title: Go to Next Step
+
   utter_week4_s58:
   - text: |- 
       You're doing great, {name}!  
@@ -523,28 +536,46 @@ responses:
 
       Try to look at the situation more positively, and write down your thoughts.
 
-  utter_week4_s63:
-  - text: Good job, {name}! Can you tell me how much you believe in this alternative thought?
+  utter_week4_s62_a:
+  - text: Continue, {name}.
     buttons:
     - payload: /affirm
-      title: Sliding scale with percentages.
+      title: Go to Next Step
+
+  utter_week4_s63:
+  - text: |- 
+      Good job, {name}! Can you tell me how much you believe in this alternative thought?
+      
+      Enter it as a percentage - 1% being the lowest and 100% being the highest.
 
   utter_week4_s64:
   - text: |- 
       That's good.
+    buttons:
+    - payload: /affirm
+      title: Go to Next Step
 
   utter_week4_s65:
-  - text: |- 
-      How does this alternative thought make you feel?
+  - text: How does this alternative thought make you feel? Write one emotion that you think is the most accurate from the feelings wheel.
+    image: https://i.ibb.co/xD2GM6W/Charts-wheel.png 
+
+  utter_week4_s65_a:
+  - text: Continue, {name}.
     buttons:
     - payload: /affirm
-      title: List of emotions
+      title: Go to Next Step
 
   utter_week4_s66:
-  - text: How intensely are you feeling this emotion?
+  - text: |- 
+      How intensely are you feeling this emotion?
+
+      Enter it as a percentage - 1% being the lowest and 100% being the highest
+
+  utter_week4_s66_a:
+  - text: Continue, {name}.
     buttons:
     - payload: /affirm
-      title: Sliding scale of percentage.
+      title: Go to Next Step 
 
   utter_week4_s67:
   - text: |- 
@@ -564,13 +595,16 @@ responses:
 
   utter_week4_s70:
   - text: That must be very hard to deal with, {name}
-
-  utter_week4_s71:
-  - text: Can you rate how bad you think the catastrophe will be?
     buttons:
     - payload: /affirm
-      title: Sliding scale of percentage.
+      title: Go to Next Step 
 
+  utter_week4_s71:
+  - text: |- 
+      Can you rate how bad you think the catastrophe will be?
+    
+      Enter it as a percentage - 1% being the least and 100% being the worst
+ 
   utter_week4_s72:
   - text: Now, let's try to reflect on the likelihood of this event happening.
     buttons:
@@ -581,14 +615,22 @@ responses:
   - text: How often does this kind of thing happen to you? How frequently do you experience such catastrophic situations in real life?
     buttons:
     - payload: /affirm
-      title: Sliding scale- Never, Rarely, Sometimes, Often, Always.
-
-  utter_week4_s74:
-  - text: Realistically, how likely is it to happen now?
-    buttons:
+      title: Never
     - payload: /affirm
-      title: Sliding scale of percentage.
+      title: Rarely
+    - payload: /affirm
+      title: Sometimes
+    - payload: /affirm
+      title: Often
+    - payload: /affirm
+      title: Always
  
+  utter_week4_s74:
+  - text: |- 
+      Realistically, how likely is it to happen now?
+
+      Enter it as a percentage - 1% being the least and 100% being the worst
+  
   utter_week4_s75:
   - text: |- 
       Can you tell me if this is the worst-case scenario? Are there other, more probable outcomes, that are not as bad?
@@ -604,12 +646,21 @@ responses:
 
   utter_week4_s77:
   - text: Good job, {name}
-
-  utter_week4_s78:
-  - text: How likely is it that this alternate scenario will take place?
     buttons:
     - payload: /affirm
-      title: Sliding scale of percentages.
+      title: Go to Next Step 
+
+  utter_week4_s78:
+  - text: |- 
+      How likely is it that this alternate scenario will take place?
+
+      Enter it as a percentage - 1% being the least and 100% being the worst
+  
+  utter_week4_s78_a:
+  - text: Continue, {name}.
+    buttons:
+    - payload: /affirm
+      title: Go to Next Step 
 
   utter_week4_s79:
   - text: |- 
@@ -909,10 +960,19 @@ entities:
   - input20
   - input21
   - input22
+  - input22_a
+  - input22_b
+  - input22_c
   - input23
   - input23_1
   - input24
+  - input24_a
+  - input24_b
+  - input24_c  
   - input25  
+  - input25_a
+  - input25_b
+  - input25_c   
   - input26
   - input27
   - input28
@@ -1006,6 +1066,24 @@ slots:
     # auto_fill: true
     influence_conversation: False
 
+  input22_a:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input22_b:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input22_c:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
   input23:
     type: text
     # initial_value: null
@@ -1024,11 +1102,47 @@ slots:
     # auto_fill: true
     influence_conversation: False
 
+  input24_a:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input24_b:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input24_c:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
   input25:
     type: text
     # initial_value: null
     # auto_fill: true
     influence_conversation: False    
+
+  input25_a:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input25_b:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
+
+  input25_c:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
 
   input26:
     type: text
@@ -1189,6 +1303,21 @@ forms:
       input22:
       - type: from_text
 
+  input22_a_form:
+    required_slots:
+      input22_a:
+      - type: from_text
+
+  input22_b_form:
+    required_slots:
+      input22_b:
+      - type: from_text
+
+  input22_c_form:
+    required_slots:
+      input22_c:
+      - type: from_text
+
   input23_form:
     required_slots:
       input23:
@@ -1204,9 +1333,39 @@ forms:
       input24:
       - type: from_text
 
+  input24_a_form:
+    required_slots:
+      input24_a:
+      - type: from_text
+
+  input24_b_form:
+    required_slots:
+      input24_b:
+      - type: from_text
+
+  input24_c_form:
+    required_slots:
+      input24_c:
+      - type: from_text
+
   input25_form:
     required_slots:
       input25:
+      - type: from_text
+
+  input25_a_form:
+    required_slots:
+      input25_a:
+      - type: from_text
+
+  input25_b_form:
+    required_slots:
+      input25_b:
+      - type: from_text
+
+  input25_c_form:
+    required_slots:
+      input25_c:
       - type: from_text
 
   input26_form:
@@ -1303,16 +1462,26 @@ actions:
 - action_set_input20_slot_none
 - action_set_input21_slot_none
 - action_set_input22_slot_none
+- action_set_input22_a_slot_none
+- action_set_input22_b_slot_none
+- action_set_input22_c_slot_none
 - action_set_input23_slot_none
 - action_set_input23_1_slot_none
 - action_set_input24_slot_none 
+- action_set_input24_a_slot_none
+- action_set_input24_b_slot_none
+- action_set_input24_c_slot_none
 - action_set_input25_slot_none
+- action_set_input25_a_slot_none
+- action_set_input25_b_slot_none
+- action_set_input25_c_slot_none
 - action_set_input26_slot_none
 - action_set_input27_slot_none
 - action_set_input28_slot_none
 - action_set_input29_slot_none
 - action_set_input29_slot
 - action_input29_slot
+- action_input29_1_slot
 - action_set_input30_slot_none
 # - action_set_input31_slot_none
 - action_set_input32_slot_none

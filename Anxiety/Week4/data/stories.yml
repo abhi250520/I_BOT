@@ -283,12 +283,20 @@ stories:
   - intent: affirm  
   - action: action_set_input22_slot_none
   - action: utter_week4_s54
-  - intent: affirm
+  - action: input22_a_form
   - action: utter_week4_s55
+  - intent: affirm 
+  - action: action_set_input22_a_slot_none   
   - action: utter_week4_s56
-  - intent: affirm 
+  - action: input22_b_form 
+  - action: utter_week4_s56_a   
+  - intent: affirm    
+  - action: action_set_input22_b_slot_none
   - action: utter_week4_s57  
+  - action: input22_c_form   
+  - action: utter_week4_s57_a   
   - intent: affirm 
+  - action: action_set_input22_c_slot_none
   - action: utter_week4_s58
   - action: input23_form
   - action: utter_week4_s58_a
@@ -302,14 +310,24 @@ stories:
   - action: action_set_input23_1_slot_none
   - action: utter_week4_s62
   - action: input24_form  
+  - action: utter_week4_s62_a
+  - intent: affirm   
+  - action: action_set_input24_slot_none    
   - action: utter_week4_s63  
-  - intent: affirm  
-  - action: action_set_input24_slot_none 
+  - action: input24_a_form 
   - action: utter_week4_s64
+  - intent: affirm   
+  - action: action_set_input24_a_slot_none      
   - action: utter_week4_s65
+  - action: input24_b_form 
+  - action: utter_week4_s65_a
   - intent: affirm   
+  - action: action_set_input24_b_slot_none    
   - action: utter_week4_s66
-  - intent: affirm   
+  - action: input24_c_form 
+  - action: utter_week4_s66_a  
+  - intent: affirm
+  - action: action_set_input24_c_slot_none  
   - action: utter_week4_s67
   - action: utter_week4_ext1
   - action: utter_week4_ext2
@@ -329,23 +347,30 @@ stories:
   - action: utter_week4_s69
   - action: input25_form
   - action: utter_week4_s70
-  - action: utter_week4_s71
   - intent: affirm   
-  - action: action_set_input25_slot_none
+  - action: action_set_input25_slot_none   
+  - action: utter_week4_s71
+  - action: input25_a_form
   - action: utter_week4_s72 
   - intent: affirm 
+  - action: action_set_input25_a_slot_none    
   - action: utter_week4_s73
   - intent: affirm 
   - action: utter_week4_s74
-  - intent: affirm 
+  - action: input25_b_form
   - action: utter_week4_s75
   - intent: affirm 
+  - action: action_set_input25_b_slot_none      
   - action: utter_week4_s76
   - action: input26_form  
   - action: utter_week4_s77
-  - action: utter_week4_s78  
   - intent: affirm 
-  - action: action_set_input26_slot_none
+  - action: action_set_input26_slot_none  
+  - action: utter_week4_s78  
+  - action: input25_c_form
+  - action: utter_week4_s78_a
+  - intent: affirm   
+  - action: action_set_input25_c_slot_none  
   - action: utter_week4_s79
   - action: utter_week4_ext1
   - action: utter_week4_ext2
