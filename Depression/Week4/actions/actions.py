@@ -152,93 +152,93 @@ class ActionSetInput_29(Action):
 
 
  
-class ActionSetInput12(Action):
+class ActionSetinput12_1(Action):
     
     def name(self) -> Text:
-        return "action_set_input12_slot_none"
+        return "action_set_input12_1_slot_none"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
    
-        return [SlotSet("input12", None)]
+        return [SlotSet("input12_1", None)]
      
-class ActionSetInput13(Action):
+class ActionSetinput13_1(Action):
     
     def name(self) -> Text:
-        return "action_set_input13_slot_none"
+        return "action_set_input13_1_slot_none"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
    
-        return [SlotSet("input13", None)] 
+        return [SlotSet("input13_1", None)] 
  
 
-class ActionSetInput14(Action):
+class ActionSetinput14_1(Action):
     
     def name(self) -> Text:
-        return "action_set_input14_slot_none"
+        return "action_set_input14_1_slot_none"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
    
-        return [SlotSet("input14", None)]
+        return [SlotSet("input14_1", None)]
 
-class ActionSetInput15(Action):
+class ActionSetinput15_1(Action):
     
     def name(self) -> Text:
-        return "action_set_input15_slot_none"
+        return "action_set_input15_1_slot_none"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        return [SlotSet("input15", None)]  
+        return [SlotSet("input15_1", None)]  
 
-class ActionSetInput16(Action):
+class ActionSetinput16_1(Action):
     
     def name(self) -> Text:
-        return "action_set_input16_slot_none"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-   
-        return [SlotSet("input16", None)]    
-    
-class ActionSetInput17(Action):
-    
-    def name(self) -> Text:
-        return "action_set_input17_slot_none"
+        return "action_set_input16_1_slot_none"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
    
-        return [SlotSet("input17", None)] 
+        return [SlotSet("input16_1", None)]    
+    
+class ActionSetinput17_1(Action):
+    
+    def name(self) -> Text:
+        return "action_set_input17_1_slot_none"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+   
+        return [SlotSet("input17_1", None)] 
  
 
-class ActionSetInput18(Action):
+class ActionSetinput18_1(Action):
     
     def name(self) -> Text:
-        return "action_set_input18_slot_none"
+        return "action_set_input18_1_slot_none"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
    
-        return [SlotSet("input18", None)]
+        return [SlotSet("input18_1", None)]
 
-class ActionSetInput19(Action):
+class ActionSetinput19_1(Action):
     
     def name(self) -> Text:
-        return "action_set_input19_slot_none"
+        return "action_set_input19_1_slot_none"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        return [SlotSet("input19", None)]  
+        return [SlotSet("input19_1", None)]  
 
 class ActionSetInput20(Action):
     

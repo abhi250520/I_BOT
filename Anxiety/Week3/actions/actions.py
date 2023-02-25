@@ -7,7 +7,6 @@
 
 # This is a simple example for a custom action which utters "Hello World!"
 
-
 import logging
 import json
 from datetime import datetime
@@ -114,7 +113,7 @@ class ActionGetName(Action):
         print(names)
         name = names[0]
         return [SlotSet("name", name)]
-
+    
 class ActionSetInput7(Action):
 
     def name(self) -> Text:
@@ -138,25 +137,27 @@ class ActionSetName(Action):
 class ActionSetInput_3(Action):
     
     def name(self) -> Text:
-        global all_input
-        all_input= []
-        self.input3_all = [ ]
-        print("input3_saved")
+        
         return "action_set_input3_slot"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        input3_all = [ ]  
         input3 = tracker.get_slot("input3")
+        bot_session_id = tracker.sender_id
+        print("bot_session_id", bot_session_id)
         if input3:
             print("input3_slot",input3) 
-            input3_all.append(input3) 
-            self.input3_all.append(input3)
-            all_input.append(input3)
-            print("input3_all",input3_all)
-            print("self.input3_all",self.input3_all)
-            print("all_input",all_input)
+            conn = connection()
+            result = conn.iwill.bot_emotion.insert_one(
+                {
+                    "bot_session_id": bot_session_id,
+                    "emotion": input3
+                }
+            )
+            # print(result)
+            # print(result.inserted_id)
+            conn.close()
         dispatcher.utter_message(template="utter_guided_trymore") 
         return [SlotSet("input3", None)]
 
@@ -236,6 +237,61 @@ class ActionSetInput6(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
    
         return [SlotSet("input6", None)]
+ 
+
+class ActionHelloWorld(Action):
+    
+    def name(self) -> Text:
+        self.input_all = [ ]
+        print("hello")
+        return "action_input0_1_2_3"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        bot_session_id = tracker.sender_id
+        print("bot_session_id", bot_session_id)
+        conn = connection()
+        result = conn.iwill.bot_emotion.find(
+            {
+                "bot_session_id": bot_session_id
+            }
+        )
+        all_emotions= []
+        for doc in result:
+            print(doc['emotion']) 
+            all_emotions.append(doc['emotion'])
+        print(all_emotions)
+
+        last_intent = tracker.latest_message['intent'].get('name')
+        print(last_intent)
+        input0 = tracker.get_slot("input0")
+        if input0:
+            print("input0_slot",input0)
+        #     dispatcher.utter_message(template="utter_input3_0")
+
+        input2 = tracker.get_slot("input2")
+        if input2:
+            print("input2_slot",input2)
+
+        input3 = tracker.get_slot("input3")
+        if input3:
+            print("-------------------------------------")
+            print("input3_slot",input3) 
+
+        input1 = tracker.get_slot("input1")
+        if input1:
+            print("input1",input1)
+            # dispatcher.utter_message(template="utter_input3_1")
+            dispatcher.utter_message(text = "When you face situations like "+'"'+str(input0)+", "+str(input1)+'"'+", you think that "+'"'+str(input2)+'"'+". This makes you feel "+'"'+", ".join(all_input)+'"'+". Am I right?")
+            dispatcher.utter_message(buttons = [{"payload": "/okay_story_part_4", "title": "Exactly..."}])
+        else:
+            # dispatcher.utter_message(template="utter_input3_0")
+            dispatcher.utter_message(text = "When you face situations like "+'"'+str(input0)+'"'+", you think that "+'"'+str(input2)+'"'+". This makes you feel "+'"'+", ".join(all_input)+'"'+". Am I right?")
+            dispatcher.utter_message(buttons = [{"payload": "/okay_story_part_4", "title": "Exactly..."}])
+        print("@@@@@@@@@@@@@@@@@@@@@@I_WILL@@@@@@@@@@@@@@@@@@@@@@@")
+        return [SlotSet("input3", None)]   
+  
 
 class ActionSetInput8(Action):
     
@@ -291,103 +347,3 @@ class ActionSetInput11_a(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
    
         return [SlotSet("input11_a", None)]  
-
-class ActionHelloWorld(Action):
-    
-    def name(self) -> Text:
-        self.input_all = [ ]
-        print("hello")
-        return "action_input0_1_2_3"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        input_all = [ ]    
-        last_intent = tracker.latest_message['intent'].get('name')
-        print(last_intent)
-        input0 = tracker.get_slot("input0")
-        if input0:
-            print("input0_slot",input0)
-        #     dispatcher.utter_message(template="utter_input3_0")
-
-        input2 = tracker.get_slot("input2")
-        if input2:
-            print("input2_slot",input2)
-
-        input3 = tracker.get_slot("input3")
-        if input3:
-            print("-------------------------------------")
-            print("input3_slot",input3) 
-            input_all.append(input3) 
-            self.input_all.append(input3)
-            print("input_all",input_all)
-            print("self.input_all",self.input_all)
-            print("-------------------------------------")
-
-        input1 = tracker.get_slot("input1")
-        if input1:
-            print("input1",input1)
-            # dispatcher.utter_message(template="utter_input3_1")
-            dispatcher.utter_message(text = "When you face situations like "+'"'+str(input0)+", "+str(input1)+'"'+", you think that "+'"'+str(input2)+'"'+". This makes you feel "+'"'+", ".join(all_input)+'"'+". Am I right?")
-            dispatcher.utter_message(buttons = [{"payload": "/okay_story_part_4", "title": "Exactly..."}])
-        else:
-            # dispatcher.utter_message(template="utter_input3_0")
-            dispatcher.utter_message(text = "When you face situations like "+'"'+str(input0)+'"'+", you think that "+'"'+str(input2)+'"'+". This makes you feel "+'"'+", ".join(all_input)+'"'+". Am I right?")
-            dispatcher.utter_message(buttons = [{"payload": "/okay_story_part_4", "title": "Exactly..."}])
-        print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
-        return [SlotSet("input3", None)] 
- 
-class ActionSetInput12(Action):
-    
-    def name(self) -> Text:
-        return "action_set_input12_slot_none"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-   
-        return [SlotSet("input12", None)]    
-
-class ActionSetInput13(Action):
-    
-    def name(self) -> Text:
-        return "action_set_input13_slot_none"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-   
-        return [SlotSet("input13", None)] 
- 
-
-class ActionSetInput14(Action):
-    
-    def name(self) -> Text:
-        return "action_set_input14_slot_none"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-   
-        return [SlotSet("input14", None)]    
-
-class ActionSetInput15(Action):
-    
-    def name(self) -> Text:
-        return "action_set_input15_slot_none"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        return [SlotSet("input15", None)]  
-
-class ActionSetInput16(Action):
-    
-    def name(self) -> Text:
-        return "action_set_input16_slot_none"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-   
-        return [SlotSet("input16", None)]      

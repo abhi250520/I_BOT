@@ -21,11 +21,11 @@ stories:
   steps:   
   - intent: affirm17
   - action: utter_week4_s5
-  - action: input12_form
+  - action: input12_1_form
   - action: utter_week4_s6
   - action: utter_week4_s7  
   - intent: affirm
-  - action: action_set_input12_slot_none
+  - action: action_set_input12_1_slot_none
   - action: utter_week4_s8  
   - action: utter_week4_s16
   - action: utter_week4_s17 
@@ -58,18 +58,18 @@ stories:
   - action: utter_week4_s19
   - intent: affirm
   - action: utter_week4_s20
-  - action: input13_form
+  - action: input13_1_form
   - action: utter_week4_s21
   - intent: affirm
   - action: utter_week4_s21_a  
-  - action: input14_form
+  - action: input14_1_form
   - action: utter_week4_s22
   - action: utter_week4_s23
   - intent: affirm 
-  - action: action_set_input13_slot_none  
+  - action: action_set_input13_1_slot_none  
   - action: utter_week4_s24
   - intent: affirm 
-  - action: action_set_input14_slot_none  
+  - action: action_set_input14_1_slot_none  
   - action: utter_week4_s16  
   - action: utter_week4_s17 
 
@@ -89,14 +89,14 @@ stories:
   - action: utter_week4_s26
   - intent: deny
   - action: utter_week4_s27
-  - action: input15_form 
+  - action: input15_1_form 
   - action: utter_week4_s28  
   - intent: mood_unhappy
-  - action: action_set_input15_slot_none   
+  - action: action_set_input15_1_slot_none   
   - action: utter_week4_s29
   - action: utter_week4_s30
   - intent: deny
-  - action: action_set_input16_slot_none    
+  - action: action_set_input16_1_slot_none    
   - action: utter_week4_s32
   - action: utter_week4_s13
   - intent: affirm  
@@ -106,18 +106,18 @@ stories:
   # - action: utter_week4_s19
   # - intent: affirm
   # - action: utter_week4_s20
-  # - action: input13_form
+  # - action: input13_1_form
   # - action: utter_week4_s21
   # - intent: affirm
   # - action: utter_week4_s21_a  
-  # - action: input14_form
+  # - action: input14_1_form
   # - action: utter_week4_s22
   # - action: utter_week4_s23
   # - intent: affirm 
-  # - action: action_set_input13_slot_none  
+  # - action: action_set_input13_1_slot_none  
   # - action: utter_week4_s24
   # - intent: affirm 
-  # - action: action_set_input14_slot_none  
+  # - action: action_set_input14_1_slot_none  
   # - action: utter_week4_s16  
   # - action: utter_week4_s17 
 
@@ -125,12 +125,12 @@ stories:
   steps: 
   - intent: affirm15
   - action: utter_week4_s28a
-  - action: input16_form  
+  - action: input16_1_form  
   - action: utter_week4_s29
   - action: utter_week4_s30
   - intent: deny
-  - action: action_set_input15_slot_none  
-  - action: action_set_input16_slot_none      
+  - action: action_set_input15_1_slot_none  
+  - action: action_set_input16_1_slot_none      
   - action: utter_week4_s32
   - action: utter_week4_s13
   - intent: affirm  
@@ -140,18 +140,18 @@ stories:
   # - action: utter_week4_s19
   # - intent: affirm
   # - action: utter_week4_s20
-  # - action: input13_form
+  # - action: input13_1_form
   # - action: utter_week4_s21
   # - intent: affirm
   # - action: utter_week4_s21_a  
-  # - action: input14_form
+  # - action: input14_1_form
   # - action: utter_week4_s22
   # - action: utter_week4_s23
   # - intent: affirm 
-  # - action: action_set_input13_slot_none  
+  # - action: action_set_input13_1_slot_none  
   # - action: utter_week4_s24
   # - intent: affirm 
-  # - action: action_set_input14_slot_none  
+  # - action: action_set_input14_1_slot_none  
   # - action: utter_week4_s16  
   # - action: utter_week4_s17 
 
@@ -167,18 +167,18 @@ stories:
   # - action: utter_week4_s19
   # - intent: affirm
   # - action: utter_week4_s20
-  # - action: input13_form
+  # - action: input13_1_form
   # - action: utter_week4_s21
   # - intent: affirm
   # - action: utter_week4_s21_a  
-  # - action: input14_form
+  # - action: input14_1_form
   # - action: utter_week4_s22
   # - action: utter_week4_s23
   # - intent: affirm 
-  # - action: action_set_input13_slot_none  
+  # - action: action_set_input13_1_slot_none  
   # - action: utter_week4_s24
   # - intent: affirm 
-  # - action: action_set_input14_slot_none  
+  # - action: action_set_input14_1_slot_none  
   # - action: utter_week4_s16  
   # - action: utter_week4_s17 
 
@@ -206,20 +206,20 @@ stories:
   - action: utter_week4_s39_b
   - intent: affirm 
   - action: utter_week4_s39
-  - action: input17_form
+  - action: input17_1_form
   - action: utter_week4_s40
   - intent: affirm 
-  - action: action_set_input17_slot_none
+  - action: action_set_input17_1_slot_none
   - action: utter_week4_s40_a
-  - action: input18_form
+  - action: input18_1_form
   - action: utter_week4_s40_b
   - intent: affirm 
-  - action: action_set_input18_slot_none
+  - action: action_set_input18_1_slot_none
   - action: utter_week4_s41 
-  - action: input19_form
+  - action: input19_1_form
   - action: utter_week4_s42
   - intent: affirm
-  - action: action_set_input19_slot_none 
+  - action: action_set_input19_1_slot_none 
   - action: utter_week4_s43  
   - action: input20_form
   - action: utter_week4_s44

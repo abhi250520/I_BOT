@@ -949,14 +949,14 @@ entities:
   # - input9
   # - input10  
   # - input11
-  - input12
-  - input13
-  - input14  
-  - input15
-  - input16
-  - input17
-  - input18
-  - input19
+  - input12_1
+  - input13_1
+  - input14_1  
+  - input15_1
+  - input16_1
+  - input17_1
+  - input18_1
+  - input19_1
   - input20
   - input21
   - input22
@@ -1000,49 +1000,49 @@ slots:
     influence_conversation: False
 
         
-  input12:
+  input12_1:
     type: text
     # initial_value: null
     # auto_fill: true
     influence_conversation: False
 
-  input13:
+  input13_1:
     type: text
     # initial_value: null
     # auto_fill: true
     influence_conversation: False
 
-  input14:
+  input14_1:
     type: text
     # initial_value: null
     # auto_fill: true
     influence_conversation: False    
 
-  input15:
+  input15_1:
     type: text
     # initial_value: null
     # auto_fill: true
     influence_conversation: False   
 
-  input16:
+  input16_1:
     type: text
     # initial_value: null
     # auto_fill: true
     influence_conversation: False    
 
-  input17:
+  input17_1:
     type: text
     # initial_value: null
     # auto_fill: true
     influence_conversation: False
 
-  input18:
+  input18_1:
     type: text
     # initial_value: null
     # auto_fill: true
     influence_conversation: False
 
-  input19:
+  input19_1:
     type: text
     # initial_value: null
     # auto_fill: true
@@ -1248,44 +1248,44 @@ forms:
       name:
       - type: from_text
 
-  input12_form:
+  input12_1_form:
     required_slots:
-      input12:
+      input12_1:
       - type: from_text
 
-  input13_form:
+  input13_1_form:
     required_slots:
-      input13:
+      input13_1:
       - type: from_text
 
-  input14_form:
+  input14_1_form:
     required_slots:
-      input14:
+      input14_1:
       - type: from_text
 
-  input15_form:
+  input15_1_form:
     required_slots:
-      input15:
+      input15_1:
       - type: from_text  
 
-  input16_form:
+  input16_1_form:
     required_slots:
-      input16:
+      input16_1:
       - type: from_text
 
-  input17_form:
+  input17_1_form:
     required_slots:
-      input17:
+      input17_1:
       - type: from_text    
 
-  input18_form:
+  input18_1_form:
     required_slots:
-      input18:
+      input18_1:
       - type: from_text
 
-  input19_form:
+  input19_1_form:
     required_slots:
-      input19:
+      input19_1:
       - type: from_text
 
   input20_form:
@@ -1451,14 +1451,14 @@ forms:
 actions:
 - action_set_name_slot_none
 - action_get_name
-- action_set_input12_slot_none
-- action_set_input13_slot_none
-- action_set_input14_slot_none
-- action_set_input15_slot_none
-- action_set_input16_slot_none
-- action_set_input17_slot_none
-- action_set_input18_slot_none
-- action_set_input19_slot_none
+- action_set_input12_1_slot_none
+- action_set_input13_1_slot_none
+- action_set_input14_1_slot_none
+- action_set_input15_1_slot_none
+- action_set_input16_1_slot_none
+- action_set_input17_1_slot_none
+- action_set_input18_1_slot_none
+- action_set_input19_1_slot_none
 - action_set_input20_slot_none
 - action_set_input21_slot_none
 - action_set_input22_slot_none
