@@ -137,8 +137,10 @@ class ActionSetInput_29(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
         input29_all = [ ]  
         input29 = tracker.get_slot("input29")
+        ###########################
         if input29:
             print("input29_slot",input29) 
             input29_all.append(input29) 
@@ -147,6 +149,22 @@ class ActionSetInput_29(Action):
             print("input29_all",input29_all)
             print("self.input29_all",self.input29_all)
             print("all_input",all_input)
+        ###########################
+        input29 = tracker.get_slot("input29")
+        bot_session_id = tracker.sender_id
+        print("bot_session_id", bot_session_id)        
+        if input29:
+            print("input29_slot",input29) 
+            conn = connection()
+            result = conn.iwill.bot_reason.insert_one(
+                {
+                    "bot_session_id": bot_session_id,
+                    "reason": input29
+                }
+            )
+            print(result)
+            print(result.inserted_id)
+            conn.close()
         dispatcher.utter_message(template="utter_week4_s86") 
         return [SlotSet("input29", None)]
 
@@ -593,6 +611,21 @@ class ActionHelloWorld29(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        ###########################
+        bot_session_id = tracker.sender_id
+        print("bot_session_id", bot_session_id)
+        conn = connection()
+        result = conn.iwill.bot_reason.find(
+            {
+                "bot_session_id": bot_session_id
+            }
+        )
+        all_reasons= []
+        for doc in result:
+            print(doc['emotion']) 
+            all_reasons.append(doc['emotion'])
+        print(all_reasons)
+        ###########################
         input_all = [ ]    
         last_intent = tracker.latest_message['intent'].get('name')
         print(last_intent)      
@@ -600,20 +633,57 @@ class ActionHelloWorld29(Action):
         input29 = tracker.get_slot("input29")
         all_input_len = len(all_input)
         if int(all_input_len) <= 3 :
-            print("-------------------------------------")
-            print("input29_slot",input29) 
-            input_all.append(input29) 
-            self.input_all_1.append(input29)
-            print("input_all",input_all)
-            print("self.input_all_1",self.input_all_1)
-            print("-------------------------------------")
+ 
             dispatcher.utter_message(text = "Please think of a few more things to add. You can add them even if the chance is very low! ")
             dispatcher.utter_message(buttons = [{"payload": "/affirm8", "title": "Yes."}])
+ 
         else:
             print("input29",input29)    
             # dispatcher.utter_message(template="utter_week4_s86_b")
-            dispatcher.utter_message(text = "Here is what you typed:- "+'"'+", ".join(all_input)+'"'+".") 
- 
+            dispatcher.utter_message(text = "Here is what you typed:- "+'"'+", ".join(all_reasons)+'"'+".") 
+            dispatcher.utter_message(buttons = [{"payload": "/affirm9", "title": "Yes."}])
         print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
         return [SlotSet("input29", None)]     
+    
+    
+class ActionHelloWorld29_1(Action):
+    
+    def name(self) -> Text:
+        self.input_all_1 = [ ]
+        print("hello")
+        return "action_input29_1_slot"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        ###########################
+        bot_session_id = tracker.sender_id
+        print("bot_session_id", bot_session_id)
+        conn = connection()
+        result = conn.iwill.bot_reason.find(
+            {
+                "bot_session_id": bot_session_id
+            }
+        )
+        all_reasons= []
+        for doc in result:
+            print(doc['emotion']) 
+            all_reasons.append(doc['emotion'])
+        print(all_reasons)
+        ###########################
+
+        input29 = tracker.get_slot("input29")
+        last_input = all_input[-1]
+        rev_input = all_reasons.reverse()
+        
+        # if last_input :
+        #     print("-------------------------------------")
+        #     dispatcher.utter_message(text = "1." +str(last_input))
+        if rev_input :
+            for i in rev_input:
+                print("-------------------------------------")
+                dispatcher.utter_message(text = "1." +str(i))
+
+        print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
+        return [SlotSet("input29", None)]  
     
