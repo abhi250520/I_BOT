@@ -1045,6 +1045,7 @@ forms:
 
 actions:
 - action_set_name_slot_none
+- action_get_name
 - action_set_input7_slot_none
 - action_set_input8_slot_none
 - action_set_input10_slot_none

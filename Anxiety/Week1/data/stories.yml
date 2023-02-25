@@ -32,6 +32,7 @@ stories:
 - story: story 6 happy
   steps: 
   - intent: umm_exactly_yes
+  - action: action_save_name   
   - action: utter_week_more
   - action: input7_form
   - action: utter_week_desc

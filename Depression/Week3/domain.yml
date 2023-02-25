@@ -1227,6 +1227,7 @@ forms:
 
 actions:
 - action_set_name_slot_none
+- action_get_name
 - action_set_input16_slot_none
 - action_set_input17_slot_none
 - action_set_input18_slot_none

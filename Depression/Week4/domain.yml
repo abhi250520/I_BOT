@@ -1291,20 +1291,7 @@ forms:
 
 actions:
 - action_set_name_slot_none
-# - action_set_input0_slot_none
-# - action_set_input1_slot_none
-# - action_set_input2_slot_none
-# - action_set_input3_slot_none
-# - action_set_input4_slot_none
-# - action_set_input5_slot_none
-# - action_set_input6_slot_none
-# - action_set_input7_slot_none
-# - action_set_input8_slot_none
-# - action_set_input9_slot_none
-# - action_set_input10_slot_none
-# - action_set_input11_slot_none
-# - action_input0_1_2_3 
-# - action_set_input3_slot 
+- action_get_name
 - action_set_input12_slot_none
 - action_set_input13_slot_none
 - action_set_input14_slot_none

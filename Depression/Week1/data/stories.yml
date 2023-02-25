@@ -36,6 +36,7 @@ stories:
 - story: OKay story [ SAD PATH ]
   steps: 
   - intent: okay_story_part_1
+  - action: action_save_name  
   - action: utter_ok1
   - intent: deny
   - action: utter_not_sure
@@ -55,6 +56,7 @@ stories:
 - story: OKay story [ Happy PATH ]
   steps: 
   - intent: okay_story_part_1
+  - action: action_save_name  
   - action: utter_ok1
   - intent: affirm
   - action: utter_sure_yes

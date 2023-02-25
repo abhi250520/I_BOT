@@ -5,6 +5,7 @@ stories:
 - story: story 1 convo1 start.................................................
   steps:
   - intent: session0
+  - action: action_get_name
   - action: utter_user1c
   - action: utter_user2c
 

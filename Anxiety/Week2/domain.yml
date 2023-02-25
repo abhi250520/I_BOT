@@ -413,6 +413,7 @@ forms:
         
 
 actions:
+- action_get_name
 - action_set_name_slot_none
 - action_set_input0_slot_none
 - action_set_input1_slot_none
