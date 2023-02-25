@@ -1,3 +1,1 @@
-rasa
-rasa-sdk
-rasa-x
+pymongo
