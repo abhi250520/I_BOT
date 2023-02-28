@@ -8,9 +8,13 @@ stories:
   - action: utter_great_a
   - action: name_form
   - action: utter_great_spell
+
+- story: story 1_checks
+  steps:  
   - intent: affirm_spell
   - action: utter_name
   - intent: mood_great
+  - action: action_save_name     
   - action: utter_user1_a
   - action: utter_user2_a
   - intent: affirm
@@ -31,8 +35,7 @@ stories:
 
 - story: story 6 happy
   steps: 
-  - intent: umm_exactly_yes
-  - action: action_save_name   
+  - intent: umm_exactly_yes 
   - action: utter_week_more
   - action: input7_form
   - action: utter_week_desc

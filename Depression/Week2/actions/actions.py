@@ -139,10 +139,10 @@ class ActionSetInput_7(Action):
         if input7:
             print("input7_slot",input7) 
             conn = connection()
-            result = conn.iwill.bot_emotion.insert_one(
+            result = conn.iwill.bot_activity.insert_one(
                 {
                     "bot_session_id": bot_session_id,
-                    "emotion": input7
+                    "activity": input7
                 }
             )
             # print(result)
@@ -176,16 +176,16 @@ class ActionHelloWorld1(Action):
         print("bot_session_id", bot_session_id)
 
         conn = connection()
-        result = conn.iwill.bot_emotion.find(
+        result = conn.iwill.bot_activity.find(
             {
                 "bot_session_id": bot_session_id
             }
         )
-        all_emotions1= []
+        all_activity= []
         for doc in result:
-            print(doc['emotion']) 
-            all_emotions1.append(doc['emotion'])
-        print(all_emotions1) 
+            print(doc['activity']) 
+            all_activity.append(doc['activity'])
+        print(all_activity) 
 
         last_intent = tracker.latest_message['intent'].get('name')
         print(last_intent) 
@@ -197,11 +197,12 @@ class ActionHelloWorld1(Action):
         else:
             print("input7",input7)    
             # dispatcher.utter_message(template="utter_week2_affirm3")
-            dispatcher.utter_message(text = "Good job! Here is a list of your favorite activities:- "+'"'+", ".join(all_emotions1)+'"'+".")
-            dispatcher.utter_message(text = "Choose one that you would like to start working on this week! Write down the number next to the activity.")
-            for i in all_emotions1:
+            dispatcher.utter_message(text = "Good job! Here is a list of your favorite activities:- "+'"'+", ".join(all_activity)+'"'+".")
+            buttons = [ ]
+            for i in all_activity:
                 print(i)
-                dispatcher.utter_message(buttons = [{"payload": "/mood_great", "title": str(i)}])     
+                buttons.append({"payload": "/mood_great", "title": str(i)})
+            dispatcher.utter_message(text = "Choose one that you would like to start working on this week! Write down the number next to the activity.", buttons = buttons)     
         return [SlotSet("input7", None)]  
     
 class ActionSetInput8(Action):

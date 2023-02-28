@@ -467,6 +467,16 @@ class ActionSetInput28(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         return [SlotSet("input28", None)]  
 
+class ActionSetInput28_a(Action):
+    
+    def name(self) -> Text:
+        return "action_set_input28_a_slot_none"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        return [SlotSet("input28_a", None)] 
+
 class ActionSetInput29(Action):
     
     def name(self) -> Text:
@@ -629,8 +639,8 @@ class ActionHelloWorld29(Action):
         print(last_intent)      
 
         input29 = tracker.get_slot("input29")
-        all_input_len = len(all_input)
-        if int(all_input_len) <= 3 :
+        all_reasons_len = len(all_reasons)
+        if int(all_reasons_len) <= 3 :
  
             dispatcher.utter_message(text = "Please think of a few more things to add. You can add them even if the chance is very low! ")
             dispatcher.utter_message(buttons = [{"payload": "/affirm8", "title": "Yes."}])
@@ -673,7 +683,7 @@ class ActionHelloWorld29_1(Action):
         input29 = tracker.get_slot("input29")
         last_input = all_input[-1]
         rev_input = all_reasons.reverse()
-        
+        print("rev_input",rev_input)
         # if last_input :
         #     print("-------------------------------------")
         #     dispatcher.utter_message(text = "1." +str(last_input))

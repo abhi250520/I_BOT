@@ -201,14 +201,15 @@ nlu:
     - 5. Worse than before.
     - worse than before  
 
- 
-
 - intent: session3
   examples: |
     - Continue to Session 44
     - Continue to Session 4..
 
- 
+- intent: session4
+  examples: |
+    - Continue to Session 55
+    - Continue to Session 5..
 
 - intent: distortion12
   examples: |

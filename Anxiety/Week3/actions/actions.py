@@ -283,11 +283,11 @@ class ActionHelloWorld(Action):
         if input1:
             print("input1",input1)
             # dispatcher.utter_message(template="utter_input3_1")
-            dispatcher.utter_message(text = "When you face situations like "+'"'+str(input0)+", "+str(input1)+'"'+", you think that "+'"'+str(input2)+'"'+". This makes you feel "+'"'+", ".join(all_input)+'"'+". Am I right?")
+            dispatcher.utter_message(text = "When you face situations like "+'"'+str(input0)+", "+str(input1)+'"'+", you think that "+'"'+str(input2)+'"'+". This makes you feel "+'"'+", ".join(all_emotions)+'"'+". Am I right?")
             dispatcher.utter_message(buttons = [{"payload": "/okay_story_part_4", "title": "Exactly..."}])
         else:
             # dispatcher.utter_message(template="utter_input3_0")
-            dispatcher.utter_message(text = "When you face situations like "+'"'+str(input0)+'"'+", you think that "+'"'+str(input2)+'"'+". This makes you feel "+'"'+", ".join(all_input)+'"'+". Am I right?")
+            dispatcher.utter_message(text = "When you face situations like "+'"'+str(input0)+'"'+", you think that "+'"'+str(input2)+'"'+". This makes you feel "+'"'+", ".join(all_emotions)+'"'+". Am I right?")
             dispatcher.utter_message(buttons = [{"payload": "/okay_story_part_4", "title": "Exactly..."}])
         print("@@@@@@@@@@@@@@@@@@@@@@I_WILL@@@@@@@@@@@@@@@@@@@@@@@")
         return [SlotSet("input3", None)]   

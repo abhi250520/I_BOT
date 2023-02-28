@@ -398,6 +398,8 @@ stories:
   - action: utter_week4_s84
   - intent: affirm
   - action: action_set_input28_slot_none
+  - action: utter_week4_s84_a
+  - action: input28_a_form
   - action: utter_week4_s85 
   - action: input29_form
   - action: action_set_input29_slot
@@ -405,10 +407,12 @@ stories:
 - story: anxty 4_distortion15_first
   steps:   
   - intent: affirm7
+  - action: action_set_input28_a_slot_none  
   - action: utter_week4_s86_a
   - intent: deny
   - action: action_input29_slot
   - action: utter_week4_s86_c
+  - action: action_input29_1_slot
   - action: input30_form
   - action: utter_week4_s86_d
   - intent: affirm
@@ -428,6 +432,7 @@ stories:
 - story: anxty 4_distortion15_second
   steps: 
   - intent: affirm8
+  - action: action_set_input28_a_slot_none  
   - action: action_set_input29_slot_none
   - action: utter_week4_s87_a
   - action: input29_form
@@ -436,6 +441,7 @@ stories:
 - story: anxty 4_distortion15_third
   steps: 
   - intent: affirm9
+  - action: action_set_input28_a_slot_none    
   - action: utter_week4_s087_1
   - action: action_set_input29_slot_none  
   - action: input29_form

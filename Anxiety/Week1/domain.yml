@@ -311,7 +311,7 @@ responses:
       We can work on this together, and come to a stage where these symptoms don't bother you anymore.     
     buttons:
     - payload: /affirm
-      title: Yes, I want to work it!
+      title: Yes, I want to work on it!
     - payload: /affirm
       title: I think that would help!
 
