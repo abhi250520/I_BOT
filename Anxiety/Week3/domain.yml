@@ -34,6 +34,7 @@ intents:
 - goodbye
 - affirm
 - deny
+- affirm2
 - affirm3
 - affirm4
 - affirm5
@@ -1124,6 +1125,14 @@ responses:
     buttons:
     - payload: /affirm
       title: Continue
+
+  utter_more_distortion: 
+  - text: Do you want to explore more distortions?
+    buttons:
+    - payload: /deny
+      title: No, I don't want
+    - payload: /affirm2
+      title: Yes.
 
   utter_week3_last1:
   - text: I hope you are now a little more clear on how many different ways our thoughts can be distorted.

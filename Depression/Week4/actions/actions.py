@@ -611,6 +611,7 @@ class ActionSetInput41(Action):
    
         return [SlotSet("input41", None)]    
     
+    
 class ActionHelloWorld29(Action):
     
     def name(self) -> Text:
@@ -632,8 +633,8 @@ class ActionHelloWorld29(Action):
         )
         all_reasons= []
         for doc in result:
-            print(doc['emotion']) 
-            all_reasons.append(doc['emotion'])
+            print(doc['reason']) 
+            all_reasons.append(doc['reason'])
         print(all_reasons)
         ###########################
         input_all = [ ]    
@@ -677,23 +678,22 @@ class ActionHelloWorld29_1(Action):
         )
         all_reasons= []
         for doc in result:
-            print(doc['emotion']) 
-            all_reasons.append(doc['emotion'])
-        print(all_reasons)
+            print(doc['reason']) 
+            all_reasons.append(doc['reason'])
+        print(all_reasons,"@@@@@")
         ###########################
 
         input29 = tracker.get_slot("input29")
-        last_input = all_input[-1]
-        rev_input = all_reasons.reverse()
-        
-        # if last_input :
-        #     print("-------------------------------------")
-        #     dispatcher.utter_message(text = "1." +str(last_input))
+
+        rev_input = all_reasons[ ::-1] 
+        print("rev_input@@@",rev_input)
+ 
         if rev_input :
+            count =0
             for i in rev_input:
+                count = count +1
                 print("-------------------------------------")
-                dispatcher.utter_message(text = "1." +str(i))
+                dispatcher.utter_message(text = str(count)+". "+str(i))
 
         print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
-        return [SlotSet("input29", None)]  
-    
+        return [SlotSet("input29", None)] 

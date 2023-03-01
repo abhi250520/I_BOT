@@ -128,8 +128,8 @@ class ActionSetName(Action):
 class ActionSetInput_29(Action):
     
     def name(self) -> Text:
-        global all_input
-        all_input= []
+        global all_reasons
+        all_reasons= []
         self.input29_all = [ ]
         print("input29_saved")
         return "action_set_input29_slot"
@@ -145,10 +145,10 @@ class ActionSetInput_29(Action):
             print("input29_slot",input29) 
             input29_all.append(input29) 
             self.input29_all.append(input29)
-            all_input.append(input29)
+            all_reasons.append(input29)
             print("input29_all",input29_all)
             print("self.input29_all",self.input29_all)
-            print("all_input",all_input)
+            print("all_reasons",all_reasons)
         ###########################
         input29 = tracker.get_slot("input29")
         bot_session_id = tracker.sender_id
@@ -630,8 +630,8 @@ class ActionHelloWorld29(Action):
         )
         all_reasons= []
         for doc in result:
-            print(doc['emotion']) 
-            all_reasons.append(doc['emotion'])
+            print(doc['reason']) 
+            all_reasons.append(doc['reason'])
         print(all_reasons)
         ###########################
         input_all = [ ]    
@@ -675,22 +675,22 @@ class ActionHelloWorld29_1(Action):
         )
         all_reasons= []
         for doc in result:
-            print(doc['emotion']) 
-            all_reasons.append(doc['emotion'])
-        print(all_reasons)
+            print(doc['reason']) 
+            all_reasons.append(doc['reason'])
+        print(all_reasons,"@@@@@")
         ###########################
 
         input29 = tracker.get_slot("input29")
-        last_input = all_input[-1]
-        rev_input = all_reasons.reverse()
-        print("rev_input",rev_input)
-        # if last_input :
-        #     print("-------------------------------------")
-        #     dispatcher.utter_message(text = "1." +str(last_input))
+
+        rev_input = all_reasons[ ::-1] 
+        print("rev_input@@@",rev_input)
+ 
         if rev_input :
+            count =0
             for i in rev_input:
+                count = count +1
                 print("-------------------------------------")
-                dispatcher.utter_message(text = "1." +str(i))
+                dispatcher.utter_message(text = str(count)+". "+str(i))
 
         print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
         return [SlotSet("input29", None)]  

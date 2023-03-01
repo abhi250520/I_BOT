@@ -222,6 +222,10 @@ nlu:
     - 4. Slightly worse than Before...
     - 5. Worse than Before...
 
+- intent: affirm2
+  examples: |    
+    - affirm2
+    - affirm2...
 
 - intent: affirm13
   examples: |    

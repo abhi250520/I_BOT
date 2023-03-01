@@ -181,6 +181,12 @@ nlu:
     - Can I try it? 
     - How does this work?
 
+
+- intent: affirm2
+  examples: |    
+    - affirm2
+    - affirm2...
+
 - intent: affirm3
   examples: |    
     - affirm3

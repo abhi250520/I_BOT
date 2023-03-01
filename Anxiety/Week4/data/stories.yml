@@ -409,7 +409,7 @@ stories:
   - intent: affirm7
   # - action: utter_week4_s86_a
   # - intent: deny
-  - action: action_set_input28_a_slot_none    
+  # - action: action_set_input28_a_slot_none    
   - action: action_input29_slot
 
 - story: anxty 4_distortion15_first_A
@@ -428,7 +428,8 @@ stories:
   - intent: affirm  
   - action: action_set_input30_slot_none 
   - action: utter_week4_ext3
-  - intent: affirm   
+  - intent: affirm  
+  - action: action_set_input28_a_slot_none 
   - action: utter_week4_ext4  
   - action: utter_week4_ext5
   - intent: goodbye   
@@ -437,7 +438,7 @@ stories:
 - story: anxty 4_distortion15_second
   steps: 
   - intent: affirm8
-  - action: action_set_input28_a_slot_none    
+  # - action: action_set_input28_a_slot_none    
   - action: action_set_input29_slot_none
   - action: utter_week4_s87_a
   - action: input29_form

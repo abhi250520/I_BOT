@@ -528,9 +528,16 @@ stories:
 #   - intent: affirm
 #   - action: utter_week3_last1a  
 
+- story: anxty 3_dist_more
+  steps: 
+  - intent: affirm2
+  - action: utter_week3_all_1 
+
 - story: anxty_last_all
   steps: 
   - intent: affirm_ok9
+  - action: utter_more_distortion
+  - intent: deny  
   - action: utter_week3_last1 
   - intent: mood_great
   - action: utter_week3_last1a  

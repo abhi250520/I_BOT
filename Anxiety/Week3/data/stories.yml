@@ -362,6 +362,11 @@ stories:
   - action: utter_week3_all_b
   - action: utter_week3_all_1 
 
+- story: anxty 3_dist_more
+  steps: 
+  - intent: affirm2
+  - action: utter_week3_all_1 
+
 - story: anxty 3_distortion1
   steps: 
   - intent: distortion1
@@ -369,6 +374,8 @@ stories:
   - action: utter_distortion1a
   - action: utter_distortion1b
   - intent: affirm
+  - action: utter_more_distortion
+  - intent: deny
   - action: utter_week3_last1 
   - intent: affirm
   - action: utter_week3_last1a
@@ -380,6 +387,8 @@ stories:
   - action: utter_distortion2a
   - action: utter_distortion2b  
   - intent: affirm
+  - action: utter_more_distortion
+  - intent: deny
   - action: utter_week3_last1 
   - intent: affirm
   - action: utter_week3_last1a
@@ -391,6 +400,8 @@ stories:
   - action: utter_distortion3a
   - action: utter_distortion3b  
   - intent: affirm
+  - action: utter_more_distortion
+  - intent: deny
   - action: utter_week3_last1 
   - intent: affirm
   - action: utter_week3_last1a
@@ -402,6 +413,8 @@ stories:
   - action: utter_distortion4a
   - action: utter_distortion4b  
   - intent: affirm
+  - action: utter_more_distortion
+  - intent: deny
   - action: utter_week3_last1 
   - intent: affirm
   - action: utter_week3_last1a
@@ -413,6 +426,8 @@ stories:
   - action: utter_distortion5a
   - action: utter_distortion5b  
   - intent: affirm
+  - action: utter_more_distortion
+  - intent: deny
   - action: utter_week3_last1 
   - intent: affirm
   - action: utter_week3_last1a
@@ -424,6 +439,8 @@ stories:
   - action: utter_distortion6a
   - action: utter_distortion6b  
   - intent: affirm
+  - action: utter_more_distortion
+  - intent: deny
   - action: utter_week3_last1 
   - intent: affirm
   - action: utter_week3_last1a
@@ -435,6 +452,8 @@ stories:
   - action: utter_distortion7a
   - action: utter_distortion7b
   - intent: affirm
+  - action: utter_more_distortion
+  - intent: deny
   - action: utter_week3_last1 
   - intent: affirm
   - action: utter_week3_last1a
@@ -446,6 +465,8 @@ stories:
   - action: utter_distortion8a
   - action: utter_distortion8b  
   - intent: affirm
+  - action: utter_more_distortion
+  - intent: deny
   - action: utter_week3_last1 
   - intent: affirm
   - action: utter_week3_last1a  
@@ -457,6 +478,8 @@ stories:
   - action: utter_distortion9a
   - action: utter_distortion9b  
   - intent: affirm
+  - action: utter_more_distortion
+  - intent: deny
   - action: utter_week3_last1 
   - intent: affirm
   - action: utter_week3_last1a
@@ -468,6 +491,8 @@ stories:
   - action: utter_distortion10a
   - action: utter_distortion10b
   - intent: affirm
+  - action: utter_more_distortion
+  - intent: deny
   - action: utter_week3_last1 
   - intent: affirm
   - action: utter_week3_last1a
@@ -479,6 +504,8 @@ stories:
   - action: utter_distortion11a
   - action: utter_distortion11b
   - intent: affirm
+  - action: utter_more_distortion
+  - intent: deny
   - action: utter_week3_last1 
   - intent: affirm
   - action: utter_week3_last1a
