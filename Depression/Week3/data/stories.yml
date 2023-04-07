@@ -531,7 +531,7 @@ stories:
 - story: anxty 3_dist_more
   steps: 
   - intent: affirm2
-  - action: utter_week3_all_1 
+  - action: utter_distortion_list 
 
 - story: anxty_last_all
   steps: 
