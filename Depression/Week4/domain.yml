@@ -650,7 +650,7 @@ responses:
   - text: |- 
       Realistically, how likely is it to happen now?
 
-      Enter it as a percentage - 1% being the least and 100% being the worst
+      Enter it as a percentage - 1% being the lowest and 100% being the highest
   
   utter_week4_s75:
   - text: |- 
@@ -675,7 +675,7 @@ responses:
   - text: |- 
       How likely is it that this alternate scenario will take place?
 
-      Enter it as a percentage - 1% being the least and 100% being the worst
+      Enter it as a percentage - 1% being the lowest and 100% being the highest
   
   utter_week4_s78_a:
   - text: Continue, {name}.
@@ -721,7 +721,7 @@ responses:
       title: Go to Next Step
  
   utter_week4_s84_a:
-  - text: Enter it as a percentage - 1% being the least and 100% being the worst.
+  - text: Enter it as a percentage - 1% being the lowest and 100% being the highest
 
   utter_week4_s85:
   - text: |- 

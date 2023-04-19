@@ -202,7 +202,7 @@ responses:
     - payload: /affirm
       title: Let's go!
   utter_convo_3:
-  - text: So, {name}, in the last session, we talked about how your thoughts affect you emotions, and behavior.
+  - text: So, {name}, in the last session, we talked about how your thoughts affect your emotions, and behavior
   utter_convo_4:
   - text: Do you remember this chart?
     image: https://i.ibb.co/Rvj8kx9/Chartsfinal-01.png
@@ -222,7 +222,7 @@ responses:
     - payload: /affirm
       title: Ok...But why?
   utter_convo_8:
-  - text: Because, your behavior can affect you mood, and you mood, in turn, can affect your behavior.
+  - text: Because, your behavior can affect your mood, and your mood, in turn, can affect your behavior
   utter_convo_9:
   - text: This is called the vicious cycle of depression.
   utter_convo_10:
@@ -748,7 +748,7 @@ responses:
   - text: Firstly, activating your behavior can change your brain state by releasing "good chemicals" in your brain.
   
   utter_story_week2_32:
-  - text: These good chemicals can lift up our mood
+  - text: These good chemicals can lift up your mood
     buttons:
     - payload: /affirm
       title: Go On...
@@ -784,7 +784,9 @@ responses:
   - text: So, how did you feel after doing the activity?
     buttons:
     - payload: /mood_unhappy
-      title: Options
+      title: 1. It felt good
+    - payload: /mood_unhappy
+      title: 2. It felt okay
 
   utter_affirm3:
   - text: Let's go one step further.
