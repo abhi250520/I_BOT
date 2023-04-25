@@ -723,6 +723,7 @@ responses:
   utter_week4_s84_a:
   - text: Enter it as a percentage - 1% being the lowest and 100% being the highest
 
+
   utter_week4_s85:
   - text: |- 
       I'm sorry to hear that.
@@ -741,16 +742,19 @@ responses:
     - payload: /affirm7
       title: No, I'm good
 
-  utter_week4_s86_a:
-  - text: If would you like to add more few things ?
-    buttons:
-    - payload: /affirm9
-      title: Yes.
-    - payload: /deny
-      title: No, I'm good
+  # utter_week4_s86_a:
+  # - text: If would you like to add more few things ?
+  #   buttons:
+  #   - payload: /affirm9
+  #     title: Yes.
+  #   - payload: /deny
+  #     title: No, I'm good
 
   utter_week4_s86_b:
   - text: Here is what you typed:- "{input29}".
+    buttons:
+    - payload: /affirm9
+      title: Yes.
 
   utter_week4_s86_c:
   - text: Now, lets try to assign percentages to each of these reasons. How much do you think each reason could have contributed to the situation?
