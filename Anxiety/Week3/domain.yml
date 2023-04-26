@@ -959,6 +959,7 @@ responses:
 
   utter_distortion1:
   - text: The inability or unwillingness to see shades of gray. In other words, you see things in terms of extremes.
+    image: https://i.ibb.co/bmfwcK1/Document-from-Sanjana-Palakodeti.jpg
 
   utter_distortion1a:
   - text: |- 
@@ -976,6 +977,7 @@ responses:
 
   utter_distortion2:
   - text: Inaccurate belief that we know what another person is thinking. Believing that people are thinking badly of you without any real evidence that they are.
+    image: https://i.ibb.co/C6z1HQN/Mind-Reading.jpg
 
   utter_distortion2a:
   - text: |- 
@@ -993,6 +995,7 @@ responses:
 
   utter_distortion3:
   - text: Tendency to make  predictions about the future based on little to no evidence.
+    image: https://i.ibb.co/d6xTQB1/Fortune-Telling.jpg
 
   utter_distortion3a:
   - text: |- 
@@ -1008,6 +1011,7 @@ responses:
 
   utter_distortion4:
   - text: Negative experiences/aspects seem large and scary wile positive things seem small and insignificant. In simpler words, you focus only on what went wrong.
+    image: https://i.ibb.co/nRcg9C1/M-M.jpg
 
   utter_distortion4a:
   - text: |- 
@@ -1022,6 +1026,7 @@ responses:
 
   utter_distortion5:
   - text: Focusing on the worst possible scenario.
+    image: https://i.ibb.co/92nsNpK/Catastrophizing.jpg
 
   utter_distortion5a:
   - text: |- 
@@ -1038,6 +1043,7 @@ responses:
 
   utter_distortion6:
   - text: Taking everything personally or assigning blame to yourself or others without any logical reason to believe it.
+    image: https://i.ibb.co/y63fRWP/Blaming.jpg
 
   utter_distortion6a:
   - text: |- 
@@ -1052,6 +1058,7 @@ responses:
 
   utter_distortion7:
   - text: Turning something positive into negative.
+    image: https://i.ibb.co/YygD8NM/Discount-Positives.jpg
 
   utter_distortion7a:
   - text: |- 
@@ -1068,6 +1075,7 @@ responses:
 
   utter_distortion8:
   - text: Judging or labelling yourself or others in an extreme way based on one instance or experience.
+    image: https://i.ibb.co/fXL9hw0/Labelling.jpg
 
   utter_distortion8a:
   - text: |- 
@@ -1084,6 +1092,7 @@ responses:
 
   utter_distortion9:
   - text: Should statements are rules that you make to yourself about what you “should” do, what you “ought” to do, or what you “must” do. They can also be applied to others, setting a expectations that may not be met.
+    image: https://i.ibb.co/XCqNryt/Should.jpg
 
   utter_distortion9a:
   - text: |- 
@@ -1100,6 +1109,7 @@ responses:
 
   utter_distortion10:
   - text: Here, we mistake our feelings for facts. Just because we feel something doesn’t mean it is true.
+    image: https://i.ibb.co/5KmchLF/Emotional-Reasoning.jpg
 
   utter_distortion10a:
   - text: |- 
@@ -1114,6 +1124,7 @@ responses:
 
   utter_distortion11:
   - text: In overgeneralization, you take a single negative situation and generalize it widely using words like "always", "never", and "everyone".
+    image: https://i.ibb.co/yYtmRWM/Generalization.jpg
 
   utter_distortion11a:
   - text: |- 
