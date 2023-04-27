@@ -275,7 +275,7 @@ responses:
     - payload: /affirm
       title: Sure
   utter_meter_2_5anx:
-  - text: Next time you start feeling low/sad, open the thought diary, a (you'll find it in the tools tab!) and write down the situation, your thought, your emotions, and your response to it. And...
+  - text: Next time you start feeling low/sad, open the thought diary (you'll find it in the tools tab!) and write down the situation, your thought, your emotions, and your response to it. And...
   utter_meter_2_6anx:
   - text: Try to build a more healthy and positive alternative thought.
     buttons:
