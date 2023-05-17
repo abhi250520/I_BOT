@@ -26,12 +26,12 @@ stories:
   - action: utter_week3_a_affirm2
   - action: utter_week3_a_affirm2a
 
-- story: anxty 3_b
+- story: anxty_3_b
   steps: 
   - intent: meter8
   - action: utter_week3_b_1
   - action: utter_week3_b_1a
-  - intent: deny
+  - intent: affirm
   - action: utter_week3_b_2
 
 - story: anxty 3_c1

@@ -126,7 +126,6 @@ nlu:
     - No,I'm good
     - no im good
     - No, I'm done for today.
-    - Thank you. I'm looking forward to learning new things.
 
 - intent: mood_great
   examples: |

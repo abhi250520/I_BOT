@@ -159,10 +159,9 @@ responses:
       I know this is super stressful, but you're doing great!
 
   utter_week3_b_1a:  
-  - text: |- 
-      Trust me, I've got your back. We shall work through this together.
+  - text: Trust me, I've got your back. We shall work through this together.
     buttons:
-    - payload: /deny
+    - payload: /affirm
       title: Thank you. I'm looking forward to learning new things.
 
   utter_week3_b_2:  
