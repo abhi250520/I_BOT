@@ -603,7 +603,7 @@ responses:
     - payload: /mood_unhappy8
       title: Yes, she assumes she will do a bad job without any evidence to indicate it.
     - payload: /mood_unhappy9
-      title: No, I don't think he was
+      title: No, I don't think she was
 
   utter_week3_shilpa_great:  
   - text: Exactly! This type of thinking is called Mind Reading.
