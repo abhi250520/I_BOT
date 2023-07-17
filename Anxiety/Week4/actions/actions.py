@@ -694,3 +694,105 @@ class ActionHelloWorld29_1(Action):
 
         print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
         return [SlotSet("input29", None)]  
+
+# class ActionHelloWorld29(Action):
+    
+#     def name(self) -> Text:
+#         self.input_all_1 = [ ]
+#         print("hello")
+#         return "action_input29_slot"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+#         ###########################
+#         bot_session_id = tracker.sender_id
+#         print("bot_session_id", bot_session_id)
+#         conn = connection()
+#         result = conn.iwill.bot_reason.find(
+#             {
+#                 "bot_session_id": bot_session_id
+#             }
+#         )
+#         all_reasons= []
+#         for doc in result:
+#             print(doc['reason']) 
+#             all_reasons.append(doc['reason'])
+#         print(all_reasons)
+#         ###########################
+#         input_all = [ ]    
+#         last_intent = tracker.latest_message['intent'].get('name')
+#         print(last_intent)      
+
+#         input29 = tracker.get_slot("input29")
+#         all_reasons_len = len(all_reasons)
+#         if int(all_reasons_len) <= 3 :
+ 
+#             dispatcher.utter_message(text = "Please think of a few more things to add. You can add them even if the chance is very low! ")
+#             dispatcher.utter_message(buttons = [{"payload": "/affirm8", "title": "Yes."}])
+ 
+#         else:
+#             print("input29",input29)    
+#             # dispatcher.utter_message(template="utter_week4_s86_b")
+#             dispatcher.utter_message(text = "Here is what you typed:- "+'"'+", ".join(all_reasons)+'"'+".") 
+#             dispatcher.utter_message(buttons = [{"payload": "/affirm9", "title": "Yes."}])
+#         print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
+#         return [SlotSet("input29", None)]     
+    
+    
+# class ActionHelloWorld29_1(Action):
+    
+#     def name(self) -> Text:
+#         self.input_all_1 = [ ]
+#         print("hello")
+#         return "action_input29_1_slot"
+
+#     def run(self, dispatcher: CollectingDispatcher,
+#             tracker: Tracker,
+#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+#         ###########################
+#         bot_session_id = tracker.sender_id
+#         print("bot_session_id", bot_session_id)
+#         conn = connection()
+#         result_total_count = conn.iwill.bot_reason.find(
+#             {
+#                 "bot_session_id": bot_session_id
+#             }
+#         ).count()
+#         result_count = conn.iwill.bot_reason_reference.find(
+#             {
+#                 "bot_session_id": bot_session_id
+#             }
+#         ).count()
+#         serial = result_total_count-result_count+1
+#         # all_reasons= []
+#         result = conn.iwill.bot_reason_reference.find(
+#             {
+#                 "bot_session_id": bot_session_id
+#             }
+#         ).limit(1)
+#         print("result",result)
+#         res= conn.iwill.bot_reason_reference.deleteOne({"reason": result } )
+        
+#         dispatcher.utter_message(text = str(serial)+". "+str(result))
+
+#         # for doc in result:
+#         #     print(doc['reason']) 
+#         #     all_reasons.append(doc['reason'])
+#         # print(all_reasons,"@@@@@")
+#         ###########################
+
+#         input29 = tracker.get_slot("input29")
+
+#         # rev_input = all_reasons[ ::-1] 
+#         # print("rev_input@@@",rev_input)
+ 
+#         # if rev_input :
+#         #     count =0
+#         #     for i in rev_input:
+#         #         count = count +1
+#         #         print("-------------------------------------")
+#         #         dispatcher.utter_message(text = str(count)+". "+str(i))
+
+#         print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
+#         return [SlotSet("input29", None)]  

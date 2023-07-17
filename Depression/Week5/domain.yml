@@ -7,7 +7,24 @@ intents:
 - goodbye
 - affirm
 - deny
-
+- session4
+- session5
+- meter13
+- meter14
+- meter15
+- affirm18
+- affirm19
+- button3
+- affirm20
+- affirm21
+- affirm22
+- affirm23
+- affirm24
+- affirm25
+- affirm26
+- affirm27
+- affirm28
+- affirm29
 # - chitchat
 
 responses:
@@ -59,7 +76,7 @@ responses:
 # ========================================================================================================================
 
   utter_week5_s5:
-  - text: Don't stress about it, <username>. It takes some time to retrain your brain to see things differently.
+  - text: Don't stress about it, {name}. It takes some time to retrain your brain to see things differently.
 
   utter_week5_s6:
   - text: We will get through this together!
@@ -69,926 +86,575 @@ responses:
 
 # ========================================================================================================================
 
-#   utter_week4_s7:
-#   - text: |- 
-#       Would you like to begin with our next session?
-#     buttons:
-#     - payload: /affirm
-#       title: Yes!
-
-#   utter_week4_s8:
-#   - text: |- 
-#       Let's begin!
-
-#   utter_week4_s9:
-#   - text: |- 
-#       No problem. Let's begin with our session!
-#     buttons:
-#     - payload: /affirm10
-#       title: Sure!
-
-# # =========================================================================
-
-#   utter_week4_s10:
-#   - text: |- 
-#       Don't worry, {name}.
-
-#       I know this is super stressful, but you're doing great!
-
-#   utter_week4_s11:
-#   - text: |- 
-#       Trust me, I've got your back. We shall work through this together.
-#     buttons:
-#     - payload: /affirm
-#       title: Thank you. I'm looking forward to this session!
-
-#   utter_week4_s12:
-#   - text: |- 
-#       That's great! Let's begin with our next session!
-#     buttons:
-#     - payload: /affirm10
-#       title: Sure!
-
-#   utter_week4_s13:
-#   - text: |- 
-#       So {name}, remember how in our previous sessions, we talked about cognitive distortions?
-#     buttons:
-#     - payload: /affirm
-#       title: Yes!
-#     - payload: /affirm
-#       title: I think so...
-
-#   utter_week4_s14:
-#   - text: Great! I hope you've tried to identify the common distortions you experience regularly.
-#     buttons:
-#     - payload: /affirm6
-#       title: Yes, I was able to identify them.
-#     - payload: /button2
-#       title: No...I haven't tried that
-
-#   utter_week4_s15:
-#   - text: Good job, {name}!
-
-#   utter_week4_s16:
-#   - text: Since you were able to identify which of your thoughts were distorted, we will now try to reframe those thoughts.
-
-#   utter_week4_s17:
-#   - text: Are you ready?
-#     buttons:
-#     - payload: /affirm12
-#       title: How will this help me?
-#     - payload: /affirm13
-#       title: Yes!
-
-#   utter_week4_s18:
-#   - text: |- 
-#       No problem! We can try that now.
-
-#   utter_week4_s19:
-#   - text: |- 
-#       Can you think of any recent situation that made you anxious or worried?
-#     buttons:
-#     - payload: /affirm
-#       title: Maybe...
-#     - payload: /affirm
-#       title: Yes...
-
-#   utter_week4_s20:
-#   - text: Can you write it down for me? Try focusing on the where, when, who, and what happened?
-
-#   utter_week4_s21:
-#   - text: Ok, {name}.
-#     buttons:  
-#     - payload: /affirm
-#       title: Go to next Step
-
-#   utter_week4_s21_a:
-#   - text: I'm sorry you had to go through that. Can you write down the negative thoughts that were running in your head at that moment?
-
-#   utter_week4_s22:
-#   - text: That must have been hard, {name}. Do you think these thoughts could fall under any of these cognitive distortions?
-
-#   utter_week4_s23:
-#   - text: Choose the ones you think apply to you.
-#     buttons:
-#     - payload: /affirm
-#       title: All or None
-#     - payload: /affirm
-#       title: Discounting the positive
-#     - payload: /affirm
-#       title: Magnification and Minimization      
-#     - payload: /affirm
-#       title: Mind reading
-#     - payload: /affirm
-#       title: Fortune Telling
-#     - payload: /affirm
-#       title: Overgeneralization
-#     - payload: /affirm
-#       title: Catastrophizing
-#     - payload: /affirm
-#       title: Personalization and/or Blaming
-#     - payload: /affirm
-#       title: Labelling
-#     - payload: /affirm
-#       title: Should Statements
-#     - payload: /affirm
-#       title: Emotional Reasoning
-
-#   utter_week4_s24:
-#   - text: Great job, {name}! Let's begin with this session now!
-#     buttons:
-#     - payload: /affirm
-#       title: Ok!
-
-# #  =========================================================================================================
-
-#   utter_week4_s25:
-#   - text: I'm sorry to hear that. I can't imagine what it must be like for you.
-
-#   utter_week4_s26:
-#   - text: You can try scheduling a session with our experienced psychologists to get more personalized help with your problems.
-#     buttons:
-#     - payload: /deny
-#       title: No, I want to continue with chatbot sessions
-#     - payload: /deny
-#       title: Take me there!
-
-#   utter_week4_s27:
-#   - text: |- 
-#       Ok, {name}. I love the efforts you're putting in to feel better!
-
-#       So, you said you were feeling worse, right? Is there anything specific that happened in these few days, that triggered you?
-
-#   utter_week4_s28:
-#   - text: Is there anything else you would like to add?
-#     buttons:
-#     - payload: /mood_unhappy
-#       title: No, I'm good
-#     - payload: /affirm15
-#       title: Yes.
-
-#   utter_week4_s28a:
-#   - text: Ok, Please enter it below.
-
-#   utter_week4_s29:
-#   - text: That's too bad, {name}. I can imagine how depressing that must have been.
-
-#   utter_week4_s30:
-#   - text: Would you like to try using the thought diary for this situation?
-#     buttons:
-#     - payload: /deny
-#       title: No, I'd like to continue with this session.
-#     - payload: /affirm14
-#       title: Yes.
-
-#   utter_week4_s31:
-#   - text: Thought diary.
-
-#   utter_week4_s32:
-#   - text: |- 
-#       Sure, {name}. I hope this session will help you handle your negative thoughts more effectively.
-
-#   utter_week4_s32_a:
-#   - text: |- 
-#       Let's begin!
-#     buttons:
-#     - payload: /affirm10
-#       title: Sure!
-
-#   utter_week4_s33:
-#   - text: |- 
-#       So, {name}, in this session, we will try to measure how accurate our negative thoughts are.
-
-#   utter_week4_s34:
-#   - text: |- 
-#       You will realise that most of the time, our negative thoughts have no basis. There are none, or rather, very few things that support our negative thought.
-#     buttons:
-#     - payload: /affirm
-#       title: Oh...I think I would like to try this
-
-#   utter_week4_s35:
-#   - text: You definitely should! When you start doing this exercise regularly, you will also be able to manage the emotions that come along with negative thought.
-
-#   utter_week4_s36:
-#   - text: Are you ready?
-#     buttons:
-#     - payload: /affirm13
-#       title: Yes!
-
-#   utter_week4_s37:
-#   - text: Great! So first, can you choose one cognitive distortion that you would like to work on?
-
-#   utter_week4_s38:
-#   - text: You can choose the one you think you experience most frequently.
-#     buttons:
-#     - payload: /distortion12
-#       title: All or None
-#     - payload: /distortion13
-#       title: Discounting the positive
-#     - payload: /distortion13
-#       title: Magnification and Minimization      
-#     - payload: /distortion13
-#       title: Mind reading
-#     - payload: /distortion13
-#       title: Fortune Telling
-#     - payload: /distortion13
-#       title: Overgeneralization
-#     - payload: /distortion14
-#       title: Catastrophizing
-#     - payload: /distortion15
-#       title: Personalization and/or Blaming
-#     - payload: /distortion16
-#       title: Labelling
-#     - payload: /distortion17
-#       title: Should Statements
-#     - payload: /distortion18
-#       title: Emotional Reasoning
-
-
-# # # ================== 1st ======================================================================================================================================================
-
-#   utter_week4_s39_a:
-#   - text: |- 
-#       Ok, {name}. 
-
-#   utter_week4_s39_b:
-#   - text: |- 
-#       Let's start from the top.
-#     buttons:
-#     - payload: /affirm
-#       title: Go to step 1
-
-#   utter_week4_s39:
-#   - text: |- 
-#       Can you write down a scenario for me where your were thinking in All or None terms? Try focusing on the where, when, who, and what happened.
-
-#   utter_week4_s40:
-#   - text: I'm sorry you had to go through that. Can you write down the negative thoughts that were running in your head at that moment?
-#     buttons:
-#     - payload: /affirm
-#       title: Go to step 2
-
-#   utter_week4_s40_a:
-#   - text: |- 
-#       Can you write down the negative thoughts that were running in your head at that moment?
-
-#   utter_week4_s40_b:
-#   - text: I understand why you might have felt that way about that situation.
-#     buttons:
-#     - payload: /affirm
-#       title: Go to step 3
-
-#   utter_week4_s41:
-#   - text: Can you tell me what words, language and tone do you use to describe yourself in this scenario? How will you talk to yourself? Ex:- Calm, Harsh
-
-#   utter_week4_s42:
-#   - text: Now imagine a close friend, or someone you care about going through a similar situation, {name}.
-#     buttons:
-#     - payload: /affirm
-#       title: Go on
-
-#   utter_week4_s43:
-#   - text: What would you tell them to make them feel better, if they were having the same negative thoughts as you?
-
-#   utter_week4_s44:
-#   - text: Did you notice a difference between the reaction towards your friend and yourself?
-#     buttons:
-#     - payload: /affirm
-#       title: Yes, I was kinder to my friend.
-#     - payload: /affirm
-#       title: Yes, I was harsher with myself.
-
-#   utter_week4_s45:
-#   - text: Exactly! Why do you think you responded differently? What factors or fears do you have that make you to treat yourself and others so differently?
-#     buttons:
-#     - payload: /affirm16
-#       title: I think that others are allowed to mess up, but when I do it, I'm a failure.
-#     - payload: /affirm
-#       title: I expect myself to be perfect all the time.
-
-#   utter_week4_s46:
-#   - text: Exactly. Try and do this exercise every time you find yourself following the All or None thinking pattern.
-
-#   utter_week4_s47:
-#   - text: Exactly. You see, {name}, we cannot be perfect in everything we do.
-
-#   utter_week4_s48:
-#   - text: Try to be compassionate and kind to yourself, like you would be towards a friend.
-#     buttons:
-#     - payload: /affirm
-#       title: I will try it!
-
-#   utter_week4_s49:
-#   - text: Everyone makes mistakes. We are, after all, human!
-#     buttons:
-#     - payload: /affirm
-#       title: That's true...
-
-#   utter_week4_s50:
-#   - text: Try and do this exercise every time you find yourself following the All or None thinking pattern.
-#     buttons:
-#     - payload: /affirm
-#       title: I will try it!
-
-#   utter_week4_s51:
-#   - text: |- 
-#       Great!
-
-#       You might have understood that how we might be overly rude towards ourselves.
-
-#   utter_week4_s51_a:
-#   - text: |-       
-#       If we are a little more compassionate towards ourselves and behave kindly we would definitely be less distressed in any challenging situation.
-#     buttons:
-#     - payload: /affirm
-#       title: Got it!
-
-#   utter_week4_ext1:
-#   - text: Now that you know how to work on your most common cognitive distortion, you just have to practice it regularly so that it almost becomes second nature!
-
-#   utter_week4_ext2:
-#   - text: And if you start noticing other distortions too, don't hesitate to come back to this chat and work on it!
-#     buttons:
-#     - payload: /affirm
-#       title: Ok
-#     - payload: /affirm
-#       title: I will    
-
-#   utter_week4_ext3:
-#   - text: But remember, you will have to consistently and consciously work on your thoughts and distortions to see significant results. Keep at it, {name}!
-#     buttons:
-#     - payload: /affirm
-#       title: I Understand
-
-#   utter_week4_ext4:
-#   - text: Good luck, {name}! You can always come back to any of these modules whenever you feel stuck.
-
-#   utter_week4_ext5:
-#   - text: Check out our IWill counselling programs too, where you can get a personalized journey built for you with our experienced psychologists.
-#     buttons:
-#     - payload: /goodbye
-#       title: bye
-
-#   utter_week4_ext6:
-#   - text: |- 
-#       See you in the next session!
-#     buttons:
-#     - payload: /session4
-#       title: Continue to Session 5  
-
-# # # ================== 2nd ======================================================================================================================================================
-
-#   utter_week4_s53:
-#   - text: |- 
-#       Ok, {name}.  
-
-#   utter_week4_s53_1:
-#   - text: |- 
-#       Let's start from the top.
-#     buttons:
-#     - payload: /mood_great
-#       title: Go to Step 1      
-
-#   utter_week4_s53_2:
-#   - text: |- 
-#       Can you write it down a scenario for me where your were thinking in a distorted manner? Try focusing on the where, when, who, and what happened.
-
-#   utter_week4_s53_a:
-#   - text: I'm sorry you had to go through that. Can you write down the negative thoughts that were running in your head at that moment?
-#     buttons:
-#     - payload: /affirm
-#       title: Go to Step 2
-
-#   utter_week4_s53_b:
-#   - text: Can you write down the negative thoughts that were running in your head at that moment?
-
-#   utter_week4_s53_c:
-#   - text: I understand why you might have felt that way about that situation.
-#     buttons:
-#     - payload: /affirm
-#       title: Go to Step 3
-
-#   utter_week4_s54:
-#   - text: |- 
-#       Can you tell me how much you believe in this thought?
+  utter_week5_s7:
+  - text: I'm so sorry to hear that, {name}. Things must be really hard for you right now.
+
+  utter_week5_s8:
+  - text: You can try scheduling a session with our experienced psychologists to get more personalized help with your problems.
+    buttons:
+    - payload: /deny
+      title: No, I want to continue with chatbot sessions
+    - payload: /deny
+      title: Take me there!
+
+  utter_week5_s9:
+  - text: |- 
+      Ok, {name}. I love the efforts you're putting in to feel better!
+
+      So, you said you were feeling worse, right? Is there anything specific that happened in these few days, that triggered you?
+
+  utter_week5_s10:
+  - text: Is there anything else you would like to add?
+    buttons:
+    - payload: /deny
+      title: No, I'm good
+    - payload: /affirm19
+      title: Yes!
+
+  utter_week5_s10a:
+  - text: Ok, Please enter it below.
+
+  utter_week5_s11:
+  - text: That's too bad, {name}. I can imagine how depressing that must have been.
+
+  utter_week5_s12:
+  - text: Would you like to try using the thought diary for this situation?
+    buttons:
+    - payload: /deny
+      title: No, I'd like to continue with this session.
+    - payload: /deny
+      title: Thought diary
+
+  utter_week5_s13:
+  - text: |- 
+      Sure, {name}. I hope this session will help you deal with tough situations more effectively.
+
+      Let's begin!
+
+# =========================================================================================================================================
+
+  utter_week5_s14:
+  - text: |- 
+      That's ok, {name}. It takes time to get used to it. Don't give up!
+
+      I would encourage you to try some of those methods before moving on with this week.
+
+  utter_week5_s15:
+  - text: Do you want to continue?
+    buttons:
+    - payload: /affirm
+      title: Yes.
+    - payload: /affirm20
+      title: No.
+
+# ===========================================================================================================================================
+
+  utter_week5_s16:
+  - text: |- 
+      That's ok, {name}! Do give it a shot and come back.
+
+      See you later!
+
+# =============================================================================================================================================
+
+  utter_week5_s17:
+  - text: That's great! Would you like to tell me how it worked out for you?
+    buttons:
+    - payload: /affirm21
+      title: Yes.
+    - payload: /deny
+      title: No.
+
+  utter_week5_s18:
+  - text: That's ok, {name}
+
+# ================================================================================================================================================
+
+  utter_week5_s19:
+  - text: Sounds like you've come close to conquering your negative thoughts, {name}! I'm proud of you!
+    buttons:
+    - payload: /affirm
+      title: Thank You!
+
+  utter_week5_s20:
+  - text: Let's move on to talking about core belief systems
+    buttons:
+    - payload: /affirm
+      title: Ok!
+
+  utter_week5_s21:
+  - text: Have you heard about core beliefs before, {name}?
+    buttons:
+    - payload: /affirm
+      title: Yes.
+    - payload: /affirm22
+      title: No.
+
+  utter_week5_s22:
+  - text: Great! The you already know that...
+
+  utter_week5_s23:
+  - text: Core beliefs are the fundamental ideas that you hold about yourself and your importance in the world.
+
+  utter_week5_s24:
+  - text: Let me explain it to you with an example
+    buttons:
+    - payload: /affirm23
+      title: Yes, please!
+    - payload: /affirm23
+      title: That would help!
+
+# ==================================================================================================================================================
+
+  utter_week5_s25:
+  - text: I'm glad! Type it down below. You can write about the situation, the thought, the distortion and how you handled it.
+    buttons:
+    - payload: /affirm
+      title: Let's begin!
+
+  utter_week5_s26:
+  - text: What was the situation?
+
+  utter_week5_s27:
+  - text: That must have been hard
+    buttons:
+    - payload: /affirm
+      title: Next step
+
+  utter_week5_s28:
+  - text: What thoughts ran in your head during/after this happened?
+
+  utter_week5_s29:
+  - text: I understand, {name}
+    buttons:
+    - payload: /affirm
+      title: Next step
+
+  utter_week5_s30:
+  - text: Could you identify the cognitive distortion(s) in your thought? Write them down below.
+
+  utter_week5_s31:
+  - text: Good job identifying the distortion, {name}
+    buttons:
+    - payload: /affirm
+      title: Thanks!
+
+  utter_week5_s32:
+  - text: So, tell me, how did you deal with this thought?
+
+  utter_week5_s33:
+  - text: Would you like to add more?
+    buttons:
+    - payload: /affirm25
+      title: No.
+    - payload: /affirm24
+      title: Yes.
+
+  utter_week5_s34:
+  - text: Type it below
+
+# ======================================================================================================================================================================================
+
+  utter_week5_s35:
+  - text: |- 
+      Let's take an example of Ramya and Abdul.
    
-#       Enter it as a percentage - 1% being the lowest and 100% being the highest
- 
-#   utter_week4_s55:
-#   - text: It must have been hard to deal with that thought, {name}.
-#     buttons:
-#     - payload: /affirm
-#       title: Go to Next Step
+      Ramya and Abdul are very similar in terms of their academic strengths and weaknesses. Both of them apply for a reputed internship program and get accepted!
 
-#   utter_week4_s56:
-#   - text: Can you tell me how this negative thought makes you feel? Can you tell me how this negative thought makes you feel? Write one emotion that you think is the most accurate from the feelings wheel.
-#     image: https://i.ibb.co/xD2GM6W/Charts-wheel.png 
+  utter_week5_s36:
+  - text: |- 
+      Now, let's look at their reactions:
+    buttons:
+    - payload: /affirm
+      title: Go to Next Step
 
-#   utter_week4_s56_a:
-#   - text: Continue, {name}.
-#     buttons:
-#     - payload: /affirm
-#       title: Go to Next Step
+  utter_week5_s37:
+  - text: |- 
+      Ramya: "Oh! I'm sure they made a mistake. I'm not going to be able to live up to their expectations!"
+    buttons:
+    - payload: /affirm
+      title: Go to Next Step
 
-#   utter_week4_s57:
-#   - text: |- 
-#       How intensely are you feeling this emotion?
-     
-#       Enter it as a percentage - 1% being the lowest and 100% being the highest
- 
-#   utter_week4_s57_a:
-#   - text: Continue, {name}.
-#     buttons:
-#     - payload: /affirm
-#       title: Go to Next Step
+  utter_week5_s38:
+  - text: |- 
+      Abdul: "Wow! They must have really seen something in me to give me this opportunity! I must try to make the best of it!"
+    buttons:
+    - payload: /affirm
+      title: Go to Next Step
 
-#   utter_week4_s58:
-#   - text: |- 
-#       You're doing great, {name}!  
+  utter_week5_s39:
+  - text: |- 
+      Can you see the difference in their reactions? Take a moment to think about why that happened.
+    buttons:
+    - payload: /affirm
+      title: Go to Next Step
 
-#       Let's go further now.
+  utter_week5_s40:
+  - text: |- 
+      This happened because Ramya fundamentally believed that she did not deserve the chance. Her core belief - "I'm not good enough" - made her see even a positive situation in a negative light.
+    buttons:
+    - payload: /affirm
+      title: Go to Next Step
 
-#       Can you write down any concrete evidences to support your negative thought? How do you know that your thought is true?
+  utter_week5_s41:
+  - text: |- 
+      On the other hand, Abdul's core belief - "I believe in myself" - helped him use the opportunity given to him to get better at his field.
+    buttons:
+    - payload: /affirm
+      title: Done
 
-#   utter_week4_s58_a:
-#   - text: |- 
-#       Let's go further.
-#     buttons:
-#     - payload: /affirm
-#       title: Go to Step 4
+  utter_week5_s42:
+  - text: |- 
+      So you see, core beliefs act like a lens through which you see every situation and life experience.
 
-#   utter_week4_s59:
-#   - text: |- 
-#       Now, try to think of any evidences against your negative thought, and write them down. Would anyone see the situation in another way?
+  utter_week5_s43:
+  - text: |- 
+      Do you understand how negative core beliefs could be very harmful for our self esteem and mental health?
+    buttons:
+    - payload: /affirm
+      title: Yes!
 
-#   utter_week4_s60:
-#   - text: Good job, {name}
+  utter_week5_s44:
+  - text: |- 
+      Now, let's try to identify your core beliefs
+   
+      Write down one negative thought you had in a situation that you've recently experienced.Try to keep it specific to the situation.
 
-#   utter_week4_s61:
-#   - text: Most of the time, you will realise that there is very less evidence to support your negative thought.
-#     buttons:
-#     - payload: /affirm
-#       title: Yes, I see that now.
-#     - payload: /affirm
-#       title: I guess so...
+      For example. "They would never want to go out on a date with me"
 
-#   utter_week4_s62:
-#   - text: |- 
-#       Great! Now, let's try to build an alternative thought from the evidence we have gathered.
+  utter_week5_s45:
+  - text: |- 
+      You're getting good at this, {name}!
+    buttons:
+    - payload: /affirm
+      title: Thanks!
 
-#       Try to look at the situation more positively, and write down your thoughts.
+  utter_week5_s46:
+  - text: |- 
+      Now, ask yourself the question - "What does this say about me?"   Complete the statement below:
+   
+      I am ____________________ For example, "I am not worthy."
 
-#   utter_week4_s62_a:
-#   - text: Continue, {name}.
-#     buttons:
-#     - payload: /affirm
-#       title: Go to Next Step
-
-#   utter_week4_s63:
-#   - text: |- 
-#       Good job, {name}! Can you tell me how much you believe in this alternative thought?
-      
-#       Enter it as a percentage - 1% being the lowest and 100% being the highest.
-
-#   utter_week4_s64:
-#   - text: |- 
-#       That's good.
-#     buttons:
-#     - payload: /affirm
-#       title: Go to Next Step
-
-#   utter_week4_s65:
-#   - text: How does this alternative thought make you feel? Write one emotion that you think is the most accurate from the feelings wheel.
-#     image: https://i.ibb.co/xD2GM6W/Charts-wheel.png 
-
-#   utter_week4_s65_a:
-#   - text: Continue, {name}.
-#     buttons:
-#     - payload: /affirm
-#       title: Go to Next Step
-
-#   utter_week4_s66:
-#   - text: |- 
-#       How intensely are you feeling this emotion?
-
-#       Enter it as a percentage - 1% being the lowest and 100% being the highest
-
-#   utter_week4_s66_a:
-#   - text: Continue, {name}.
-#     buttons:
-#     - payload: /affirm
-#       title: Go to Next Step 
-
-#   utter_week4_s67:
-#   - text: |- 
-#       You did amazing, {name}.
-
-      
-# # # ================== 3rd ======================================================================================================================================================
-
-
-#   utter_week4_s69:
-#   - text: |- 
-#       Ok, {name}.  
-
-#       Can you tell me, what is the catastrophe you are worried about?
-
-#       What exactly are you worried will happen?
-
-#   utter_week4_s70:
-#   - text: That must be very hard to deal with, {name}
-#     buttons:
-#     - payload: /affirm
-#       title: Go to Next Step 
-
-#   utter_week4_s71:
-#   - text: |- 
-#       Can you rate how bad you think the catastrophe will be?
-    
-#       Enter it as a percentage - 1% being the least and 100% being the worst
- 
-#   utter_week4_s72:
-#   - text: Now, let's try to reflect on the likelihood of this event happening.
-#     buttons:
-#     - payload: /affirm
-#       title: Ok.
-
-#   utter_week4_s73:
-#   - text: How often does this kind of thing happen to you? How frequently do you experience such catastrophic situations in real life?
-#     buttons:
-#     - payload: /affirm
-#       title: Never
-#     - payload: /affirm
-#       title: Rarely
-#     - payload: /affirm
-#       title: Sometimes
-#     - payload: /affirm
-#       title: Often
-#     - payload: /affirm
-#       title: Always
- 
-#   utter_week4_s74:
-#   - text: |- 
-#       Realistically, how likely is it to happen now?
-
-#       Enter it as a percentage - 1% being the lowest and 100% being the highest
+  utter_week5_s47:
+  - text: |- 
+      Good, {name}! You've identified one of your negative core beliefs.
   
-#   utter_week4_s75:
-#   - text: |- 
-#       Can you tell me if this is the worst-case scenario? Are there other, more probable outcomes, that are not as bad?
-#     buttons:
-#     - payload: /affirm
-#       title: Yes, I realise that this is the worst-case scenario...
-#     - payload: /affirm
-#       title: Yes, this is less likely to happen
+  utter_week5_s48:
+  - text: |- 
+      Now, think about this statement. Are there any experiences in your life that have led you to this belief? Do you know anyone close who thinks similarly?
+    buttons:
+    - payload: /affirm
+      title: Yes, I can think of some
 
-#   utter_week4_s76:
-#   - text: |- 
-#       Can you write down a more probable and positive scenario that might happen?
-
-#   utter_week4_s77:
-#   - text: Good job, {name}
-#     buttons:
-#     - payload: /affirm
-#       title: Go to Next Step 
-
-#   utter_week4_s78:
-#   - text: |- 
-#       How likely is it that this alternate scenario will take place?
-
-#       Enter it as a percentage - 1% being the lowest and 100% being the highest
+  utter_week5_s49:
+  - text: |- 
+      Write everything down below
   
-#   utter_week4_s78_a:
-#   - text: Continue, {name}.
-#     buttons:
-#     - payload: /affirm
-#       title: Go to Next Step 
+  utter_week5_s50:
+  - text: |- 
+      Great job, {name}! You see, sometimes major and minor life experiences can shape our core beliefs and people around us can reinforce them.
 
-#   utter_week4_s79:
-#   - text: |- 
-#       You did amazing, {name}.
+  utter_week5_s50_a:
+  - text: |-    
+      Now, I want you to think about whether this belief helps you in any way. Think of a belief that could be more constructive and write  it down
+    buttons:
+    - payload: /affirm
+      title: Go to Next Step
 
-# # # ================== 4th ======================================================================================================================================================
+  utter_week5_s50_b:
+  - text: |- 
+      I am ______________________ For example, "I am lovable just the way I am."
 
-#   utter_week4_s81:
-#   - text: |- 
-#       Ok, {name}.  
+  utter_week5_s51:
+  - text: |- 
+      Great job, {name}! You found a good alternative core belief to train your mind with.
+   
+      There is another method we can use to combat core beliefs. You might have come across something similar in the past modules.
 
-#       Can you tell me, what event do you hold yourself completely responsible for?
+      In the second method, we try to find evidences for and against your core belief, and then change them into more accurate statements.
 
-#       Try to focus on the who, how and what happened, rather than your thoughts on that situation.
+  utter_week5_s52:
+  - text: |- 
+      Do you want to try this method?
+    buttons:
+    - payload: /affirm26
+      title: Yes!
+    - payload: /deny
+      title: No, this workks for me!
 
-#       Can you write it down for me?
+# ===============================================================================================================================================================================
 
-#   utter_week4_s82:
-#   - text: |- 
-#       That must have been so hard for you, {name}.  
-#     buttons:
-#     - payload: /affirm
-#       title: Yes, it was.
+  utter_week5_s53:
+  - text: |- 
+      Great!
 
-#   utter_week4_s83:
-#   - text: |- 
-#       Why do you think you're responsible for that event?
+      I have one more question for you.
 
-#   # utter_week4_s83_a:
-#   # - text: |- 
-#   #     What is the main reason you think you're responsible for that event?
+      Would you like to know more about how negative core beliefs are formed?
 
-#   utter_week4_s84:
-#   - text: How strongly do you believe you're responsible for the event, {name}?
-#     buttons:
-#     - payload: /affirm
-#       title: Go to Next Step
- 
-#   utter_week4_s84_a:
-#   - text: Enter it as a percentage - 1% being the lowest and 100% being the highest
+  utter_week5_s54:
+  - text: |- 
+      This can give you a deeper understanding of your various core beliefs and help you in modifying them.
+    buttons:
+    - payload: /affirm27
+      title: Yes, tell me more!
+    - payload: /deny
+      title: No, I'm good
+
+# ======================================================================================================================================================================
+
+  utter_week5_s55:
+  - text: |- 
+      Ok!
+
+      Now, we've dealt with core beliefs about you. There are 2 more types of core beliefs - about others, and about the world.
+
+      Ex:  About others: "Everyone wants to see me fail."
+      
+      About the world: "The world is an unfair place."
+
+  utter_week5_s56:
+  - text: |- 
+      You can use the same method/s we talked about for these too!
+    buttons:
+    - payload: /affirm
+      title: Ok! I'll try that!
+
+# =================================================================================================================================================================================
+
+  utter_week5_last:
+  - text: |- 
+      Bye, {name}! See you next week!
+    buttons:
+    - payload: /session5
+      title: Continue to Session 6 
+
+# ==========================================================================================================================================================================================
+
+  utter_week5_s57:
+  - text: |- 
+      Great! Let's start from the top. Write down the core belief that you identified in the previous exercise below.
+
+  utter_week5_s58:
+  - text: |- 
+      Good.
+    buttons:
+    - payload: /affirm
+      title: Next Step
+
+  utter_week5_s59:
+  - text: |- 
+      Can you write down any concrete evidences to support your core belief? How do you know that your belief is true?
+
+  utter_week5_s60:
+  - text: |- 
+      Now, try to think of any evidences against your core belief, and write them down. Would anyone disagree with you on your belief? Why?
+    buttons:
+    - payload: /affirm
+      title: I can think of some
+
+  utter_week5_s61:
+  - text: |- 
+      Great! Write them down below
+
+  utter_week5_s62:
+  - text: |- 
+      Good job, {name}
+
+  utter_week5_s63:
+  - text: |- 
+      Now, spend a few minutes thinking about the evidence, and see if you can interpret it in a different way.
+    buttons:
+    - payload: /affirm
+      title: Next Step
+
+  utter_week5_s64:
+  - text: |- 
+      Try to form a new core belief as you go. Your new belief should be a more constructive and positive one. Write it down below.
+
+  utter_week5_s65:
+  - text: |- 
+      Wonderful, {name}! You did a great job!
+
+      With both the exercises in mind, I would like you to spend a few days trying to reinforce your new belief.
+
+  utter_week5_s66:
+  - text: |- 
+      You could try doing something that your old belief might have prevented you from doing, or just try to sink it in.
+    buttons:
+    - payload: /affirm
+      title: Yes, I'll do that!
+    - payload: /affirm
+      title: I can try...
+
+  utter_week5_s67:
+  - text: |- 
+      Good luck, {name}!
+
+      I have one more question for you.
+
+      Would you like to know more about how negative core beliefs are formed?
+
+# ==========================================================================================================================================================================
+
+  utter_week5_s68:
+  - text: |- 
+      Great!
+
+      Core beliefs are generally of 3 types:
+      
+      1. About yourself - "I'm worthless" 
+      
+      2. About others - "Everyone wants to see me fail." 
+
+  utter_week5_s68_a:
+  - text: |-  
+      3. About the world - "The world is an unfair place."
+    buttons:
+    - payload: /affirm
+      title: About yourself
+    - payload: /affirm28
+      title: About others
+    - payload: /affirm29
+      title: About the world
+
+  utter_week5_s69:
+  - text: |- 
+      A lot of our core beliefs come from our childhood experiences, {name}.
+
+      Can you think of any experience which made you think something was wrong with you?
+
+  utter_week5_s70:
+  - text: |- 
+      I'm so sorry to hear that. That must have felt terrible, and could have definitely contributed to your negative belief.
+    buttons:
+    - payload: /affirm
+      title: Yes!
+    - payload: /affirm
+      title: Maybe
+
+  utter_week5_s71:
+  - text: |- 
+      Can you link a specific person to the way you feel about yourself? What does their treatment of you says about you as a person?
 
 
-#   utter_week4_s85:
-#   - text: |- 
-#       I'm sorry to hear that.
+  utter_week5_s72:
+  - text: |- 
+      I understand, {name}.
 
-#       Let's go one step further.
+      So you see, your childhood experiences can contribute towards your core beliefs.
+      
+      Here are some more questions you can ask:
+      
+      1. Does your negative self image remind you of criticisms you have received from others when you were young?
+      
+  utter_week5_s73:
+  - text: |-  
+      2. What made it difficult to think about yourself kindly or treat yourself kindly?
+    buttons:
+    - payload: /affirm
+      title: Continue
 
-#       Can you make a list of all the possible causes for the event? Add everything you can think of, however unlikely they may be.
+  utter_week5_s74:
+  - text: |- 
+      
+      {name}, though our childhood experiences shape our beliefs, we need to realize that we've come a long way since then.
+      
+      We've grown up with lots of newer experiences and seen a lot more things.
 
-#       Please add each reason as a different message.
+  utter_week5_s75:
+  - text: |-  
+      With this mindset, I hope it will be easier for you to overcome your negative core beliefs.
+    buttons:
+    - payload: /affirm
+      title: Sure, I will try that!
 
-#   utter_week4_s86:
-#   - text: Would you like to add more?
-#     buttons:
-#     - payload: /affirm8
-#       title: Yes.
-#     - payload: /affirm7
-#       title: No, I'm good
+# =======================================================================================================================================================
 
-#   # utter_week4_s86_a:
-#   # - text: If would you like to add more few things ?
-#   #   buttons:
-#   #   - payload: /affirm9
-#   #     title: Yes.
-#   #   - payload: /deny
-#   #     title: No, I'm good
+  utter_week5_s76:
+  - text: |- 
+      A lot of our core beliefs come from our childhood experiences, {name}.
 
-#   utter_week4_s86_b:
-#   - text: Here is what you typed:- "{input29}".
-#     buttons:
-#     - payload: /affirm9
-#       title: Yes.
+      Can you think of any experience which made you feel betrayed or feel like you had no support?
 
-#   utter_week4_s86_c:
-#   - text: Now, lets try to assign percentages to each of these reasons. How much do you think each reason could have contributed to the situation?
+  utter_week5_s77:
+  - text: |- 
+      I'm so sorry to hear that. That must have felt terrible, and could have definitely contributed to your negative belief.
+    buttons:
+    - payload: /affirm
+      title: Yes!
+    - payload: /affirm
+      title: Maybe
 
-#   utter_week4_s86_d:
-#   - text: Did you notice how your responsibility was not as much as you thought, {name}?
-#     buttons:
-#     - payload: /affirm
-#       title: Yes.
-#     - payload: /affirm
-#       title: Hmm
+  utter_week5_s78:
+  - text: |- 
+      Can you link a specific person to the way you feel about others? What experiences have you had that made you feel that others are not supportive, empathetic, helpful or compassionate towards you?
 
-#   utter_week4_s87:
-#   - text: |- 
-#       A lot of situations are not completely under our control, {name}. There are usually many factors influencing one thing.
+  utter_week5_s79:
+  - text: |- 
+      I understand, {name}.
 
-#   utter_week4_s87_a:
-#   - text: |- 
-#       Please enter it below.
+  utter_week5_s80:
+  - text: |-  
+      So you see, your childhood experiences can contribute towards your core beliefs.
+    buttons:
+    - payload: /affirm
+      title: That's true...
 
-#   utter_week4_s087_1:
-#   - text: |- 
-#       Please think of a few more things to add. You can add them even if the chance is very low!
+# ======================================================================================================================================================================================================================================
 
-# # # ================== 5th ======================================================================================================================================================
+  utter_week5_s81:
+  - text: |- 
+      A lot of our core beliefs come from our childhood experiences, {name}.
 
+      Can you think of any experience that made you feel that the world is constant struggle, no matter how much effort is put in?
 
-#   utter_week4_s89:
-#   - text: |- 
-#       Ok, {name}. Let's begin!
-#     buttons:
-#     - payload: /mood_great
-#       title: Go to Step 1
+  utter_week5_s82:
+  - text: |- 
+      I'm so sorry to hear that. That must have felt terrible, and could have definitely contributed to your negative belief.
+    buttons:
+    - payload: /affirm
+      title: Yes!
+    - payload: /affirm
+      title: Maybe
 
-#   utter_week4_s89_a:
-#   - text: |- 
-#       Can you write down a thought that you frequently get, that you have identified as Labelling?
+  utter_week5_s83:
+  - text: |- 
+      Can you identify the influences of your parents or caregivers had upon how you viewed the world – and did this influence your world?
 
-#   utter_week4_s89_b:
-#   - text: |- 
-#       That sounds like a tough situation, {name}.
-#     buttons:
-#     - payload: /affirm
-#       title: Go to Step 2
+  utter_week5_s84:
+  - text: |- 
+      I understand, {name}.
 
-#   utter_week4_s90:
-#   - text: Ok. Can you now identify the label in this thought? For example, if your thought is "I'm such a loser.", the label would be the word loser.
-
-#   utter_week4_s91:
-#   - text: |- 
-#       Good, {name}. Now, let's try to find the definition of your label. Think to yourself what you mean by these labels. 
-#     buttons:
-#     - payload: /affirm
-#       title: Continue
-
-#   utter_week4_s91_a:
-#   - text: |- 
-#       You will discover there's no such thing as "a fool" or "a loser."
-
-#   utter_week4_s92:
-#   - text: Foolish behavior exists, but "fools" and "losers" do not.
-#     buttons:
-#     - payload: /affirm
-#       title: Yes, I see what you mean
-#     - payload: /affirm
-#       title: I think I understand...     
-
-#   utter_week4_s93:
-#   - text: |- 
-#       Good {name}.
-
-#   utter_week4_s94:
-#   - text: What we can do instead of labelling, is to be specific about the strengths and weaknesses.
-#     buttons:
-#     - payload: /affirm
-#       title: Can you give me an example?
-
-#   utter_week4_s95:
-#   - text: |- 
-#       Sure! So instead of thinking of yourself as defective or worthless, you can focus on your specific weaknesses, for example, time management, and find ways to tackle them.
-
-#   utter_week4_s96:
-#   - text: |- 
-#       Make sure you stick to reality while doing this.
-#     buttons:
-#     - payload: /affirm
-#       title: Got it!
-
-
-# # # ================== 6th ======================================================================================================================================================      
-
-#   utter_week4_s98:
-#   - text: |- 
-#       Ok, {name}. Let's begin! 
-#     buttons:
-#     - payload: /mood_great
-#       title: Go to Step 1
-
-#   utter_week4_s98_a:
-#   - text: |- 
-#       Can you write down a thought that you frequently get, that you have identified as a Should Statement?
-
-#   utter_week4_s98_b:
-#   - text: |- 
-#       Good job identifying the thought, {name}
-#     buttons:
-#     - payload: /affirm
-#       title: Go to Step 2
-
-#   utter_week4_s99:
-#   - text: Ok. Can you now identify the "Should" part of this thought? For example, if your thought is "I must have been more prepared", the "Should" part would be the word must.
-
-#   utter_week4_s100:
-#   - text: |- 
-#       Good, {name}.
-#     buttons:
-#     - payload: /affirm
-#       title: Go to Step 3
-
-#   utter_week4_s100_a:
-#   - text: |- 
-#       Now, let's try to replace this word with a better, less emotional word. 
-
-#       For example, instead of thinking "I must have been more prepared.", you could think "It would have been better if I would have been more prepared."
- 
-#   utter_week4_s101:
-#   - text: |- 
-#       Good effort, {name}!
- 
-# # # ================== 7th ======================================================================================================================================================      
-
-#   utter_week4_s102:
-#   - text: |- 
-#       Ok, {name}.  
-
-#       Can you write down a thought that you frequently get, that you have identified as Emotional Reasoning?
-
-#   utter_week4_s103:
-#   - text: |- 
-#       Ok. No let's try to separate the thought and feeling in this statement.
-
-#       For example, if your thought is "I'm lonely because I'm unlovable.", you can separate it into:
-
-#       Thought - I think I'm unlovable Feeling - I'm feeling lonely
-
-#   utter_week4_s104:
-#   - text: Can you try this now?
-#     buttons:
-#     - payload: /affirm
-#       title: Go to Step 1
-
-#   utter_week4_s104_a:
-#   - text: Thought -
-
-#   utter_week4_s104_b:
-#   - text: |- 
-#       Good job, {name}!
-#     buttons:
-#     - payload: /affirm
-#       title: Go to Step 2
-
-#   utter_week4_s104_c:
-#   - text: Feelings -
-
-#   utter_week4_s105:
-#   - text: |- 
-#       Good job, {name}!
-#     buttons:
-#     - payload: /affirm
-#       title: Go to Step 3
-
-#   utter_week4_s105_a:
-#   - text: |- 
-#       Can you write down any concrete evidences to support your negative thought? How do you know that your thought is true?
-
-#   utter_week4_s105_b:
-#   - text: |- 
-#       Let's go further
-#     buttons:
-#     - payload: /affirm
-#       title: Go to Step 4
-
-#   utter_week4_s106:
-#   - text: Now, try to think of any evidences against your negative thought, and write them down. Would anyone see the situation in another way?
-
-#   utter_week4_s107:
-#   - text: Good job, {name}!
-
-#   utter_week4_s108:
-#   - text: Most of the time, you will realise that there is very less evidence to support your negative thought.
-#     buttons:
-#     - payload: /affirm
-#       title: Yes, I see that now.
-#     - payload: /affirm
-#       title: I guess so...  
-
-#   utter_week4_s109:
-#   - text: Great! Do you now understand that just because you might be experiencing an emotion (loneliness, shame, guilt, etc.), it doesn't make your negative thought (thinking that you're unloved, that you made a big mistake, etc.) completely true?
-#     buttons:
-#     - payload: /affirm
-#       title: A little bit
-#     - payload: /affirm
-#       title: Yes.
-
-#   utter_week4_s110:
-#   - text: Good job, {name}! 
+  utter_week5_s85:
+  - text: |-  
+      So you see, your childhood experiences can contribute towards your core beliefs.
+    buttons:
+    - payload: /affirm
+      title: That's true...
 
 
 entities:
   - name
-  # - input12_1
-  # - input13_1
-  # - input14_1  
-  # - input15_1
-  # - input16_1
-  # - input17_1
-  # - input18_1
-  # - input19_1
-  # - input20
-  # - input21
-  # - input22
-  # - input22_a
-  # - input22_b
-  # - input22_c
-  # - input23
-  # - input23_1
-  # - input24
-  # - input24_a
-  # - input24_b
-  # - input24_c  
-  # - input25  
-  # - input25_a
-  # - input25_b
-  # - input25_c   
-  # - input26
-  # - input27
-  # - input28
-  # - input28_a
-  # - input29 
-  # - input30
-  # # - input31
-  # - input32
-  # - input33
-  # - input34
-  # - input35
-  # - input36
-  # - input37
-  # - input38
-  # - input39
-  # - input40
-  # - input41 
-
-
+  - input42
+  - input43
+  - input44
+  - input45
+  - input46
+  - input47 
+  - input48
+  - input49
+  - input50 
+  - input51
+  - input52
+  - input53
+  - input54
+  - input55
+  - input56
+  - input57 
+  - input58
+  - input59
+  - input60 
 slots:
 
   name:
@@ -997,513 +663,245 @@ slots:
     # auto_fill: true
     influence_conversation: False
 
+
+  input42:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False    
+
+  input43:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False   
         
-#   input12_1:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
+  input44:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
 
-#   input13_1:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
+  input45:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
 
-#   input14_1:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False    
+  input46:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False    
 
-#   input15_1:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False   
+  input47:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
 
-#   input16_1:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False    
+  input48:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
 
-#   input17_1:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
+  input49:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False    
 
-#   input18_1:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
+  input50:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
 
-#   input19_1:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
+  input51:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False 
 
-#   input20:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False    
+  input52:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False    
 
-#   input21:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
-
-#   input22:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
-
-#   input22_a:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
-
-#   input22_b:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
-
-#   input22_c:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
-
-#   input23:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
-
-#   input23_1:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
-
-#   input24:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
-
-#   input24_a:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
-
-#   input24_b:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
-
-#   input24_c:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
-
-#   input25:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False    
-
-#   input25_a:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
-
-#   input25_b:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
-
-#   input25_c:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
-
-#   input26:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False   
+  input53:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False   
         
-#   input27:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
+  input54:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
 
-#   input28:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
+  input55:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
 
-#   input28_a:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
+  input56:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False    
 
-#   input29:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False    
+  input57:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
 
-#   input30:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False   
+  input58:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
 
-#   # input31:
-#   #   type: text
-#   #   # initial_value: null
-#   #   # auto_fill: true
-#   #   influence_conversation: False    
+  input59:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False    
 
-#   input32:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
+  input60:
+    type: text
+    # initial_value: null
+    # auto_fill: true
+    influence_conversation: False
 
-#   input33:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
+forms:
 
-#   input34:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
+  name_form:
+    required_slots:
+      name:
+      - type: from_text
 
-#   input35:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
+  input42_form:
+    required_slots:
+      input42:
+      - type: from_text
 
-#   input36:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False    
+  input43_form:
+    required_slots:
+      input43:
+      - type: from_text      
 
-#   input37:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False   
-        
-#   input38:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
+  input44_form:
+    required_slots:
+      input44:
+      - type: from_text
 
-#   input39:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
+  input45_form:
+    required_slots:
+      input45:
+      - type: from_text
 
-#   input40:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False    
+  input46_form:
+    required_slots:
+      input46:
+      - type: from_text
 
-#   input41:
-#     type: text
-#     # initial_value: null
-#     # auto_fill: true
-#     influence_conversation: False
+  input47_form:
+    required_slots:
+      input47:
+      - type: from_text             
 
+  input48_form:
+    required_slots:
+      input48:
+      - type: from_text
 
-# forms:
+  input49_form:
+    required_slots:
+      input49:
+      - type: from_text
 
-#   name_form:
-#     required_slots:
-#       name:
-#       - type: from_text
+  input50_form:
+    required_slots:
+      input50:
+      - type: from_text   
 
-#   input12_1_form:
-#     required_slots:
-#       input12_1:
-#       - type: from_text
+  input51_form:
+    required_slots:
+      input50:
+      - type: from_text   
 
-#   input13_1_form:
-#     required_slots:
-#       input13_1:
-#       - type: from_text
+  input52_form:
+    required_slots:
+      input52:
+      - type: from_text
 
-#   input14_1_form:
-#     required_slots:
-#       input14_1:
-#       - type: from_text
+  input53_form:
+    required_slots:
+      input53:
+      - type: from_text      
 
-#   input15_1_form:
-#     required_slots:
-#       input15_1:
-#       - type: from_text  
+  input54_form:
+    required_slots:
+      input54:
+      - type: from_text
 
-#   input16_1_form:
-#     required_slots:
-#       input16_1:
-#       - type: from_text
+  input55_form:
+    required_slots:
+      input55:
+      - type: from_text
 
-#   input17_1_form:
-#     required_slots:
-#       input17_1:
-#       - type: from_text    
+  input56_form:
+    required_slots:
+      input56:
+      - type: from_text
 
-#   input18_1_form:
-#     required_slots:
-#       input18_1:
-#       - type: from_text
+  input57_form:
+    required_slots:
+      input57:
+      - type: from_text             
 
-#   input19_1_form:
-#     required_slots:
-#       input19_1:
-#       - type: from_text
+  input58_form:
+    required_slots:
+      input58:
+      - type: from_text
 
-#   input20_form:
-#     required_slots:
-#       input20:
-#       - type: from_text
+  input59_form:
+    required_slots:
+      input59:
+      - type: from_text
 
-#   input21_form:
-#     required_slots:
-#       input21:
-#       - type: from_text
-
-#   input22_form:
-#     required_slots:
-#       input22:
-#       - type: from_text
-
-#   input22_a_form:
-#     required_slots:
-#       input22_a:
-#       - type: from_text
-
-#   input22_b_form:
-#     required_slots:
-#       input22_b:
-#       - type: from_text
-
-#   input22_c_form:
-#     required_slots:
-#       input22_c:
-#       - type: from_text
-
-#   input23_form:
-#     required_slots:
-#       input23:
-#       - type: from_text
-
-#   input23_1_form:
-#     required_slots:
-#       input23_1:
-#       - type: from_text
-
-#   input24_form:
-#     required_slots:
-#       input24:
-#       - type: from_text
-
-#   input24_a_form:
-#     required_slots:
-#       input24_a:
-#       - type: from_text
-
-#   input24_b_form:
-#     required_slots:
-#       input24_b:
-#       - type: from_text
-
-#   input24_c_form:
-#     required_slots:
-#       input24_c:
-#       - type: from_text
-
-#   input25_form:
-#     required_slots:
-#       input25:
-#       - type: from_text
-
-#   input25_a_form:
-#     required_slots:
-#       input25_a:
-#       - type: from_text
-
-#   input25_b_form:
-#     required_slots:
-#       input25_b:
-#       - type: from_text
-
-#   input25_c_form:
-#     required_slots:
-#       input25_c:
-#       - type: from_text
-
-#   input26_form:
-#     required_slots:
-#       input26:
-#       - type: from_text      
-
-#   input27_form:
-#     required_slots:
-#       input27:
-#       - type: from_text
-
-#   input28_form:
-#     required_slots:
-#       input28:
-#       - type: from_text
-
-#   input28_a_form:
-#     required_slots:
-#       input28_a:
-#       - type: from_text
-
-#   input29_form:
-#     required_slots:
-#       input29:
-#       - type: from_text
-
-#   input30_form:
-#     required_slots:
-#       input30:
-#       - type: from_text  
-
-#   # input31_form:
-#   #   required_slots:
-#   #     input31:
-#   #     - type: from_text
-
-#   input32_form:
-#     required_slots:
-#       input32:
-#       - type: from_text
-
-#   input33_form:
-#     required_slots:
-#       input33:
-#       - type: from_text
-
-#   input34_form:
-#     required_slots:
-#       input34:
-#       - type: from_text
-
-#   input35_form:
-#     required_slots:
-#       input35:
-#       - type: from_text
-
-#   input36_form:
-#     required_slots:
-#       input36:
-#       - type: from_text
-
-#   input37_form:
-#     required_slots:
-#       input37:
-#       - type: from_text      
-
-#   input38_form:
-#     required_slots:
-#       input38:
-#       - type: from_text
-
-#   input39_form:
-#     required_slots:
-#       input39:
-#       - type: from_text
-
-#   input40_form:
-#     required_slots:
-#       input40:
-#       - type: from_text
-
-#   input41_form:
-#     required_slots:
-#       input41:
-#       - type: from_text             
+  input60_form:
+    required_slots:
+      input60:
+      - type: from_text 
 
 actions:
 - action_set_name_slot_none
 - action_get_name
-# - action_set_input12_1_slot_none
-# - action_set_input13_1_slot_none
-# - action_set_input14_1_slot_none
-# - action_set_input15_1_slot_none
-# - action_set_input16_1_slot_none
-# - action_set_input17_1_slot_none
-# - action_set_input18_1_slot_none
-# - action_set_input19_1_slot_none
-# - action_set_input20_slot_none
-# - action_set_input21_slot_none
-# - action_set_input22_slot_none
-# - action_set_input22_a_slot_none
-# - action_set_input22_b_slot_none
-# - action_set_input22_c_slot_none
-# - action_set_input23_slot_none
-# - action_set_input23_1_slot_none
-# - action_set_input24_slot_none 
-# - action_set_input24_a_slot_none
-# - action_set_input24_b_slot_none
-# - action_set_input24_c_slot_none
-# - action_set_input25_slot_none
-# - action_set_input25_a_slot_none
-# - action_set_input25_b_slot_none
-# - action_set_input25_c_slot_none
-# - action_set_input26_slot_none
-# - action_set_input27_slot_none
-# - action_set_input28_slot_none
-# - action_set_input28_a_slot_none
-# - action_set_input29_slot_none
-# - action_set_input29_slot
-# - action_input29_slot
-# - action_input29_1_slot
-# - action_set_input30_slot_none
-# # - action_set_input31_slot_none
-# - action_set_input32_slot_none
-# - action_set_input33_slot_none
-# - action_set_input34_slot_none
-# - action_set_input35_slot_none
-# - action_set_input36_slot_none
-# - action_set_input37_slot_none
-# - action_set_input38_slot_none
-# - action_set_input39_slot_none
-# - action_set_input40_slot_none
-# - action_set_input41_slot_none
+- action_set_input42_slot_none
+- action_set_input43_slot_none
+- action_set_input44_slot_none
+- action_set_input45_slot_none
+- action_set_input46_slot_none
+- action_set_input47_slot_none
+- action_set_input48_slot_none
+- action_set_input49_slot_none
+- action_set_input50_slot_none
+- action_set_input51_slot_none
+- action_set_input52_slot_none
+- action_set_input53_slot_none
+- action_set_input54_slot_none
+- action_set_input55_slot_none
+- action_set_input56_slot_none
+- action_set_input57_slot_none
+- action_set_input58_slot_none
+- action_set_input59_slot_none
+- action_set_input60_slot_none
 
 session_config:
   session_expiration_time: 60

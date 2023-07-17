@@ -175,7 +175,7 @@ responses:
   - text: Can you write it down for me? Try focusing on the where, when, who, and what happened?
 
   utter_week4_s21:
-  - text: Ok, {name}.
+  - text: Ok, Let's begin!
     buttons:  
     - payload: /affirm
       title: Go to next Step
