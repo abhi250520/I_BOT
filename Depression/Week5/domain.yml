@@ -832,7 +832,7 @@ forms:
 
   input51_form:
     required_slots:
-      input50:
+      input51:
       - type: from_text   
 
   input52_form:
