@@ -1,0 +1,315 @@
+version: "2.0"
+
+stories:
+
+#  =================week_6_start======================
+
+- story: anxty 6 start
+  steps: 
+  # - intent: session5
+  - intent: great
+  - action: action_get_name
+  - action: utter_week6_s1
+  - action: utter_week6_s2
+
+- story: anxty 6 story 1
+  steps: 
+  - intent: meter16
+  - action: utter_week6_s3
+  - action: utter_week6_s4
+
+# ===================================================
+
+- story: anxty 6 story 2
+  steps: 
+  - intent: meter17
+  - action: utter_week6_s5
+  - action: utter_week6_s6
+  - intent: affirm  
+  - action: utter_week6_s6_a 
+  - action: utter_week6_s4
+
+# ======================================================
+
+- story: anxty 6 story 3
+  steps: 
+  - intent: meter18
+  - action: utter_week6_s7
+  - action: utter_week6_s8
+  - intent: deny
+  - action: utter_week6_s9
+  - action: input42_form
+  - action: utter_week6_s10
+  - intent: deny
+  - action: action_set_input42_slot_none  
+  - action: utter_week6_s11
+  - action: utter_week6_s12
+  - intent: deny
+  - action: utter_week6_s13
+  - action: utter_week6_s4
+
+- story: anxty 6 story 3 affirm31
+  steps: 
+  - intent: affirm31
+  - action: action_set_input42_slot_none    
+  - action: utter_week6_s10a
+  - action: input42_form
+  - action: utter_week6_s11
+  - action: utter_week6_s12
+  - intent: deny
+  - action: utter_week6_s13
+  - action: utter_week6_s4
+
+# ========================================================
+
+- story: anxty 6 story 4 button3
+  steps: 
+  - intent: button3
+  - action: utter_week6_s14
+  - action: utter_week6_s15
+  # - intent: affirm  
+  # - action: utter_week6_s19
+  # - action: utter_week6_s20
+  # - intent: affirm  
+  # - action: utter_week6_s21
+  # - action: utter_week6_s22
+  # - intent: affirm    
+  # - action: utter_week6_s23  
+  # - action: utter_week6_s24
+
+# ============================================================
+
+- story: anxty 6 story 4 affirm32
+  steps: 
+  - intent: affirm32
+  - action: utter_week6_s16
+
+# ===============================================================
+
+- story: anxty 6 story 5 affirm30
+  steps: 
+  - intent: affirm30
+  - action: utter_week6_s17
+  - intent: deny
+  - action: utter_week6_s18  
+  - action: utter_week6_s19
+  - action: utter_week6_s20
+  - intent: affirm  
+  - action: utter_week6_s21
+  - action: utter_week6_s22
+  - intent: affirm    
+  - action: utter_week6_s23  
+  - action: utter_week6_s24
+
+# ====================wait=================================================
+
+# - story: anxty 6 story 5 affirm34
+#   steps: 
+#   - intent: affirm34 
+#   - action: utter_week6_s23  
+#   - action: utter_week6_s24
+
+# ===============================================================
+
+- story: anxty 6 story 6 affirm33
+  steps: 
+  - intent: affirm33
+  - action: utter_week6_s25
+  - intent: affirm
+  - action: utter_week6_s26
+  - action: input43_form
+  - action: utter_week6_s27
+  - intent: affirm
+  - action: action_set_input43_slot_none   
+  - action: utter_week6_s28
+  - action: input44_form
+  - action: utter_week6_s29
+  - intent: affirm
+  - action: action_set_input44_slot_none   
+  - action: utter_week6_s30
+  - action: input45_form  
+  - action: utter_week6_s31  
+  - intent: affirm
+  - action: action_set_input45_slot_none   
+  - action: utter_week6_s32
+  - action: input46_form
+  - action: utter_week6_s32_a
+  - action: utter_week6_s33
+
+- story: anxty 6 story 6 affirm37
+  steps:   
+  - intent: affirm37
+  - action: action_set_input46_slot_none   
+  - action: utter_week6_s19_a
+  - action: utter_week6_s19
+  - action: utter_week6_s20
+  - intent: affirm  
+  - action: utter_week6_s21
+  - action: utter_week6_s22
+  - intent: affirm    
+  - action: utter_week6_s23  
+  - action: utter_week6_s24
+
+- story: anxty 6 story 6 affirm36
+  steps: 
+  - intent: affirm36
+  - action: action_set_input46_slot_none    
+  - action: utter_week6_s34
+  - action: input46_form
+  - action: utter_week6_s32_a
+  - action: utter_week6_s33
+
+# =================25-08-23==============================================
+
+- story: anxty 6 story 7 affirm35
+  steps: 
+  - intent: affirm35
+  # - action: utter_week6_s35
+  # - action: utter_week6_s36
+  # - intent: affirm  
+  # - action: utter_week6_s37
+  # - intent: affirm  
+  # - action: utter_week6_s38
+  # - intent: affirm  
+  # - action: utter_week6_s39
+  # - intent: affirm  
+  # - action: utter_week6_s40
+  # - intent: affirm  
+  # - action: utter_week6_s41
+  # - intent: affirm  
+  # - action: utter_week6_s42
+  # - action: utter_week6_s43
+  # - intent: affirm  
+  - action: action_set_input47_slot_none    
+  - action: utter_week6_s44
+  - action: input47_form 
+  - action: utter_week6_s44_a  
+  - action: utter_week6_s45
+  - intent: affirm  
+  # - action: action_set_input48_slot_none    
+  - action: utter_week6_s46
+  # - action: input48_form
+  - action: utter_week6_s47
+  - intent: affirm    
+  - action: utter_week6_s48
+  # - intent: affirm  
+  # - action: action_set_input49_slot_none    
+  - action: utter_week6_s49
+  - intent: affirm    
+  # - action: input49_form
+  - action: utter_week6_s50_a
+  - intent: affirm      
+  - action: utter_week6_s50
+  # - intent: affirm
+  # - action: action_set_input50_slot_none      
+  # - action: utter_week6_s50_b
+  # - action: input50_form
+  # - action: utter_week6_s51
+  # - action: utter_week6_s52
+  # - intent: deny
+  # - action: utter_week6_s53
+  # - action: utter_week6_s54  
+  # - intent: deny
+  # - action: utter_week6_s55
+  # - action: utter_week6_s56
+  # - intent: affirm  
+  # - action: utter_week6_last
+
+# ========================sleep====================================
+
+- story: anxty 6 story 8 affirm38
+  steps: 
+  - intent: affirm38
+  - action: action_set_input51_slot_none  
+  - action: utter_week6_s57
+  - action: input51_form
+  - action: utter_week6_s58
+  - intent: affirm 
+  - action: action_set_input52_slot_none  
+  - action: utter_week6_s59 
+  - action: input52_form    
+  - action: utter_week6_s60
+  - intent: affirm   
+  - action: action_set_input53_slot_none  
+  - action: utter_week6_s61  
+  - action: input53_form   
+  - action: utter_week6_s62 
+  - action: utter_week6_s63   
+  - intent: affirm   
+  - action: action_set_input54_slot_none  
+  - action: utter_week6_s64
+  - action: input54_form  
+  - action: utter_week6_s65
+  - action: utter_week6_s66   
+  - intent: affirm 
+  - action: utter_week6_s67
+  - action: utter_week6_s54  
+  - intent: deny
+  - action: utter_week6_s55
+  - action: utter_week6_s56
+  - intent: affirm  
+  - action: utter_week6_last
+
+# ============================================================
+
+- story: anxty 6 story 9 affirm39
+  steps: 
+  - intent: affirm39
+  - action: utter_week6_s68
+  - action: utter_week6_s68_a
+  - intent: affirm
+  - action: action_set_input55_slot_none    
+  - action: utter_week6_s69
+  - action: input55_form   
+  - action: utter_week6_s70
+  - intent: affirm
+  - action: action_set_input56_slot_none  
+  - action: utter_week6_s71 
+  - action: input56_form   
+  - action: utter_week6_s72
+  - action: utter_week6_s73
+  - intent: affirm    
+  - action: utter_week6_s74
+  - action: utter_week6_s75
+  - intent: affirm  
+  - action: utter_week6_last
+
+- story: anxty 6 story 9 affirm40
+  steps: 
+  - intent: affirm40
+  - action: action_set_input57_slot_none  
+  - action: utter_week6_s76
+  - action: input57_form   
+  - action: utter_week6_s77
+  - intent: affirm
+  - action: action_set_input58_slot_none  
+  - action: utter_week6_s78 
+  - action: input58_form   
+  - action: utter_week6_s79
+  - action: utter_week6_s80
+  - intent: affirm    
+  - action: utter_week6_s74
+  - action: utter_week6_s75
+  - intent: affirm  
+  - action: utter_week6_last
+
+- story: anxty 6 story 10 affirm41
+  steps: 
+  - intent: affirm41
+  - action: action_set_input59_slot_none  
+  - action: utter_week6_s81
+  - action: input59_form   
+  - action: utter_week6_s82
+  - intent: affirm
+  - action: action_set_input60_slot_none  
+  - action: utter_week6_s83
+  - action: input60_form   
+  - action: utter_week6_s84
+  - action: utter_week6_s85
+  - intent: affirm    
+  - action: utter_week6_s74
+  - action: utter_week6_s75
+  - intent: affirm  
+  - action: utter_week6_last
+
+ 

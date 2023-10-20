@@ -7,7 +7,7 @@ stories:
 - story: anxty 5 start
   steps: 
   # - intent: session4
-  - intent: great 
+  - intent: session4
   - action: action_get_name
   - action: utter_week5_s1
   - action: utter_week5_s2
